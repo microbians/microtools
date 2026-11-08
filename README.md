@@ -10,9 +10,9 @@ This repository holds what you need to get and build plugins:
 | --- | --- |
 | `catalog/index.json` | The official plugins microTools offers in Settings › General › More Plugins. Each entry is a plugin's manifest plus its release download and SHA-256. |
 | Releases | One release per plugin version (`<id>-<version>`), with the signed, notarized `<id>.microplugin.zip`. |
-| `docs/` | The plugin format, the MicroKit (Swift) and JavaScript APIs, and step-by-step instructions written so an AI can build a plugin too. *(coming)* |
+| `docs/` | [`javascript.md`](docs/javascript.md): the plugin format and the JavaScript API. [`for-ai.md`](docs/for-ai.md): step-by-step instructions so an AI can build a plugin. |
 | `sdk/` | MicroKit's interface for Swift plugins. *(coming)* |
-| `templates/`, `examples/` | Starting points and open example plugins. *(coming)* |
+| `examples/` | Open example plugins: [`dateStamp`](examples/dateStamp.microplugin) (JavaScript). |
 
 ## Plugins
 
@@ -46,7 +46,7 @@ mediaGrab.microplugin/
 ```
 
 - **Swift plugins** run with microTools' own rights, so microTools only loads Swift plugins signed by microbians.
-- **JavaScript plugins** (coming) run in a sandboxed JavaScriptCore context and reach the Mac only through the API
+- **JavaScript plugins** run in a sandboxed JavaScriptCore context and reach the Mac only through the API
   microTools gives them, with the permissions you grant each one: anyone can write them, an AI too.
 
 ## Official plugins

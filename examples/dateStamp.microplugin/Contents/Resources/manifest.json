@@ -1,0 +1,21 @@
+{
+  "id": "dateStamp",
+  "title": "dateStamp",
+  "summary": "Copies today’s date in the format you choose.",
+  "symbol": "calendar",
+  "version": "1.0",
+  "kind": "js",
+  "sdk": 1,
+  "minApp": "3.0",
+  "settings": [
+    { "key": "format", "type": "select", "title": "Format", "section": "Date",
+      "options": [
+        { "value": "iso", "title": "2026-11-08" },
+        { "value": "long", "title": "8 November 2026" },
+        { "value": "stamp", "title": "20261108-1530" }
+      ],
+      "default": "iso" },
+    { "key": "notice", "type": "toggle", "title": "Show a notice", "description": "Under the icon, when the date is copied.", "section": "Date", "default": true },
+    { "key": "copy", "type": "shortcut", "title": "Shortcut", "section": "Date" }
+  ]
+}
