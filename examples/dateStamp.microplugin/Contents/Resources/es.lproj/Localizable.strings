@@ -6,3 +6,4 @@
 "Shortcut" = "Atajo";
 "Copied" = "Copiado";
 "Copy Date" = "Copiar fecha";
+"Copies today’s date to the clipboard from its menu or a keyboard shortcut, as 2026-11-08, 8 November 2026 or 20261108-1530. Other plugins can ask it for the date too." = "Copia la fecha de hoy al portapapeles desde su menú o con un atajo de teclado, como 2026-11-08, 8 de noviembre de 2026 o 20261108-1530. Otros plugins también pueden pedirle la fecha.";

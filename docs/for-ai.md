@@ -29,6 +29,8 @@ You are asked to build a plugin for **microTools**, a macOS menu bar app that ho
 
 - `kind` is `"js"`, `sdk` is `1`, `minApp` is `"3.0"`, `version` starts at `"1.0"`.
 - `summary`: one plain sentence, what it does for the user, no marketing.
+- `about`: two to four plain sentences: what it does, how it is used, what it needs. Users find plugins by
+  searching these words, so name the things they would search for.
 - `symbol`: an SF Symbol name that exists (check SF Symbols), or `lucide:<name>`.
 - Declare every option the user sets in `settings` (never ask with a dialog what a setting can hold). Group them
   with `section`. Give each a `default`. A global shortcut is a `shortcut` setting plus `microtools.onShortcut`.

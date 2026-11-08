@@ -36,6 +36,7 @@ Install a plugin by double-clicking the `.microplugin` folder, or in microTools 
 | `id` | Unique, camelCase, also the folder name. Prefixes the plugin's settings and is the host of its URLs. |
 | `title` | Shown in the menu bar menu and Settings. microTools' own plugins use lowerCamelCase names. |
 | `summary` | One sentence under the title in Settings (a translation key). |
+| `about` | A few sentences on what it does and how, shown when its line in Settings › General is opened, and searched by the plugin search (a translation key). |
 | `symbol` | An [SF Symbol](https://developer.apple.com/sf-symbols/) name, or `lucide:<name>` for a [Lucide](https://lucide.dev) icon. |
 | `version` | The plugin's version, `major.minor`. |
 | `kind` | `"js"`. |
