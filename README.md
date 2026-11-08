@@ -1,0 +1,61 @@
+# microTools
+
+**microTools** is a small macOS menu bar app that hosts little utilities as **plugins**. Turn on only the ones you
+need; new tools arrive as new plugins, not as one more app. Get the app at
+[microbians.gumroad.com/l/microtools](https://microbians.gumroad.com/l/microtools).
+
+This repository holds what you need to get and build plugins:
+
+| Folder | What |
+| --- | --- |
+| `catalog/index.json` | The official plugins microTools offers in Settings › General › More Plugins. Each entry is a plugin's manifest plus its release download and SHA-256. |
+| Releases | One release per plugin version (`<id>-<version>`), with the signed, notarized `<id>.microplugin.zip`. |
+| `docs/` | The plugin format, the MicroKit (Swift) and JavaScript APIs, and step-by-step instructions written so an AI can build a plugin too. *(coming)* |
+| `sdk/` | MicroKit's interface for Swift plugins. *(coming)* |
+| `templates/`, `examples/` | Starting points and open example plugins. *(coming)* |
+
+## Plugins
+
+A plugin is a `.microplugin` folder installed in `~/Library/Application Support/microTools/Plugins`:
+
+```
+mediaGrab.microplugin/
+  Contents/
+    Info.plist                 Swift plugins: the bundle's id and executable
+    MacOS/MediaGrab            Swift plugins: the code, linked against MicroKit
+    Resources/
+      manifest.json            what microTools shows before loading the code
+      main.js                  JavaScript plugins: the code
+      es.lproj/Localizable.strings
+```
+
+`manifest.json`:
+
+```json
+{
+  "id": "mediaGrab",
+  "title": "mediaGrab",
+  "summary": "Video, MP3 or images from the page in your browser.",
+  "symbol": "arrow.down.circle",
+  "version": "1.0",
+  "kind": "swift",
+  "principalClass": "MediaGrab.MediaGrabPlugin",
+  "sdk": 1,
+  "minApp": "3.0"
+}
+```
+
+- **Swift plugins** run with microTools' own rights, so microTools only loads Swift plugins signed by microbians.
+- **JavaScript plugins** (coming) run in a sandboxed JavaScriptCore context and reach the Mac only through the API
+  microTools gives them, with the permissions you grant each one: anyone can write them, an AI too.
+
+## Official plugins
+
+| Plugin | What it does |
+| --- | --- |
+| hideOnStart | Hides the windows apps open at login. |
+| rightClick | 13 tools in Finder's right-click menu and in Services. |
+| audioSwitch | Audio devices, profiles and rules that switch them for you. |
+| mediaGrab | Video, MP3 or images from the page in your browser. |
+
+Made by [microbians](https://microbians.com).
