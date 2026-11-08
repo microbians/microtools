@@ -5,64 +5,156 @@
         "id": "audioSwitch",
         "title": "audioSwitch",
         "summary": "Audio devices, profiles and rules that switch them for you.",
+        "about": "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.",
         "symbol": "speaker.wave.2",
-        "version": "1.0",
+        "version": "1.01",
         "kind": "swift",
         "principalClass": "AudioSwitch.AudioSwitchPlugin",
         "sdk": 1,
         "minApp": "3.0"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.0/audioSwitch.microplugin.zip",
-      "sha256": "7193b74960bc421e1961780f9c45bc9c53d8c0972055a2e9e99774a220d8ecd7",
-      "size": 211249
+      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.01/audioSwitch.microplugin.zip",
+      "sha256": "7ce5ae173c356c4096618d9b0988622042a58264186a1bf690e5584568d8b83d",
+      "size": 213303,
+      "strings": {
+        "de": {
+          "Audio devices, profiles and rules that switch them for you.": "Audiogeräte, Profile und Regeln, die für dich umschalten.",
+          "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.": "Wähle Aus- und Eingabe in der Menüleiste; benenne Geräte um, gib ihnen ein Symbol, stelle Lautstärken ein, blende ungenutzte aus und gib jedem ein Tastaturkürzel. Profile setzen Ausgabe, Eingabe, Pegel und Mikrofon-Stummschaltung mit einem Klick oder Kürzel. Regeln wechseln Profile von selbst, wenn eine App geöffnet oder vorne ist, eine Webseite offen ist, Kamera oder Mikrofon benutzt werden oder ein Gerät verbunden ist, und stellen danach die vorherigen Einstellungen wieder her."
+        },
+        "es": {
+          "Audio devices, profiles and rules that switch them for you.": "Dispositivos de audio, perfiles y reglas que los cambian por ti.",
+          "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.": "Elige la salida y la entrada desde la barra de menús; cambia el nombre de los dispositivos, ponles un icono, ajusta volúmenes, oculta los que no usas y dale a cada uno un atajo de teclado. Los perfiles fijan salida, entrada, niveles y micrófono silenciado con un clic o un atajo. Las reglas cambian de perfil solas cuando una app está abierta o delante, hay una página web abierta, se usa la cámara o el micrófono, o se conecta un dispositivo, y vuelven a lo de antes al terminar."
+        },
+        "fr": {
+          "Audio devices, profiles and rules that switch them for you.": "Appareils audio, profils et règles qui les changent pour vous.",
+          "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.": "Choisissez la sortie et l’entrée depuis la barre des menus ; renommez les appareils, donnez-leur une icône, réglez les volumes, masquez ceux que vous n’utilisez jamais et attribuez à chacun un raccourci clavier. Les profils règlent sortie, entrée, niveaux et micro coupé en un clic ou un raccourci. Les règles changent de profil toutes seules quand une app est ouverte ou au premier plan, qu’une page web est ouverte, que la caméra ou le micro est utilisé ou qu’un appareil est connecté, puis rétablissent les réglages précédents."
+        },
+        "it": {
+          "Audio devices, profiles and rules that switch them for you.": "Dispositivi audio, profili e regole che li cambiano per te.",
+          "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.": "Scegli uscita e ingresso dalla barra dei menu; rinomina i dispositivi, assegna loro un’icona, regola i volumi, nascondi quelli che non usi e dai a ciascuno una scorciatoia da tastiera. I profili impostano uscita, ingresso, livelli e microfono disattivato con un clic o una scorciatoia. Le regole cambiano profilo da sole quando un’app è aperta o in primo piano, una pagina web è aperta, la fotocamera o il microfono sono in uso o un dispositivo è collegato, e ripristinano le impostazioni precedenti alla fine."
+        },
+        "pt": {
+          "Audio devices, profiles and rules that switch them for you.": "Dispositivos de áudio, perfis e regras que os mudam por si.",
+          "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.": "Escolha a saída e a entrada na barra de menus; mude o nome dos dispositivos, dê-lhes um ícone, ajuste volumes, oculte os que nunca usa e dê a cada um um atalho de teclado. Os perfis definem saída, entrada, níveis e microfone silenciado com um clique ou atalho. As regras mudam de perfil sozinhas quando uma app está aberta ou à frente, uma página web está aberta, a câmara ou o microfone estão em uso ou um dispositivo é ligado, e repõem as definições anteriores no fim."
+        }
+      }
     },
     {
       "manifest": {
         "id": "hideOnStart",
         "title": "hideOnStart",
         "summary": "Hides the windows apps open at login.",
+        "about": "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.",
         "symbol": "eye.slash",
-        "version": "1.0",
+        "version": "1.01",
         "kind": "swift",
         "principalClass": "HideOnStart.HideOnStartPlugin",
         "sdk": 1,
         "minApp": "3.0"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/hideOnStart-1.0/hideOnStart.microplugin.zip",
-      "sha256": "5c8ca43ec3f03137e35aa546aa76e3d80ee69aadf417611dbaec943609384c79",
-      "size": 93444
+      "url": "https://github.com/microbians/microtools/releases/download/hideOnStart-1.01/hideOnStart.microplugin.zip",
+      "sha256": "3bc604d2f37a4de00fb305d9fc4909143c62b500ceaedb5fc060dc2a8e1fdf78",
+      "size": 95034,
+      "strings": {
+        "de": {
+          "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.": "Wähle die Apps, die bei jedem Start deines Mac Fenster öffnen: Sync-Helfer, Updater, Chat-Apps. Bei der Anmeldung werden ihre Fenster beim Erscheinen ausgeblendet, so lange du willst (30 Sekunden bis 10 Minuten). Apps ohne Dock-Symbol werden ihre Fenster geschlossen (benötigt Bedienungshilfen). Das Menüleistensymbol kann nur während der Überwachung erscheinen.",
+          "Hides the windows apps open at login.": "Blendet die Fenster aus, die Apps bei der Anmeldung öffnen."
+        },
+        "es": {
+          "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.": "Elige las apps que abren ventanas cada vez que arranca el Mac: asistentes de sincronización, actualizadores, chats. Al iniciar sesión, sus ventanas se ocultan según aparecen, durante el tiempo que elijas (de 30 segundos a 10 minutos). Las apps sin icono en el Dock cierran sus ventanas (necesita Accesibilidad). Su icono en la barra de menús puede mostrarse solo mientras vigila.",
+          "Hides the windows apps open at login.": "Oculta las ventanas que abren las apps al iniciar sesión."
+        },
+        "fr": {
+          "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.": "Choisissez les apps qui ouvrent des fenêtres à chaque démarrage du Mac : outils de synchronisation, programmes de mise à jour, messageries. À l’ouverture de session, leurs fenêtres sont masquées dès qu’elles apparaissent, pendant la durée choisie (de 30 secondes à 10 minutes). Les apps sans icône dans le Dock voient leurs fenêtres fermées (Accessibilité requise). Son icône dans la barre des menus peut n’apparaître que pendant la surveillance.",
+          "Hides the windows apps open at login.": "Masque les fenêtres que les apps ouvrent à l’ouverture de session."
+        },
+        "it": {
+          "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.": "Scegli le app che aprono finestre a ogni avvio del Mac: strumenti di sincronizzazione, programmi di aggiornamento, chat. All’accesso, le loro finestre vengono nascoste appena compaiono, per il tempo che scegli (da 30 secondi a 10 minuti). Le app senza icona nel Dock hanno le finestre chiuse (richiede Accessibilità). La sua icona nella barra dei menu può comparire solo mentre controlla.",
+          "Hides the windows apps open at login.": "Nasconde le finestre che le app aprono all’accesso."
+        },
+        "pt": {
+          "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.": "Escolha as apps que abrem janelas sempre que o Mac arranca: assistentes de sincronização, atualizadores, chats. Ao iniciar sessão, as janelas são ocultadas à medida que aparecem, durante o tempo que escolher (de 30 segundos a 10 minutos). As apps sem ícone na Dock têm as janelas fechadas (requer Acessibilidade). O ícone na barra de menus pode aparecer só enquanto vigia.",
+          "Hides the windows apps open at login.": "Oculta as janelas que as apps abrem ao iniciar sessão."
+        }
+      }
     },
     {
       "manifest": {
         "id": "mediaGrab",
         "title": "mediaGrab",
         "summary": "Video, MP3 or images from the page in your browser.",
+        "about": "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.",
         "symbol": "arrow.down.circle",
-        "version": "1.0",
+        "version": "1.01",
         "kind": "swift",
         "principalClass": "MediaGrab.MediaGrabPlugin",
         "sdk": 1,
         "minApp": "3.0"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/mediaGrab-1.0/mediaGrab.microplugin.zip",
-      "sha256": "1e01c24661b5ec78c061ad8027d50834761cde4799afad268a1e6e7f23818e98",
-      "size": 290818
+      "url": "https://github.com/microbians/microtools/releases/download/mediaGrab-1.01/mediaGrab.microplugin.zip",
+      "sha256": "ca7d6cd47a7f06f1659d96ef15579a6a4e93bf2c25488d9ad4f062b0451afb03",
+      "size": 292826,
+      "strings": {
+        "de": {
+          "Video, MP3 or images from the page in your browser.": "Video, MP3 oder Bilder der Seite in deinem Browser.",
+          "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.": "Lädt das Video, seinen Ton als getaggte MP3 oder die gewählten Bilder aus dem vorderen Tab in Safari, Chrome, Edge, Brave oder Arc, über die Menüleiste oder ein Kürzel. Videos von YouTube, Vimeo, Instagram und über tausend weiteren Seiten, bis zur besten Qualität, mit Untertiteln. MP3s bekommen ein quadratisches Cover sowie Titel, Interpret und Album. Wähle Ordner und Ordnung für jede Art. Nutzt die kostenlosen yt-dlp und ffmpeg, beim ersten Mal für dich geladen."
+        },
+        "es": {
+          "Video, MP3 or images from the page in your browser.": "Vídeo, MP3 o imágenes de la página que tienes en el navegador.",
+          "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.": "Descarga el vídeo, su audio como MP3 etiquetado o las imágenes que elijas de la pestaña de delante en Safari, Chrome, Edge, Brave o Arc, desde la barra de menús o con un atajo. Vídeo de YouTube, Vimeo, Instagram y más de mil sitios, hasta la mejor calidad, con subtítulos. Los MP3 llevan portada cuadrada y el título, artista y álbum de la canción. Elige carpeta y orden para cada tipo. Usa yt-dlp y ffmpeg, gratuitos, que se descargan solos la primera vez."
+        },
+        "fr": {
+          "Video, MP3 or images from the page in your browser.": "Vidéo, MP3 ou images de la page de votre navigateur.",
+          "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.": "Télécharge la vidéo, son audio en MP3 avec tags, ou les images que vous choisissez depuis l’onglet au premier plan dans Safari, Chrome, Edge, Brave ou Arc, depuis la barre des menus ou un raccourci. Vidéos de YouTube, Vimeo, Instagram et plus de mille autres sites, jusqu’à la meilleure qualité, avec sous-titres. Les MP3 ont une pochette carrée et le titre, l’artiste et l’album. Choisissez un dossier et un classement pour chaque type. Utilise yt-dlp et ffmpeg, gratuits, téléchargés pour vous la première fois."
+        },
+        "it": {
+          "Video, MP3 or images from the page in your browser.": "Video, MP3 o immagini dalla pagina nel browser.",
+          "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.": "Scarica il video, il suo audio come MP3 con tag o le immagini che scegli dalla scheda in primo piano in Safari, Chrome, Edge, Brave o Arc, dalla barra dei menu o con una scorciatoia. Video da YouTube, Vimeo, Instagram e oltre mille altri siti, fino alla qualità migliore, con sottotitoli. Gli MP3 hanno copertina quadrata e titolo, artista e album del brano. Scegli cartella e ordine per ogni tipo. Usa yt-dlp e ffmpeg, gratuiti, scaricati per te la prima volta."
+        },
+        "pt": {
+          "Video, MP3 or images from the page in your browser.": "Vídeo, MP3 ou imagens da página no seu navegador.",
+          "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.": "Descarrega o vídeo, o áudio como MP3 com etiquetas ou as imagens que escolher do separador da frente no Safari, Chrome, Edge, Brave ou Arc, a partir da barra de menus ou de um atalho. Vídeo do YouTube, Vimeo, Instagram e mais de mil outros sites, até à melhor qualidade, com legendas. Os MP3 têm capa quadrada e título, artista e álbum da música. Escolha pasta e organização para cada tipo. Usa o yt-dlp e o ffmpeg, gratuitos, descarregados por si na primeira vez."
+        }
+      }
     },
     {
       "manifest": {
         "id": "rightClick",
         "title": "rightClick",
         "summary": "More tools in Finder’s right-click menu",
+        "about": "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.",
         "symbol": "cursorarrow.click.2",
-        "version": "1.0",
+        "version": "1.01",
         "kind": "swift",
         "principalClass": "RightClick.RightClickPlugin",
         "sdk": 1,
         "minApp": "3.0"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/rightClick-1.0/rightClick.microplugin.zip",
-      "sha256": "c793b32b2e1586e241323353f1079e57153a39faa18e36e5d9de7859a887426c",
-      "size": 101908
+      "url": "https://github.com/microbians/microtools/releases/download/rightClick-1.01/rightClick.microplugin.zip",
+      "sha256": "8bbe5ef57211d865b4a91b086c6b45f0a45e00907269e3232c65f3bf1eada334",
+      "size": 103320,
+      "strings": {
+        "de": {
+          "More tools in Finder’s right-click menu": "Mehr Werkzeuge im Kontextmenü des Finder",
+          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 Alltagswerkzeuge im Kontextmenü des Finder und als Dienste in allen anderen Apps: Pfad kopieren, Namen kopieren, Pfad mit ~ kopieren, Pfad für Terminal kopieren, Als file://-URL kopieren, Inhalt kopieren, SHA-256 kopieren, Neue Textdatei, Im Terminal öffnen, Symbolischen Link erstellen, Quarantäne entfernen, Fotometadaten entfernen, Versteckte Dateien ein-/ausblenden. Schalte Werkzeuge ein oder aus und hol deine Favoriten auf die oberste Ebene."
+        },
+        "es": {
+          "More tools in Finder’s right-click menu": "Más herramientas en el clic derecho de Finder",
+          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 herramientas de uso diario en el clic derecho de Finder, y como Servicios en el resto de apps: Copiar ruta, Copiar nombre, Copiar ruta con ~, Copiar ruta para Terminal, Copiar como URL file://, Copiar contenido, Copiar SHA-256, Nuevo archivo de texto, Abrir en Terminal, Crear enlace simbólico, Quitar cuarentena, Quitar metadatos de fotos, Mostrar/ocultar archivos ocultos. Activa o desactiva cada una y marca tus favoritas para tenerlas en el primer nivel."
+        },
+        "fr": {
+          "More tools in Finder’s right-click menu": "Plus d’outils dans le clic droit du Finder",
+          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 outils du quotidien dans le menu contextuel du Finder, et comme Services dans toutes les autres apps : Copier le chemin, Copier le nom, Copier le chemin avec ~, Copier le chemin pour Terminal, Copier comme URL file://, Copier le contenu, Copier le SHA-256, Nouveau fichier texte, Ouvrir dans Terminal, Créer un lien symbolique, Retirer la quarantaine, Retirer les métadonnées des photos, Afficher/masquer les fichiers cachés. Activez ou désactivez chaque outil et mettez vos favoris au premier niveau."
+        },
+        "it": {
+          "More tools in Finder’s right-click menu": "Più strumenti nel clic destro del Finder",
+          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 strumenti quotidiani nel menu del clic destro del Finder, e come Servizi in tutte le altre app: Copia percorso, Copia nome, Copia percorso con ~, Copia percorso per Terminale, Copia come URL file://, Copia contenuto, Copia SHA-256, Nuovo file di testo, Apri nel Terminale, Crea link simbolico, Rimuovi quarantena, Rimuovi metadati foto, Mostra/nascondi file nascosti. Attiva o disattiva ogni strumento e metti i preferiti al primo livello."
+        },
+        "pt": {
+          "More tools in Finder’s right-click menu": "Mais ferramentas no clique direito do Finder",
+          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 ferramentas do dia a dia no menu do clique direito do Finder, e como Serviços em todas as outras apps: Copiar caminho, Copiar nome, Copiar caminho com ~, Copiar caminho para o Terminal, Copiar como URL file://, Copiar conteúdo, Copiar SHA-256, Novo ficheiro de texto, Abrir no Terminal, Criar ligação simbólica, Remover quarentena, Remover metadados de fotos, Mostrar/ocultar ficheiros ocultos. Ative ou desative cada uma e ponha as favoritas no primeiro nível."
+        }
+      }
     }
   ]
 }
