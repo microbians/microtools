@@ -1,0 +1,68 @@
+{
+  "plugins": [
+    {
+      "manifest": {
+        "id": "audioSwitch",
+        "title": "audioSwitch",
+        "summary": "Audio devices, profiles and rules that switch them for you.",
+        "symbol": "speaker.wave.2",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "AudioSwitch.AudioSwitchPlugin",
+        "sdk": 1,
+        "minApp": "3.0"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.0/audioSwitch.microplugin.zip",
+      "sha256": "7193b74960bc421e1961780f9c45bc9c53d8c0972055a2e9e99774a220d8ecd7",
+      "size": 211249
+    },
+    {
+      "manifest": {
+        "id": "hideOnStart",
+        "title": "hideOnStart",
+        "summary": "Hides the windows apps open at login.",
+        "symbol": "eye.slash",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "HideOnStart.HideOnStartPlugin",
+        "sdk": 1,
+        "minApp": "3.0"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/hideOnStart-1.0/hideOnStart.microplugin.zip",
+      "sha256": "5c8ca43ec3f03137e35aa546aa76e3d80ee69aadf417611dbaec943609384c79",
+      "size": 93444
+    },
+    {
+      "manifest": {
+        "id": "mediaGrab",
+        "title": "mediaGrab",
+        "summary": "Video, MP3 or images from the page in your browser.",
+        "symbol": "arrow.down.circle",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "MediaGrab.MediaGrabPlugin",
+        "sdk": 1,
+        "minApp": "3.0"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/mediaGrab-1.0/mediaGrab.microplugin.zip",
+      "sha256": "1e01c24661b5ec78c061ad8027d50834761cde4799afad268a1e6e7f23818e98",
+      "size": 290818
+    },
+    {
+      "manifest": {
+        "id": "rightClick",
+        "title": "rightClick",
+        "summary": "More tools in Finder’s right-click menu",
+        "symbol": "cursorarrow.click.2",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "RightClick.RightClickPlugin",
+        "sdk": 1,
+        "minApp": "3.0"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/rightClick-1.0/rightClick.microplugin.zip",
+      "sha256": "c793b32b2e1586e241323353f1079e57153a39faa18e36e5d9de7859a887426c",
+      "size": 101908
+    }
+  ]
+}
