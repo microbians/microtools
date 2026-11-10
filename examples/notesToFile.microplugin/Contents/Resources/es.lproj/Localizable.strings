@@ -1,0 +1,13 @@
+"Adds the clipboard’s text to a notes file." = "Añade el texto del portapapeles a un archivo de notas.";
+"Adds the text in the clipboard, with the date, to the end of a notes file in a folder you choose, from its menu or a keyboard shortcut. It can only read and change files in that folder." = "Añade el texto del portapapeles, con la fecha, al final de un archivo de notas en una carpeta que elijas, desde su menú o con un atajo de teclado. Solo puede leer y cambiar archivos en esa carpeta.";
+"File name" = "Nombre del archivo";
+"Notes.txt" = "Notas.txt";
+"Notes" = "Notas";
+"Shortcut" = "Atajo";
+"Add Clipboard to Notes" = "Añadir portapapeles a las notas";
+"Open Notes" = "Abrir notas";
+"Choose Folder…" = "Elegir carpeta…";
+"Clipboard is empty" = "Portapapeles vacío";
+"Added" = "Añadido";
+"Not added" = "No añadido";
+"Not allowed" = "Sin permiso";

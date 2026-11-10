@@ -41,7 +41,7 @@ Install a plugin by double-clicking the `.microplugin` folder, or in microTools 
 | `version` | The plugin's version, `major.minor`. |
 | `kind` | `"js"`. |
 | `sdk` | `1`. |
-| `permissions` | `"shell"` to run commands (the user is asked once). |
+| `permissions` | `"shell"` to run commands, `"files"` to read and change files in the folders the user grants (microTools 3.1 or later). The user is asked once for each. |
 | `settings` | Drawn by microTools in the plugin's Settings pane, grouped by `section`. Types: `toggle`, `text`, `select` (`options`), `shortcut` (a global keyboard shortcut), `folder`, `note` (text only). `title`, `description`, `section` and option titles are translation keys. |
 
 ## main.js
@@ -87,6 +87,7 @@ menu() {
 | `await microtools.fetch(url, { method, headers, body })` | `{ status, headers, text, json() }`. http and https only. |
 | `await microtools.ai(prompt, instructions?)` | Apple's on-device model (Apple Intelligence, macOS 26): its answer as text. |
 | `await microtools.shell(command, [args])` | `{ status, output, error }`. Needs `"permissions": ["shell"]`; the user is asked once. |
+| `await microtools.readFile(path)`, `writeFile`, `listFolder`… | Files in the folders the user granted: see [Files](#files). |
 | `microtools.route(path, fn)` | `microtools://<id>/<path>?a=1` calls `fn({ a: '1' })`; other plugins can call it too. |
 | `microtools.call(pluginId, path, args)` | Calls another plugin's route; a JS plugin's route returns its value. |
 | `microtools.localized(key)` | A string from the plugin's `Localizable.strings` in the user's language. |
@@ -103,10 +104,40 @@ Keys are the English text. `Contents/Resources/es.lproj/Localizable.strings`:
 "Copies today’s date in the format you choose." = "Copia la fecha de hoy en el formato que elijas.";
 ```
 
+### Files
+
+Needs `"permissions": ["files"]` and microTools 3.1 or later (`"minApp": "3.1"`). A plugin reads and changes files
+**only inside the folders the user granted it**: with `microtools.chooseFolder()` (an open panel naming the plugin)
+or with *Add Folder…* in the plugin's Settings pane, where the user can also remove them. Paths are absolute (`~`
+works); each one is resolved (symlinks, `.`, `..`) and refused unless it lies inside one of this plugin's folders.
+A granted folder itself cannot be moved or deleted. Deleting moves to the Trash.
+
+| Call | |
+| --- | --- |
+| `await microtools.chooseFolder()` | Asks the user for a folder and grants it: its path, or `null` if cancelled. |
+| `microtools.folders()` | The paths of the folders granted to this plugin. |
+| `microtools.forgetFolder(path)` | Takes a granted folder back. |
+| `await microtools.readFile(path)` | The file's text (UTF-8). |
+| `await microtools.readFileBase64(path)` | The file's bytes as base64 (images…). |
+| `await microtools.writeFile(path, text, { append })` | Creates or replaces the file with `text`; `append: true` adds to its end. Its path. |
+| `await microtools.listFolder(path)` | `[{ name, path, isDirectory, size, modified }]` (`modified` is a `Date`), sorted by name. |
+| `await microtools.fileInfo(path)` | `{ name, path, isDirectory, size, modified }`, or `null` if nothing is there. |
+| `await microtools.makeFolder(path)` | Creates the folder (and missing parents). Its path. |
+| `await microtools.moveFile(from, to)` | Moves or renames a file or folder. The new path. |
+| `await microtools.trashFile(path)` | Moves a file or folder to the Trash. |
+
+```js
+const folder = microtools.folders()[0] || await microtools.chooseFolder()
+if (folder) {
+  await microtools.writeFile(folder + '/log.txt', new Date().toISOString() + '\n', { append: true })
+  const items = await microtools.listFolder(folder)
+}
+```
+
 ## Errors
 
 An uncaught error stops the call that threw it; microTools logs it and shows it at the top of the plugin's pane.
 
 ## Example
 
-`examples/dateStamp.microplugin` in this repository.
+`examples/dateStamp.microplugin` in this repository; `examples/notesToFile.microplugin` uses the files API.

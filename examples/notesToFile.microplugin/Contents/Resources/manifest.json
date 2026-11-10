@@ -1,0 +1,28 @@
+{
+  "id": "notesToFile",
+  "title": "notesToFile",
+  "summary": "Adds the clipboard’s text to a notes file.",
+  "about": "Adds the text in the clipboard, with the date, to the end of a notes file in a folder you choose, from its menu or a keyboard shortcut. It can only read and change files in that folder.",
+  "symbol": "note.text.badge.plus",
+  "version": "1.0",
+  "kind": "js",
+  "sdk": 1,
+  "minApp": "3.1",
+  "permissions": ["files"],
+  "settings": [
+    {
+      "key": "fileName",
+      "type": "text",
+      "title": "File name",
+      "description": "Notes.txt",
+      "section": "Notes",
+      "default": "Notes.txt"
+    },
+    {
+      "key": "append",
+      "type": "shortcut",
+      "title": "Shortcut",
+      "section": "Notes"
+    }
+  ]
+}
