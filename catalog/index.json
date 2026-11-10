@@ -119,6 +119,45 @@
     },
     {
       "manifest": {
+        "id": "midiLink",
+        "title": "midiLink",
+        "summary": "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.",
+        "about": "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.",
+        "symbol": "pianokeys",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "MidiLink.MidiLinkPlugin",
+        "sdk": 1,
+        "minApp": "3.0"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/midiLink-1.0/midiLink.microplugin.zip",
+      "sha256": "209d708c19f0b3e27cf3b624c4062fb8121529bdfc75b8ae2317d52eb8f83fac",
+      "size": 186527,
+      "strings": {
+        "de": {
+          "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Bluetooth-MIDI-Geräte in der Menüleiste, und MIDI von einem zum anderen.",
+          "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.": "Findet deine Bluetooth-MIDI-Instrumente und verbindet oder trennt sie in der Menüleiste, mit eigenen Namen und Symbolen. Gemerkte verbinden sich beim Einschalten von selbst, mit Hinweis. Routen schicken das MIDI eines Ports an einen anderen: ein Bluetooth-Keyboard an einen USB-Synth oder an eine App. Blende im Menü aus, was du nicht sehen willst."
+        },
+        "es": {
+          "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Dispositivos MIDI Bluetooth desde la barra de menús, y MIDI de uno a otro.",
+          "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.": "Encuentra tus instrumentos MIDI Bluetooth y los conecta o desconecta desde la barra de menús, con tus propios nombres e iconos. Los recordados se vuelven a conectar solos al encenderlos, con un aviso. Las rutas mandan el MIDI de un puerto a otro: un teclado Bluetooth a un sintetizador USB o a una app. Oculta del menú los que no quieras ver."
+        },
+        "fr": {
+          "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Appareils MIDI Bluetooth depuis la barre des menus, et le MIDI de l’un à l’autre.",
+          "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.": "Trouve vos instruments MIDI Bluetooth et les connecte ou déconnecte depuis la barre des menus, avec vos propres noms et icônes. Ceux mémorisés se reconnectent seuls quand vous les allumez, avec une notification. Les routes envoient le MIDI d’un port à un autre : un clavier Bluetooth vers un synthé USB ou une app. Masquez du menu ceux que vous ne voulez pas voir."
+        },
+        "it": {
+          "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Dispositivi MIDI Bluetooth dalla barra dei menu, e MIDI dall’uno all’altro.",
+          "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.": "Trova i tuoi strumenti MIDI Bluetooth e li collega o scollega dalla barra dei menu, con nomi e icone tuoi. Quelli memorizzati si ricollegano da soli quando li accendi, con un avviso. Le rotte mandano il MIDI di una porta a un’altra: una tastiera Bluetooth a un synth USB o a un’app. Nascondi dal menu quelli che non vuoi vedere."
+        },
+        "pt": {
+          "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Dispositivos MIDI Bluetooth na barra de menus, e MIDI de um para outro.",
+          "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.": "Encontra os seus instrumentos MIDI Bluetooth e liga-os ou desliga-os na barra de menus, com nomes e ícones seus. Os memorizados voltam a ligar-se sozinhos ao ligá-los, com um aviso. As rotas enviam o MIDI de uma porta para outra: um teclado Bluetooth para um sintetizador USB ou para uma app. Oculte do menu os que não quer ver."
+        }
+      }
+    },
+    {
+      "manifest": {
         "id": "rightClick",
         "title": "rightClick",
         "summary": "More tools in Finder’s right-click menu",
