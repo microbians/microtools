@@ -7,15 +7,15 @@
         "summary": "Audio devices, profiles and rules that switch them for you.",
         "about": "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.",
         "symbol": "speaker.wave.2",
-        "version": "1.01",
+        "version": "1.02",
         "kind": "swift",
         "principalClass": "AudioSwitch.AudioSwitchPlugin",
         "sdk": 1,
-        "minApp": "3.0"
+        "minApp": "3.1"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.01/audioSwitch.microplugin.zip",
-      "sha256": "7ce5ae173c356c4096618d9b0988622042a58264186a1bf690e5584568d8b83d",
-      "size": 213303,
+      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.02/audioSwitch.microplugin.zip",
+      "sha256": "4b2960947c81a62098c37d8fb9c08fae7924cfac8008d3c0f151f189549328ff",
+      "size": 156405,
       "strings": {
         "de": {
           "Audio devices, profiles and rules that switch them for you.": "Audiogeräte, Profile und Regeln, die für dich umschalten.",
@@ -36,6 +36,162 @@
         "pt": {
           "Audio devices, profiles and rules that switch them for you.": "Dispositivos de áudio, perfis e regras que os mudam por si.",
           "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.": "Escolha a saída e a entrada na barra de menus; mude o nome dos dispositivos, dê-lhes um ícone, ajuste volumes, oculte os que nunca usa e dê a cada um um atalho de teclado. Os perfis definem saída, entrada, níveis e microfone silenciado com um clique ou atalho. As regras mudam de perfil sozinhas quando uma app está aberta ou à frente, uma página web está aberta, a câmara ou o microfone estão em uso ou um dispositivo é ligado, e repõem as definições anteriores no fim."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "batteryCare",
+        "title": "batteryCare",
+        "summary": "Your Mac’s and your Bluetooth devices’ battery, from the menu bar.",
+        "about": "Tells you when your Mac has charged up to your limit (80 % by default), so you can unplug it and keep the battery healthy, and when it runs low. Lists the battery of your keyboard, mouse, trackpad and AirPods in the menu, and tells you when one of them gets low, with a threshold of its own for each device.",
+        "symbol": "battery.75percent",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "BatteryCare.BatteryCarePlugin",
+        "sdk": 1,
+        "minApp": "3.1"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/batteryCare-1.0/batteryCare.microplugin.zip",
+      "sha256": "5f37f7a6532be18d3a3d9e0f2b71a86135327e6c08ed3ff35ac7beb7e6dac1a7",
+      "size": 137538,
+      "strings": {
+        "de": {
+          "Your Mac’s and your Bluetooth devices’ battery, from the menu bar.": "Die Batterie deines Mac und deiner Bluetooth-Geräte, in der Menüleiste.",
+          "Tells you when your Mac has charged up to your limit (80 % by default), so you can unplug it and keep the battery healthy, and when it runs low. Lists the battery of your keyboard, mouse, trackpad and AirPods in the menu, and tells you when one of them gets low, with a threshold of its own for each device.": "Sagt dir, wenn dein Mac bis zu deinem Limit geladen hat (standardmäßig 80 %), damit du ihn abstecken und die Batterie schonen kannst, und wenn sie fast leer ist. Zeigt im Menü die Batterie von Tastatur, Maus, Trackpad und AirPods und sagt dir, wenn eines davon fast leer ist, mit einer eigenen Schwelle für jedes Gerät."
+        },
+        "es": {
+          "Your Mac’s and your Bluetooth devices’ battery, from the menu bar.": "La batería de tu Mac y de tus dispositivos Bluetooth, desde la barra de menús.",
+          "Tells you when your Mac has charged up to your limit (80 % by default), so you can unplug it and keep the battery healthy, and when it runs low. Lists the battery of your keyboard, mouse, trackpad and AirPods in the menu, and tells you when one of them gets low, with a threshold of its own for each device.": "Te avisa cuando tu Mac ha cargado hasta tu límite (80 % por defecto), para que lo desenchufes y cuides la batería, y cuando le queda poca. Muestra en el menú la batería de tu teclado, ratón, trackpad y AirPods, y te avisa cuando a alguno le queda poca, con un umbral propio para cada dispositivo."
+        },
+        "fr": {
+          "Your Mac’s and your Bluetooth devices’ battery, from the menu bar.": "La batterie de votre Mac et de vos appareils Bluetooth, depuis la barre des menus.",
+          "Tells you when your Mac has charged up to your limit (80 % by default), so you can unplug it and keep the battery healthy, and when it runs low. Lists the battery of your keyboard, mouse, trackpad and AirPods in the menu, and tells you when one of them gets low, with a threshold of its own for each device.": "Vous prévient quand votre Mac a chargé jusqu’à votre limite (80 % par défaut), pour le débrancher et préserver la batterie, et quand elle est faible. Affiche dans le menu la batterie de votre clavier, souris, trackpad et AirPods, et vous prévient quand l’un d’eux est faible, avec un seuil propre à chaque appareil."
+        },
+        "it": {
+          "Your Mac’s and your Bluetooth devices’ battery, from the menu bar.": "La batteria del tuo Mac e dei tuoi dispositivi Bluetooth, dalla barra dei menu.",
+          "Tells you when your Mac has charged up to your limit (80 % by default), so you can unplug it and keep the battery healthy, and when it runs low. Lists the battery of your keyboard, mouse, trackpad and AirPods in the menu, and tells you when one of them gets low, with a threshold of its own for each device.": "Ti avvisa quando il Mac ha caricato fino al tuo limite (80 % per impostazione predefinita), così puoi scollegarlo e preservare la batteria, e quando è quasi scarico. Mostra nel menu la batteria di tastiera, mouse, trackpad e AirPods, e ti avvisa quando uno di essi è quasi scarico, con una soglia propria per ogni dispositivo."
+        },
+        "pt": {
+          "Your Mac’s and your Bluetooth devices’ battery, from the menu bar.": "A bateria do seu Mac e dos seus dispositivos Bluetooth, na barra de menus.",
+          "Tells you when your Mac has charged up to your limit (80 % by default), so you can unplug it and keep the battery healthy, and when it runs low. Lists the battery of your keyboard, mouse, trackpad and AirPods in the menu, and tells you when one of them gets low, with a threshold of its own for each device.": "Avisa quando o seu Mac carregou até o seu limite (80 % por padrão), para desconectá-lo e preservar a bateria, e quando ela está fraca. Mostra no menu a bateria do teclado, mouse, trackpad e AirPods, e avisa quando um deles está fraco, com um limite próprio para cada dispositivo."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "colorPick",
+        "title": "colorPick",
+        "summary": "Pick any color on screen, named and copied in the format you need.",
+        "about": "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.",
+        "symbol": "eyedropper",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "ColorPick.ColorPickPlugin",
+        "sdk": 1,
+        "minApp": "3.1"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/colorPick-1.0/colorPick.microplugin.zip",
+      "sha256": "7ba958905840de6b6363d5d6fca2dcaa260b5016041f89d0e769d1ad8a4ae9c1",
+      "size": 153312,
+      "strings": {
+        "de": {
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.": "Nimmt eine Farbe irgendwo auf dem Bildschirm über die Menüleiste oder ein Tastenkürzel auf, gibt ihr einen Namen und kopiert sie als HEX, RGB, HSL, OKLCH oder Swift-Code. Die letzten Farben bleiben im Menü, um sie erneut zu kopieren. Sammle Farben in benannten Paletten und kopiere eine ganze Palette als CSS-Variablen, JSON oder Liste.",
+          "Pick any color on screen, named and copied in the format you need.": "Nimm jede Farbe auf dem Bildschirm auf, benannt und im gewünschten Format kopiert."
+        },
+        "es": {
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.": "Toma un color de cualquier parte de la pantalla desde la barra de menús o con un atajo de teclado, le pone nombre y lo copia como HEX, RGB, HSL, OKLCH o código Swift. Los últimos colores quedan en el menú para copiarlos otra vez. Guarda colores en paletas con nombre y copia una paleta entera como variables CSS, JSON o una lista.",
+          "Pick any color on screen, named and copied in the format you need.": "Elige cualquier color de la pantalla, con su nombre y copiado en el formato que necesites."
+        },
+        "fr": {
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.": "Prélève une couleur n’importe où à l’écran depuis la barre des menus ou un raccourci clavier, lui donne un nom et la copie en HEX, RGB, HSL, OKLCH ou code Swift. Les dernières couleurs restent dans le menu pour les copier à nouveau. Rangez des couleurs dans des palettes nommées et copiez une palette entière en variables CSS, JSON ou liste.",
+          "Pick any color on screen, named and copied in the format you need.": "Prélevez n’importe quelle couleur à l’écran, nommée et copiée dans le format voulu."
+        },
+        "it": {
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.": "Preleva un colore ovunque sullo schermo dalla barra dei menu o con una scorciatoia da tastiera, gli dà un nome e lo copia come HEX, RGB, HSL, OKLCH o codice Swift. Gli ultimi colori restano nel menu per copiarli di nuovo. Conserva i colori in tavolozze con nome e copia un’intera tavolozza come variabili CSS, JSON o elenco.",
+          "Pick any color on screen, named and copied in the format you need.": "Preleva qualsiasi colore sullo schermo, con il suo nome e copiato nel formato che ti serve."
+        },
+        "pt": {
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.": "Captura uma cor em qualquer parte do ecrã a partir da barra de menus ou de um atalho de teclado, dá-lhe um nome e copia-a como HEX, RGB, HSL, OKLCH ou código Swift. As últimas cores ficam no menu para as copiar de novo. Guarde cores em paletas com nome e copie uma paleta inteira como variáveis CSS, JSON ou lista.",
+          "Pick any color on screen, named and copied in the format you need.": "Capture qualquer cor do ecrã, com nome e copiada no formato de que precisa."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "deskClean",
+        "title": "deskClean",
+        "summary": "A clean desktop for screen sharing, recording or focus.",
+        "about": "Hides the desktop icons and widgets with one click or a keyboard shortcut, without restarting Finder: your wallpaper covers them. Rules hide them by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, or an external display is connected, and bring them back when it ends. It can also turn on Do Not Disturb through a shortcut of the Shortcuts app. Everything comes back when you switch it off or quit.",
+        "symbol": "macwindow.on.rectangle",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "DeskClean.DeskCleanPlugin",
+        "sdk": 1,
+        "minApp": "3.1"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/deskClean-1.0/deskClean.microplugin.zip",
+      "sha256": "86cb90a7a834353b9b633ff6be000527a56ee43959ebf4a51771b6ac70fbdb76",
+      "size": 128496,
+      "strings": {
+        "de": {
+          "A clean desktop for screen sharing, recording or focus.": "Ein aufgeräumter Schreibtisch für Bildschirmfreigabe, Aufnahmen oder Fokus.",
+          "Hides the desktop icons and widgets with one click or a keyboard shortcut, without restarting Finder: your wallpaper covers them. Rules hide them by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, or an external display is connected, and bring them back when it ends. It can also turn on Do Not Disturb through a shortcut of the Shortcuts app. Everything comes back when you switch it off or quit.": "Blendet die Symbole und Widgets des Schreibtischs mit einem Klick oder Tastaturkurzbefehl aus, ohne den Finder neu zu starten: Ihr Hintergrundbild verdeckt sie. Regeln blenden sie von selbst aus, solange eine App geöffnet oder im Vordergrund ist, eine Webseite geöffnet ist, Kamera oder Mikrofon benutzt werden oder ein externer Bildschirm angeschlossen ist, und zeigen sie danach wieder. Es kann auch „Nicht stören“ über einen Kurzbefehl der App Kurzbefehle einschalten. Alles kommt zurück, wenn Sie es ausschalten oder beenden."
+        },
+        "es": {
+          "A clean desktop for screen sharing, recording or focus.": "Un escritorio limpio para compartir pantalla, grabar o concentrarte.",
+          "Hides the desktop icons and widgets with one click or a keyboard shortcut, without restarting Finder: your wallpaper covers them. Rules hide them by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, or an external display is connected, and bring them back when it ends. It can also turn on Do Not Disturb through a shortcut of the Shortcuts app. Everything comes back when you switch it off or quit.": "Oculta los iconos y widgets del escritorio con un clic o un atajo de teclado, sin reiniciar el Finder: tu fondo de pantalla los tapa. Las reglas los ocultan solas mientras una app está abierta o delante, una página web está abierta, la cámara o el micrófono están en uso, o hay una pantalla externa conectada, y los devuelven al terminar. También puede activar No molestar con un atajo de la app Atajos. Todo vuelve a su sitio al desactivarlo o salir."
+        },
+        "fr": {
+          "A clean desktop for screen sharing, recording or focus.": "Un bureau propre pour partager l’écran, enregistrer ou vous concentrer.",
+          "Hides the desktop icons and widgets with one click or a keyboard shortcut, without restarting Finder: your wallpaper covers them. Rules hide them by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, or an external display is connected, and bring them back when it ends. It can also turn on Do Not Disturb through a shortcut of the Shortcuts app. Everything comes back when you switch it off or quit.": "Masque les icônes et les widgets du bureau en un clic ou avec un raccourci clavier, sans relancer le Finder : votre fond d’écran les recouvre. Les règles les masquent toutes seules quand une app est ouverte ou au premier plan, une page web est ouverte, la caméra ou le micro est utilisé, ou un écran externe est connecté, et les rétablissent ensuite. Il peut aussi activer Ne pas déranger via un raccourci de l’app Raccourcis. Tout revient quand vous le désactivez ou quittez."
+        },
+        "it": {
+          "A clean desktop for screen sharing, recording or focus.": "Una scrivania pulita per condividere lo schermo, registrare o concentrarti.",
+          "Hides the desktop icons and widgets with one click or a keyboard shortcut, without restarting Finder: your wallpaper covers them. Rules hide them by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, or an external display is connected, and bring them back when it ends. It can also turn on Do Not Disturb through a shortcut of the Shortcuts app. Everything comes back when you switch it off or quit.": "Nasconde le icone e i widget della scrivania con un clic o una scorciatoia da tastiera, senza riavviare il Finder: lo sfondo li copre. Le regole li nascondono da sole mentre un’app è aperta o in primo piano, una pagina web è aperta, la fotocamera o il microfono sono in uso, o è collegato un monitor esterno, e li riportano quando finisce. Può anche attivare Non disturbare tramite un comando dell’app Comandi Rapidi. Tutto torna com’era quando lo disattivi o esci."
+        },
+        "pt": {
+          "A clean desktop for screen sharing, recording or focus.": "Uma mesa limpa para partilhar o ecrã, gravar ou concentrar-se.",
+          "Hides the desktop icons and widgets with one click or a keyboard shortcut, without restarting Finder: your wallpaper covers them. Rules hide them by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, or an external display is connected, and bring them back when it ends. It can also turn on Do Not Disturb through a shortcut of the Shortcuts app. Everything comes back when you switch it off or quit.": "Oculta os ícones e widgets da secretária com um clique ou um atalho de teclado, sem reiniciar o Finder: o fundo do ecrã tapa-os. As regras ocultam-nos sozinhas enquanto uma app está aberta ou em primeiro plano, uma página web está aberta, a câmara ou o microfone estão em uso, ou há um ecrã externo ligado, e repõem-nos quando termina. Também pode ativar Não incomodar através de um atalho da app Atalhos. Tudo volta quando o desativa ou sai."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "habitTrack",
+        "title": "habitTrack",
+        "summary": "Habits to do a few times a day or a week, marked from the menu bar with one click.",
+        "about": "Keep track of the things you want to do several times a day or a week: drink 8 glasses of water a day, draw 5 times a week. Each habit has its own icon and color. One click in the menu bar marks one more, and the icon’s ring shows how much of today is done. Each habit keeps its history and streak, and can remind you at a time of day while it is not done.",
+        "symbol": "checkmark.circle",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "HabitTrack.HabitTrackPlugin",
+        "sdk": 1,
+        "minApp": "3.1"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/habitTrack-1.0/habitTrack.microplugin.zip",
+      "sha256": "716c8459fc51f1c170a7c0665195b6966fe147d3d1945d70987f8abca76ac765",
+      "size": 133383,
+      "strings": {
+        "de": {
+          "Habits to do a few times a day or a week, marked from the menu bar with one click.": "Gewohnheiten, die du ein paar Mal am Tag oder in der Woche machst, mit einem Klick in der Menüleiste abgehakt.",
+          "Keep track of the things you want to do several times a day or a week: drink 8 glasses of water a day, draw 5 times a week. Each habit has its own icon and color. One click in the menu bar marks one more, and the icon’s ring shows how much of today is done. Each habit keeps its history and streak, and can remind you at a time of day while it is not done.": "Behalte im Blick, was du mehrmals am Tag oder in der Woche tun willst: 8 Gläser Wasser am Tag trinken, 5 Mal pro Woche zeichnen. Jede Gewohnheit hat ihr eigenes Symbol und ihre Farbe. Ein Klick in der Menüleiste zählt eins dazu, und der Ring des Symbols zeigt, wie viel von heute erledigt ist. Jede Gewohnheit merkt sich ihren Verlauf und ihre Serie und kann dich zu einer Uhrzeit erinnern, solange sie nicht erledigt ist."
+        },
+        "es": {
+          "Habits to do a few times a day or a week, marked from the menu bar with one click.": "Hábitos para hacer unas veces al día o a la semana, marcados desde la barra de menús con un clic.",
+          "Keep track of the things you want to do several times a day or a week: drink 8 glasses of water a day, draw 5 times a week. Each habit has its own icon and color. One click in the menu bar marks one more, and the icon’s ring shows how much of today is done. Each habit keeps its history and streak, and can remind you at a time of day while it is not done.": "Lleva la cuenta de lo que quieres hacer varias veces al día o a la semana: beber 8 vasos de agua al día, dibujar 5 veces a la semana. Cada hábito tiene su propio icono y color. Un clic en la barra de menús marca uno más, y el anillo del icono muestra cuánto llevas de hoy. Cada hábito guarda su historial y su racha, y puede recordártelo a una hora del día mientras no esté hecho."
+        },
+        "fr": {
+          "Habits to do a few times a day or a week, marked from the menu bar with one click.": "Des habitudes à faire quelques fois par jour ou par semaine, cochées d’un clic depuis la barre des menus.",
+          "Keep track of the things you want to do several times a day or a week: drink 8 glasses of water a day, draw 5 times a week. Each habit has its own icon and color. One click in the menu bar marks one more, and the icon’s ring shows how much of today is done. Each habit keeps its history and streak, and can remind you at a time of day while it is not done.": "Suivez ce que vous voulez faire plusieurs fois par jour ou par semaine : boire 8 verres d’eau par jour, dessiner 5 fois par semaine. Chaque habitude a son icône et sa couleur. Un clic dans la barre des menus en ajoute une, et l’anneau de l’icône montre où vous en êtes aujourd’hui. Chaque habitude garde son historique et sa série, et peut vous le rappeler à une heure de la journée tant qu’elle n’est pas faite."
+        },
+        "it": {
+          "Habits to do a few times a day or a week, marked from the menu bar with one click.": "Abitudini da fare qualche volta al giorno o alla settimana, segnate con un clic dalla barra dei menu.",
+          "Keep track of the things you want to do several times a day or a week: drink 8 glasses of water a day, draw 5 times a week. Each habit has its own icon and color. One click in the menu bar marks one more, and the icon’s ring shows how much of today is done. Each habit keeps its history and streak, and can remind you at a time of day while it is not done.": "Tieni il conto di ciò che vuoi fare più volte al giorno o alla settimana: bere 8 bicchieri d’acqua al giorno, disegnare 5 volte alla settimana. Ogni abitudine ha la sua icona e il suo colore. Un clic nella barra dei menu ne segna una in più, e l’anello dell’icona mostra quanto hai fatto oggi. Ogni abitudine tiene la sua cronologia e la sua serie, e può ricordartela a un’ora del giorno finché non è fatta."
+        },
+        "pt": {
+          "Habits to do a few times a day or a week, marked from the menu bar with one click.": "Hábitos para fazer algumas vezes por dia ou por semana, marcados com um clique na barra de menus.",
+          "Keep track of the things you want to do several times a day or a week: drink 8 glasses of water a day, draw 5 times a week. Each habit has its own icon and color. One click in the menu bar marks one more, and the icon’s ring shows how much of today is done. Each habit keeps its history and streak, and can remind you at a time of day while it is not done.": "Acompanhe o que você quer fazer várias vezes por dia ou por semana: beber 8 copos de água por dia, desenhar 5 vezes por semana. Cada hábito tem o seu ícone e a sua cor. Um clique na barra de menus marca mais um, e o anel do ícone mostra quanto já foi feito hoje. Cada hábito guarda o seu histórico e a sua sequência, e pode lembrá-lo a uma hora do dia enquanto não estiver feito."
         }
       }
     },
@@ -75,6 +231,84 @@
         "pt": {
           "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.": "Escolha as apps que abrem janelas sempre que o Mac arranca: assistentes de sincronização, atualizadores, chats. Ao iniciar sessão, as janelas são ocultadas à medida que aparecem, durante o tempo que escolher (de 30 segundos a 10 minutos). As apps sem ícone na Dock têm as janelas fechadas (requer Acessibilidade). O ícone na barra de menus pode aparecer só enquanto vigia.",
           "Hides the windows apps open at login.": "Oculta as janelas que as apps abrem ao iniciar sessão."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "keepAwake",
+        "title": "keepAwake",
+        "summary": "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.",
+        "about": "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.",
+        "symbol": "cup.and.saucer",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "KeepAwake.KeepAwakePlugin",
+        "sdk": 1,
+        "minApp": "3.1"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/keepAwake-1.0/keepAwake.microplugin.zip",
+      "sha256": "e1d13539160b4b0fbfd304e8c372f7d6c7e7afddac12a39134a99f0c8dd52f9e",
+      "size": 83447,
+      "strings": {
+        "de": {
+          "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.": "Hält deinen Mac eine Weile wach, bis du es ausschaltest, oder solange eine Regel gilt.",
+          "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.": "Verhindert, dass dein Mac in den Ruhezustand geht – 15 Minuten, eine Stunde, ein paar Stunden oder bis du es ausschaltest, über die Menüleiste oder per Kurzbefehl; das Symbol zeigt die verbleibende Zeit. Regeln halten ihn von selbst wach, solange eine App geöffnet oder im Vordergrund ist, eine Webseite geöffnet ist, Kamera oder Mikrofon benutzt werden, er im Akkubetrieb läuft oder ein externer Bildschirm angeschlossen ist. Hält auf Wunsch auch den Bildschirm an und lässt den Mac bei niedrigem Akkustand schlafen."
+        },
+        "es": {
+          "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.": "Mantiene tu Mac despierto un rato, hasta que lo apagues o mientras se cumpla una regla.",
+          "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.": "Evita que tu Mac entre en reposo durante 15 minutos, una hora, unas horas o hasta que lo apagues, desde la barra de menús o con un atajo; el icono muestra el tiempo que queda. Las reglas lo mantienen despierto solas mientras una app está abierta o delante, una página web está abierta, la cámara o el micrófono están en uso, funciona con batería o hay una pantalla externa conectada. Opcionalmente mantiene también la pantalla encendida, y deja dormir al Mac cuando queda poca batería."
+        },
+        "fr": {
+          "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.": "Garde votre Mac éveillé un moment, jusqu’à ce que vous l’arrêtiez, ou tant qu’une règle s’applique.",
+          "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.": "Empêche votre Mac de se mettre en veille pendant 15 minutes, une heure, quelques heures ou jusqu’à ce que vous l’arrêtiez, depuis la barre des menus ou avec un raccourci ; l’icône montre le temps restant. Les règles le gardent éveillé d’elles-mêmes tant qu’une app est ouverte ou au premier plan, qu’une page web est ouverte, que la caméra ou le micro est utilisé, qu’il fonctionne sur batterie ou qu’un écran externe est connecté. Peut aussi garder l’écran allumé, et laisser le Mac se mettre en veille quand la batterie est faible."
+        },
+        "it": {
+          "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.": "Tiene sveglio il Mac per un po’, finché non lo spegni o finché vale una regola.",
+          "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.": "Impedisce al Mac di andare in stop per 15 minuti, un’ora, qualche ora o finché non lo spegni, dalla barra dei menu o con un’abbreviazione; l’icona mostra il tempo rimasto. Le regole lo tengono sveglio da sole mentre un’app è aperta o in primo piano, una pagina web è aperta, la fotocamera o il microfono sono in uso, funziona a batteria o è collegato un monitor esterno. Può anche tenere acceso lo schermo, e lasciare andare in stop il Mac quando la batteria è scarica."
+        },
+        "pt": {
+          "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.": "Mantém o Mac acordado por um tempo, até você desligar, ou enquanto uma regra valer.",
+          "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.": "Impede que o Mac entre em repouso por 15 minutos, uma hora, algumas horas ou até você desligar, pela barra de menus ou com um atalho; o ícone mostra o tempo restante. As regras o mantêm acordado sozinhas enquanto um app está aberto ou em primeiro plano, uma página web está aberta, a câmera ou o microfone estão em uso, ele funciona na bateria ou há um monitor externo conectado. Opcionalmente mantém a tela ligada também, e deixa o Mac dormir quando a bateria está baixa."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "macTweaks",
+        "title": "macTweaks",
+        "summary": "The Mac’s hidden settings and repairs, without Terminal.",
+        "about": "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.",
+        "symbol": "wrench.and.screwdriver",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "MacTweaks.MacTweaksPlugin",
+        "sdk": 1,
+        "minApp": "3.1"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/macTweaks-1.0/macTweaks.microplugin.zip",
+      "sha256": "e2bd95446e87cc749f17b45f1d79a87d90d105a1b76ba69513484255f0b47b5c",
+      "size": 158254,
+      "strings": {
+        "de": {
+          "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Schalter für die Einstellungen, die macOS versteckt (unsichtbare Dateien, keine .DS_Store auf anderen Laufwerken, Rückschritttaste geht in Safari zurück, Emoji mit „:“, Apps aus beliebiger Quelle), und Tasten für die üblichen Reparaturen (Übersicht, Symbole, „Öffnen mit“, Spotlight, Rechte des Benutzerordners), lokale Time Machine-Schnappschüsse und Apps (Quarantäne entfernen, weitere Kopie öffnen, Einstellungen mit Sicherung zurücksetzen). Jeder sagt, was er ändert und wie man es rückgängig macht, zeigt die genauen Befehle vor dem Ausführen und fragt nur nach dem Passwort, wenn macOS es braucht.",
+          "The Mac’s hidden settings and repairs, without Terminal.": "Die versteckten Einstellungen des Mac und Reparaturen, ohne Terminal."
+        },
+        "es": {
+          "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Interruptores para los ajustes que macOS esconde (archivos ocultos, sin .DS_Store en otros discos, Borrar vuelve atrás en Safari, emoji con «:», apps de cualquier origen) y botones para las reparaciones de siempre (Vista Rápida, iconos, «Abrir con», Spotlight, permisos de la carpeta de inicio), las instantáneas locales de Time Machine y apps (quitar la cuarentena, abrir otra copia, restablecer los ajustes con copia de seguridad). Cada uno dice qué cambia y cómo deshacerlo, muestra los comandos exactos antes de ejecutarlos y pide tu contraseña solo cuando macOS la necesita.",
+          "The Mac’s hidden settings and repairs, without Terminal.": "Los ajustes ocultos del Mac y sus reparaciones, sin Terminal."
+        },
+        "fr": {
+          "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Des interrupteurs pour les réglages que macOS cache (fichiers cachés, pas de .DS_Store sur les autres disques, Effacer revient en arrière dans Safari, emoji avec « : », apps de toute provenance) et des boutons pour les réparations habituelles (Coup d’œil, icônes, « Ouvrir avec », Spotlight, autorisations du dossier de départ), les instantanés locaux de Time Machine et les apps (retirer la quarantaine, ouvrir une autre copie, réinitialiser les réglages avec une sauvegarde). Chacun dit ce qu’il change et comment l’annuler, montre les commandes exactes avant de les lancer et ne demande votre mot de passe que lorsque macOS en a besoin.",
+          "The Mac’s hidden settings and repairs, without Terminal.": "Les réglages cachés du Mac et ses réparations, sans Terminal."
+        },
+        "it": {
+          "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Interruttori per le impostazioni che macOS nasconde (file nascosti, niente .DS_Store su altri dischi, Cancella torna indietro in Safari, emoji con «:», app da qualsiasi provenienza) e pulsanti per le riparazioni di sempre (Quick Look, icone, «Apri con», Spotlight, permessi della cartella Inizio), le istantanee locali di Time Machine e le app (rimuovere la quarantena, aprire un’altra copia, ripristinare le impostazioni con un backup). Ognuno dice cosa cambia e come annullarlo, mostra i comandi esatti prima di eseguirli e chiede la password solo quando macOS ne ha bisogno.",
+          "The Mac’s hidden settings and repairs, without Terminal.": "Le impostazioni nascoste del Mac e le sue riparazioni, senza Terminale."
+        },
+        "pt": {
+          "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Interruptores para os ajustes que o macOS esconde (ficheiros ocultos, sem .DS_Store noutros discos, Apagar volta atrás no Safari, emoji com «:», apps de qualquer origem) e botões para as reparações habituais (Visualização rápida, ícones, «Abrir com», Spotlight, permissões da pasta pessoal), as cópias locais do Time Machine e apps (remover a quarentena, abrir outra cópia, repor os ajustes com cópia de segurança). Cada um diz o que muda e como desfazer, mostra os comandos exatos antes de os executar e só pede a palavra-passe quando o macOS precisa.",
+          "The Mac’s hidden settings and repairs, without Terminal.": "Os ajustes ocultos do Mac e as suas reparações, sem Terminal."
         }
       }
     },
@@ -153,6 +387,45 @@
         "pt": {
           "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Dispositivos MIDI Bluetooth na barra de menus, e MIDI de um para outro.",
           "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.": "Encontra os seus instrumentos MIDI Bluetooth e liga-os ou desliga-os na barra de menus, com nomes e ícones seus. Os memorizados voltam a ligar-se sozinhos ao ligá-los, com um aviso. As rotas enviam o MIDI de uma porta para outra: um teclado Bluetooth para um sintetizador USB ou para uma app. Oculte do menu os que não quer ver."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "ocrGrab",
+        "title": "ocrGrab",
+        "summary": "Copy the text of any part of the screen, and read QR codes.",
+        "about": "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.",
+        "symbol": "text.viewfinder",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "OcrGrab.OcrGrabPlugin",
+        "sdk": 1,
+        "minApp": "3.1"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/ocrGrab-1.0/ocrGrab.microplugin.zip",
+      "sha256": "a9cfbeddd9df753b7252a2ad955f4f5f89414d039749b0914b99d139fc667aa9",
+      "size": 111364,
+      "strings": {
+        "de": {
+          "Copy the text of any part of the screen, and read QR codes.": "Kopiere den Text eines beliebigen Bildschirmbereichs und lies QR-Codes.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.": "Wähle einen Bildschirmbereich aus und sein Text wird kopiert, auf deinem Mac erkannt: aus Bildern, Videos, PDFs und Apps, in denen er sich nicht auswählen lässt. QR-Codes und Barcodes in der Auswahl kopieren ihren Inhalt, und Links darin können sich von selbst öffnen. Über die Menüleiste oder ein Tastenkürzel, mit Hinweis und Ton. Behalte die Zeilenumbrüche oder füge die Zeilen zu Absätzen zusammen, wähle die zu lesenden Sprachen und kopiere letzte Aufnahmen erneut aus dem Menü."
+        },
+        "es": {
+          "Copy the text of any part of the screen, and read QR codes.": "Copia el texto de cualquier parte de la pantalla y lee códigos QR.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.": "Selecciona una zona de la pantalla y su texto se copia, reconocido en tu Mac: de imágenes, vídeos, PDF y apps que no dejan seleccionarlo. Los códigos QR y de barras de la selección copian lo que contienen, y sus enlaces pueden abrirse solos. Desde la barra de menús o un atajo, con un aviso y un sonido. Mantén los saltos de línea o une las líneas en párrafos, elige los idiomas que leer y vuelve a copiar capturas recientes desde el menú."
+        },
+        "fr": {
+          "Copy the text of any part of the screen, and read QR codes.": "Copiez le texte de n’importe quelle partie de l’écran et lisez les codes QR.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.": "Sélectionnez une zone de l’écran et son texte est copié, reconnu sur votre Mac : depuis des images, des vidéos, des PDF, des apps qui ne permettent pas de le sélectionner. Les codes QR et codes-barres de la sélection copient ce qu’ils contiennent, et leurs liens peuvent s’ouvrir d’eux-mêmes. Depuis la barre des menus ou un raccourci, avec un avis et un son. Gardez les retours à la ligne ou joignez les lignes en paragraphes, choisissez les langues à lire et recopiez les captures récentes depuis le menu."
+        },
+        "it": {
+          "Copy the text of any part of the screen, and read QR codes.": "Copia il testo di qualsiasi parte dello schermo e leggi i codici QR.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.": "Seleziona un’area dello schermo e il suo testo viene copiato, riconosciuto sul tuo Mac: da immagini, video, PDF e app che non permettono di selezionarlo. I codici QR e a barre nella selezione copiano ciò che contengono, e i loro link possono aprirsi da soli. Dalla barra dei menu o con un’abbreviazione, con un avviso e un suono. Mantieni gli a capo o unisci le righe in paragrafi, scegli le lingue da leggere e copia di nuovo le acquisizioni recenti dal menu."
+        },
+        "pt": {
+          "Copy the text of any part of the screen, and read QR codes.": "Copie o texto de qualquer parte da tela e leia códigos QR.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.": "Selecione uma área da tela e o texto dela é copiado, reconhecido no seu Mac: de imagens, vídeos, PDFs e apps que não deixam selecioná-lo. Códigos QR e de barras na seleção copiam o que contêm, e os links neles podem abrir sozinhos. Pela barra de menus ou por um atalho, com um aviso e um som. Mantenha as quebras de linha ou junte as linhas em parágrafos, escolha os idiomas a ler e copie de novo capturas recentes pelo menu."
         }
       }
     },
