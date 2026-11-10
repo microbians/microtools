@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>microTools — Small tools for your Mac</title>
+<meta name="description" content="One small menu bar app that hosts little Mac utilities as plugins: hideOnStart, rightClick, audioSwitch, mediaGrab — and the ones you write in JavaScript.">
+<meta property="og:title" content="microTools — Small tools. One app.">
+<meta property="og:description" content="Little Mac utilities as plugins, in one menu bar app. Turn on only the ones you need.">
+<meta property="og:image" content="https://microbians.github.io/microtools/site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23C9283E'/%3E%3Cg transform='translate(20 20) scale(.6)' fill='%23fff' stroke='%23fff'%3E%3Crect y='58' width='42' height='42' rx='11.8' stroke='none'/%3E%3Crect x='58' y='58' width='42' height='42' rx='11.8' stroke='none'/%3E%3Crect width='42' height='42' rx='11.8' stroke='none'/%3E%3Cpath d='M61.4 21h35.2M79 3.4v35.2' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+  :root {
+    /* promo/src/kit.swift tokens */
+    --ruby: #C9283E;
+    --coral: #F55C54;
+    --ruby-deep: #B3122F;
+    --wine: #2B1217;
+    --paper: #F6F1EF;
+    --snow: #FFFAF8;
+    --ink: #1C1A1C;
+    --ink-soft: #706B6E;
+    --margin: clamp(20px, 5.5vw, 140px);
+    --headline: clamp(52px, 6vw, 150px);
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 18px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  img, video { display: block; max-width: 100%; }
+
+  /* Every ground: flat color shaded by an eased black-to-white overlay (darker below, lighter above). */
+  .ground { position: relative; isolation: isolate; overflow: hidden; }
+  .ground::before {
+    content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    mix-blend-mode: overlay; opacity: .2;
+    background: linear-gradient(to top, #000 0%, #0b0b0b 12.5%, #282828 25%, #505050 37.5%, #808080 50%,
+                #aeaeae 62.5%, #d7d7d7 75%, #f4f4f4 87.5%, #fff 100%);
+  }
+  .ground.paper::before { opacity: .5; }
+  .ruby { background: var(--ruby); color: var(--snow); }
+  .wine { background: var(--wine); color: var(--snow); }
+  .paper { background: var(--paper); color: var(--ink); }
+  .paper .soft { color: var(--ink-soft); }
+  .ruby .soft, .wine .soft { color: rgb(255 250 248 / .8); }
+
+  section { padding: clamp(64px, 9vw, 150px) var(--margin); }
+  .inner { max-width: 2280px; margin: 0 auto; }
+
+  h1, h2 {
+    font-weight: 400; font-size: var(--headline); line-height: .92; letter-spacing: -.035em; margin: 0;
+  }
+  h2 { font-size: clamp(44px, 5vw, 120px); }
+  .lead { font-size: clamp(20px, 2vw, 34px); line-height: 1.3; max-width: 22em; margin: clamp(28px, 3.5vw, 64px) 0 0; }
+
+  /* Two columns: copy left, real captures right. */
+  .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: clamp(32px, 5vw, 96px); align-items: start; }
+  .split.flip > .copy { order: 2; }
+  @media (max-width: 960px) { .split { grid-template-columns: minmax(0, 1fr); } .split.flip > .copy { order: 0; } }
+
+  /* features: a small label over a line */
+  .features { margin: clamp(28px, 3.5vw, 56px) 0 0; display: grid; gap: clamp(18px, 2vw, 30px); max-width: 30em; }
+  .features dt { font-size: clamp(15px, 1.15vw, 20px); }
+  .features dd { margin: 4px 0 0; font-size: clamp(19px, 1.7vw, 28px); line-height: 1.3; }
+
+  /* Lockup: wordmark first, then the mark, as tall as the wordmark. */
+  .lockup { display: inline-flex; align-items: center; gap: .16em; font-weight: 600; letter-spacing: -.02em; line-height: 1; white-space: nowrap; }
+  .lockup svg { height: .82em; width: .82em; transform: translateY(.04em); }
+  .signature { display: flex; align-items: center; gap: clamp(16px, 2vw, 40px); margin-top: clamp(48px, 7vw, 120px); }
+  .signature .lockup { font-size: clamp(44px, 4.6vw, 88px); }
+  .signature p { margin: 0; font-size: clamp(16px, 1.5vw, 26px); line-height: 1.2; white-space: nowrap; }
+
+  .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(28px, 3vw, 48px); }
+  .button {
+    display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; border-radius: 999px;
+    font-size: 18px; font-weight: 600; text-decoration: none;
+  }
+  .ruby .button.primary { background: var(--snow); color: var(--ruby); }
+  .ruby .button.primary:hover { background: #fff; color: var(--ruby-deep); }
+  .ruby .button.secondary { border: 1.5px solid rgb(255 250 248 / .6); color: var(--snow); }
+  .ruby .button.secondary:hover { background: rgb(255 250 248 / .12); }
+  .button small { font-weight: 400; opacity: .8; }
+
+  /* A Settings window around a real pane drawn by the app. */
+  .window {
+    --win-bg: #fff; --side-bg: #ececec; --side-ink: #1d1d1f; --side-soft: #8a8a8e; --side-sel: rgb(0 0 0 / .09); --line: rgb(0 0 0 / .08);
+    display: grid; grid-template-columns: 170px 1fr; border-radius: var(--radius); overflow: hidden;
+    background: var(--win-bg); box-shadow: 0 30px 80px rgb(0 0 0 / .28), 0 0 0 1px rgb(0 0 0 / .1);
+    font: 13px/1.2 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    max-height: 760px;
+  }
+  .window.dark { --win-bg: #141414; --side-bg: #262426; --side-ink: #f2f2f2; --side-soft: #8f8f93; --side-sel: rgb(255 255 255 / .1); --line: rgb(255 255 255 / .08); box-shadow: 0 30px 80px rgb(0 0 0 / .5), 0 0 0 1px rgb(255 255 255 / .1); }
+  .window aside { background: var(--side-bg); color: var(--side-ink); padding: 14px 10px; }
+  .window .lights { display: flex; gap: 8px; margin: 0 4px 22px; }
+  .window .lights i { width: 12px; height: 12px; border-radius: 50%; background: #ff5f57; }
+  .window .lights i:nth-child(2) { background: #febc2e; }
+  .window .lights i:nth-child(3) { background: #28c840; }
+  .window .item { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 7px; white-space: nowrap; overflow: hidden; }
+  .window .item.on { background: var(--side-sel); }
+  .window .item svg { width: 15px; height: 15px; flex: none; color: #0a84ff; }
+  .window .group { color: var(--side-soft); font-size: 11px; font-weight: 600; padding: 14px 8px 4px; }
+  .window main { min-width: 0; overflow: hidden; border-left: 1px solid var(--line); }
+  .window .title { color: var(--side-ink); font-weight: 700; padding: 13px 16px; border-bottom: 1px solid var(--line); }
+  .window main img { width: 100%; height: auto; }
+  @media (max-width: 600px) { .window { grid-template-columns: 1fr; } .window aside { display: none; } }
+
+  /* Plugin index */
+  .plugins { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: clamp(32px, 4vw, 64px); }
+  .plugin-card {
+    display: block; padding: 28px; border-radius: 20px; background: #fff; text-decoration: none;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / .06);
+  }
+  .plugin-card:hover { box-shadow: 0 0 0 1.5px var(--ruby); }
+  .plugin-card svg { width: 30px; height: 30px; color: var(--ruby); }
+  .plugin-card h3 { margin: 18px 0 6px; font-size: 24px; font-weight: 600; letter-spacing: -.01em; }
+  .plugin-card p { margin: 0; color: var(--ink-soft); font-size: 17px; line-height: 1.35; }
+
+  .plugin-name { display: inline-flex; align-items: center; gap: 12px; font-size: clamp(18px, 1.5vw, 24px); font-weight: 600; margin-bottom: clamp(18px, 2vw, 32px); }
+  .plugin-name svg { width: 1.2em; height: 1.2em; }
+  .ruby .plugin-name svg, .wine .plugin-name svg { color: var(--coral); }
+  .paper .plugin-name svg { color: var(--ruby); }
+  .tools { margin: clamp(24px, 3vw, 40px) 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; max-width: 34em; }
+  .tools li { padding: 6px 12px; border-radius: 8px; background: rgb(255 250 248 / .1); font-size: 15px; }
+
+  /* SDK */
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: clamp(32px, 4vw, 64px); }
+  .card { border-radius: 40px; padding: clamp(28px, 3.2vw, 60px); display: flex; flex-direction: column; min-width: 0; }
+  .card.white { background: #fff; color: var(--ink); }
+  .card .label { font-size: 16px; }
+  .card h3 { font-weight: 400; font-size: clamp(26px, 2.4vw, 40px); line-height: 1.12; letter-spacing: -.02em; margin: 10px 0 18px; }
+  .card p { margin: 0 0 16px; font-size: 17px; line-height: 1.5; }
+  .card .more { margin-top: auto; padding-top: 12px; font-weight: 600; text-decoration: none; }
+  .card .more:hover { text-decoration: underline; }
+  pre {
+    margin: 0 0 16px; padding: 20px 22px; border-radius: 20px; overflow-x: auto;
+    font: 13.5px/1.55 "SF Mono", ui-monospace, Menlo, monospace; background: #f3eeec; color: var(--ink);
+  }
+  .wine pre, .ruby pre { background: rgb(0 0 0 / .28); color: var(--snow); }
+  code { font-family: "SF Mono", ui-monospace, Menlo, monospace; font-size: .9em; }
+  pre .c { opacity: .55; }
+  .api { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0 0 16px; font-size: 15.5px; }
+  .api code { white-space: nowrap; }
+  .api span { opacity: .8; }
+  @media (max-width: 860px) { .cards { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 600px) { .api { grid-template-columns: 1fr; } .api span { margin-bottom: 8px; } }
+
+  video { width: 100%; border-radius: var(--radius); box-shadow: 0 30px 80px rgb(0 0 0 / .5); background: #000; }
+
+  footer { padding: clamp(48px, 6vw, 96px) var(--margin); }
+  footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 32px; }
+  footer p { margin: 6px 0 0; font-size: 15px; }
+  footer nav { display: flex; flex-wrap: wrap; gap: 20px; font-size: 16px; }
+  footer nav a { text-decoration: none; }
+  footer nav a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<!-- Icons (Lucide, ISC) and the mark, defined once. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mark" viewBox="0 0 100 100">
+      <rect y="58" width="42" height="42" rx="11.8" fill="currentColor"/>
+      <rect x="58" y="58" width="42" height="42" rx="11.8" fill="currentColor"/>
+      <rect width="42" height="42" rx="11.8" fill="currentColor"/>
+      <path d="M61.4 21h35.2M79 3.4v35.2" stroke="currentColor" stroke-width="10" stroke-linecap="round" fill="none"/>
+    </symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-hideOnStart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"/><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"/><path d="m2 2 20 20"/></symbol>
+    <symbol id="i-rightClick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4.1 12 6"/><path d="m5.1 8-2.9-.8"/><path d="m6 12-1.9 2"/><path d="M7.2 2.2 8 5.1"/><path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z"/></symbol>
+    <symbol id="i-audioSwitch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+    <symbol id="i-mediaGrab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="m8 12 4 4 4-4"/></symbol>
+  </defs>
+</svg>
+
+<!-- 01 Hero -->
+<section class="ground ruby" id="top">
+  <div class="inner split">
+    <div class="copy">
+      <h1>Small tools.<br>One app.</h1>
+      <p class="lead soft">hideOnStart, rightClick, audioSwitch and mediaGrab live together in your menu bar. Turn on only the ones you need; new tools arrive as new plugins, not as one more app.</p>
+      <div class="buttons">
+        <a class="button primary" href="https://microbians.gumroad.com/l/microtools">Get microTools <small>pay what you want</small></a>
+        <a class="button secondary" href="#sdk">Write a plugin</a>
+      </div>
+      <div class="signature">
+        <span class="lockup">microTools<svg><use href="#mark"/></svg></span>
+        <p>Small tools<br>for your Mac.</p>
+      </div>
+    </div>
+    <div class="window" data-shot="general-light" data-active="General"></div>
+  </div>
+</section>
+
+<!-- Plugin index -->
+<section class="ground paper" id="plugins">
+  <div class="inner">
+    <h2>Four tools inside.<br>More to come.</h2>
+    <p class="lead soft">Each plugin has its own settings, and its own menu bar icon or a place in microTools’ menu. Switch them on and off in Settings › General; new ones install from there with one click.</p>
+    <div class="plugins">
+      <a class="plugin-card" href="#hideOnStart"><svg><use href="#i-hideOnStart"/></svg><h3>hideOnStart</h3><p>Hides the windows apps open at login.</p></a>
+      <a class="plugin-card" href="#rightClick"><svg><use href="#i-rightClick"/></svg><h3>rightClick</h3><p>13 tools in Finder’s right-click menu and in Services.</p></a>
+      <a class="plugin-card" href="#audioSwitch"><svg><use href="#i-audioSwitch"/></svg><h3>audioSwitch</h3><p>Audio devices, profiles and rules that switch them for you.</p></a>
+      <a class="plugin-card" href="#mediaGrab"><svg><use href="#i-mediaGrab"/></svg><h3>mediaGrab</h3><p>Video, MP3 or images from the page in your browser.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- Video -->
+<section class="ground wine">
+  <div class="inner split">
+    <div class="copy">
+      <h2>See it in<br>45 seconds.</h2>
+      <p class="lead soft">The menu bar, the Settings window and every plugin at work.</p>
+    </div>
+    <video src="site/microTools.mp4" poster="site/og.png" controls muted playsinline preload="none"></video>
+  </div>
+</section>
+
+<!-- hideOnStart -->
+<section class="ground paper" id="hideOnStart">
+  <div class="inner split">
+    <div class="copy">
+      <div class="plugin-name"><svg><use href="#i-hideOnStart"/></svg>hideOnStart</div>
+      <h2>Log in to a<br>clean desktop.</h2>
+      <dl class="features">
+        <div><dt class="soft">Pick the apps once</dt><dd>Sync helpers, updaters, chat apps: anything that throws a window at you every time your Mac starts.</dd></div>
+        <div><dt class="soft">Hidden at login</dt><dd>For the time you choose, from 30 seconds to 10 minutes, their windows are hidden as they show up.</dd></div>
+        <div><dt class="soft">Then out of the way</dt><dd>Its menu bar icon can show only while it watches.</dd></div>
+      </dl>
+    </div>
+    <div class="window" data-shot="hideOnStart-light" data-active="hideOnStart"></div>
+  </div>
+</section>
+
+<!-- rightClick -->
+<section class="ground wine" id="rightClick">
+  <div class="inner split flip">
+    <div class="copy">
+      <div class="plugin-name"><svg><use href="#i-rightClick"/></svg>rightClick</div>
+      <h2>Your right-click,<br>supercharged.</h2>
+      <ul class="tools">
+        <li>Copy Path</li><li>Copy Name</li><li>Copy Path with ~</li><li>Copy Path for Terminal</li><li>Copy as file:// URL</li>
+        <li>Copy Contents</li><li>Copy SHA-256</li><li>New Text File</li><li>Open in Terminal</li><li>Make Symbolic Link</li>
+        <li>Remove Quarantine</li><li>Remove Photo Metadata</li><li>Show/Hide Hidden Files</li>
+      </ul>
+      <dl class="features">
+        <div><dt class="soft">Everywhere</dt><dd>In Finder’s right-click menu, and as Services in every other app.</dd></div>
+        <div><dt class="soft">Your menu, your way</dt><dd>Switch tools on or off, star your favorites to the top level.</dd></div>
+      </dl>
+    </div>
+    <div class="window dark" data-shot="rightClick-dark" data-active="rightClick"></div>
+  </div>
+</section>
+
+<!-- audioSwitch -->
+<section class="ground paper" id="audioSwitch">
+  <div class="inner split">
+    <div class="copy">
+      <div class="plugin-name"><svg><use href="#i-audioSwitch"/></svg>audioSwitch</div>
+      <h2>Sound where<br>you want it.</h2>
+      <dl class="features">
+        <div><dt class="soft">Devices</dt><dd>Rename them, give them an icon, set volumes, hide the ones you never use and give each a shortcut.</dd></div>
+        <div><dt class="soft">Profiles</dt><dd>Output, input, levels and microphone mute in one click.</dd></div>
+        <div><dt class="soft">Rules</dt><dd>Switch by themselves when an app, a web page, the camera or a device turns up — and switch back when it ends.</dd></div>
+      </dl>
+    </div>
+    <div class="window" data-shot="audioSwitch-light" data-active="audioSwitch"></div>
+  </div>
+</section>
+
+<!-- mediaGrab -->
+<section class="ground ruby" id="mediaGrab">
+  <div class="inner split flip">
+    <div class="copy">
+      <div class="plugin-name"><svg><use href="#i-mediaGrab"/></svg>mediaGrab</div>
+      <h2>Save it from<br>the page.</h2>
+      <dl class="features">
+        <div><dt class="soft">Video</dt><dd>From the front tab in Safari, Chrome, Edge, Brave or Arc, up to the best quality, with subtitles.</dd></div>
+        <div><dt class="soft">MP3 with tags</dt><dd>Square cover, and title, artist and album found by the song’s sound.</dd></div>
+        <div><dt class="soft">Images</dt><dd>A grid of every image on the page: pick the ones you want, or all of them.</dd></div>
+      </dl>
+      <p class="soft" style="font-size:15px;margin:28px 0 0;max-width:34em">Uses the free yt-dlp and ffmpeg: microTools downloads them for you the first time and keeps yt-dlp up to date. Download only what you have the right to.</p>
+    </div>
+    <div class="window dark" data-shot="mediaGrab-dark" data-active="mediaGrab"></div>
+  </div>
+</section>
+
+<!-- SDK -->
+<section class="ground paper" id="sdk">
+  <div class="inner">
+    <h2>Write your<br>own tool.</h2>
+    <p class="lead soft">A plugin is a <code>.microplugin</code> folder: a manifest that tells microTools what to show, and the code. microTools draws its settings, its menu, its shortcuts and its notices — you write what it does.</p>
+    <div class="cards">
+      <div class="card white">
+        <span class="label soft">JavaScript plugins</span>
+        <h3>Anyone can write them. An AI too.</h3>
+        <p>They run in their own sandboxed JavaScriptCore context and reach the Mac only through the <code>microtools</code> API, with the permissions you grant each one. Double-click the folder to install it.</p>
+<pre><span class="c">// main.js</span>
+microtools.register({
+  start() { microtools.onShortcut('copy', copy) },
+  menu() {
+    return [{ title: 'Copy Date',
+              symbol: 'doc.on.clipboard',
+              action: copy }]
+  }
+})</pre>
+        <a class="more" href="https://github.com/microbians/microtools/blob/main/docs/javascript.md" style="color:var(--ruby)">Plugin format and API →</a>
+        <a class="more" href="https://github.com/microbians/microtools/tree/main/examples/dateStamp.microplugin" style="color:var(--ruby);padding-top:4px">Example: dateStamp →</a>
+      </div>
+      <div class="card ruby ground">
+        <span class="label soft">The API</span>
+        <h3>Settings, menus, shortcuts, the web, the shell, AI.</h3>
+        <div class="api">
+          <code>setting / setSetting</code><span>Toggles, text, menus, folders and shortcuts, drawn by microTools.</span>
+          <code>onShortcut</code><span>Global keyboard shortcuts.</span>
+          <code>notice / activity</code><span>A tooltip and a progress ring on its menu bar icon.</span>
+          <code>frontTab</code><span>The page in the front browser tab.</span>
+          <code>fetch</code><span>http and https requests.</span>
+          <code>ai</code><span>Apple’s on-device model.</span>
+          <code>shell</code><span>Commands, after asking you once.</span>
+          <code>route / call</code><span><code>microtools://</code> URLs, and plugins calling each other.</span>
+        </div>
+        <a class="more" href="https://github.com/microbians/microtools/blob/main/docs/javascript.md#api">Every call →</a>
+      </div>
+      <div class="card wine ground">
+        <span class="label soft">Build it with an AI</span>
+        <h3>Describe the tool. Hand it the guide.</h3>
+        <p>A step-by-step guide written for AI assistants: give it to Claude or any other with what you want, and you get a working plugin folder back.</p>
+<pre>Build a microTools plugin that
+copies today’s date. Follow
+docs/for-ai.md.</pre>
+        <a class="more" href="https://github.com/microbians/microtools/blob/main/docs/for-ai.md">The guide for AIs →</a>
+      </div>
+      <div class="card white">
+        <span class="label soft">Swift plugins</span>
+        <h3>Native, linked against MicroKit.</h3>
+        <p>The official plugins are Swift bundles built on MicroKit, the framework inside microTools. They run with microTools’ own rights, so it only loads Swift plugins signed by microbians.</p>
+        <p class="soft">Every official plugin is published here as a signed, notarized release and listed in <a href="https://github.com/microbians/microtools/blob/main/catalog/index.json"><code>catalog/index.json</code></a>, which microTools reads for Settings › General › More Plugins.</p>
+        <a class="more" href="https://github.com/microbians/microtools/releases" style="color:var(--ruby)">Releases →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="ground ruby">
+  <div class="inner">
+    <div class="row">
+      <div>
+        <div class="signature" style="margin-top:0">
+          <span class="lockup">microTools<svg><use href="#mark"/></svg></span>
+          <p>Small tools<br>for your Mac.</p>
+        </div>
+        <p class="soft" style="margin-top:28px">macOS 14 Sonoma or later, Apple Silicon. In English, Spanish, French, Italian, German and Portuguese.</p>
+      </div>
+      <nav>
+        <a href="https://microbians.gumroad.com/l/microtools">Get it on Gumroad</a>
+        <a href="https://github.com/microbians/microtools">GitHub</a>
+        <a href="https://microbians.com">microbians</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // The Settings window around each capture: the same sidebar the app draws.
+  const plugins = ['hideOnStart', 'rightClick', 'audioSwitch', 'mediaGrab']
+  const item = (name, icon, active) =>
+    `<div class="item${name === active ? ' on' : ''}"><svg><use href="#${icon}"/></svg>${name}</div>`
+  for (const win of document.querySelectorAll('.window[data-shot]')) {
+    const active = win.dataset.active
+    win.innerHTML =
+      `<aside><div class="lights"><i></i><i></i><i></i></div>${item('General', 'i-settings', active)}` +
+      `<div class="group">Plugins</div>${plugins.map(p => item(p, 'i-' + p, active)).join('')}</aside>` +
+      `<main><div class="title">microTools</div><img src="site/shots/${win.dataset.shot}.png" alt="${active} settings in microTools" loading="lazy"></main>`
+  }
+</script>
+</body>
+</html>
