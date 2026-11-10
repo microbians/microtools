@@ -2,7 +2,8 @@
 
 **microTools** is a small macOS menu bar app that hosts little utilities as **plugins**. Turn on only the ones you
 need; new tools arrive as new plugins, not as one more app. Get the app at
-[microbians.gumroad.com/l/microtools](https://microbians.gumroad.com/l/microtools).
+[microbians.gumroad.com/l/microtools](https://microbians.gumroad.com/l/microtools); more at
+[microbians.github.io/microtools](https://microbians.github.io/microtools/).
 
 This repository holds what you need to get and build plugins:
 
@@ -57,5 +58,6 @@ mediaGrab.microplugin/
 | rightClick | 13 tools in Finder's right-click menu and in Services. |
 | audioSwitch | Audio devices, profiles and rules that switch them for you. |
 | mediaGrab | Video, MP3 or images from the page in your browser. |
+| midiLink | Bluetooth MIDI devices from the menu bar, and MIDI from one to another. |
 
 Made by [microbians](https://microbians.com).

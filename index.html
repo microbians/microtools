@@ -178,6 +178,7 @@
     <symbol id="i-rightClick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4.1 12 6"/><path d="m5.1 8-2.9-.8"/><path d="m6 12-1.9 2"/><path d="M7.2 2.2 8 5.1"/><path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z"/></symbol>
     <symbol id="i-audioSwitch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
     <symbol id="i-mediaGrab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="m8 12 4 4 4-4"/></symbol>
+    <symbol id="i-midiLink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M7 5v8M12 5v8M17 5v8M7 13v6M12 13v6M17 13v6"/></symbol>
   </defs>
 </svg>
 
@@ -186,7 +187,7 @@
   <div class="inner split">
     <div class="copy">
       <h1>Small tools.<br>One app.</h1>
-      <p class="lead soft">hideOnStart, rightClick, audioSwitch and mediaGrab live together in your menu bar. Turn on only the ones you need; new tools arrive as new plugins, not as one more app.</p>
+      <p class="lead soft">hideOnStart, rightClick, audioSwitch, mediaGrab and midiLink live together in your menu bar. Turn on only the ones you need; new tools arrive as new plugins, not as one more app.</p>
       <div class="buttons">
         <a class="button primary" href="https://microbians.gumroad.com/l/microtools">Get microTools <small>pay what you want</small></a>
         <a class="button secondary" href="#sdk">Write a plugin</a>
@@ -203,13 +204,14 @@
 <!-- Plugin index -->
 <section class="ground paper" id="plugins">
   <div class="inner">
-    <h2>Four tools inside.<br>More to come.</h2>
+    <h2>Five tools inside.<br>More to come.</h2>
     <p class="lead soft">Each plugin has its own settings, and its own menu bar icon or a place in microTools’ menu. Switch them on and off in Settings › General; new ones install from there with one click.</p>
     <div class="plugins">
       <a class="plugin-card" href="#hideOnStart"><svg><use href="#i-hideOnStart"/></svg><h3>hideOnStart</h3><p>Hides the windows apps open at login.</p></a>
       <a class="plugin-card" href="#rightClick"><svg><use href="#i-rightClick"/></svg><h3>rightClick</h3><p>13 tools in Finder’s right-click menu and in Services.</p></a>
       <a class="plugin-card" href="#audioSwitch"><svg><use href="#i-audioSwitch"/></svg><h3>audioSwitch</h3><p>Audio devices, profiles and rules that switch them for you.</p></a>
       <a class="plugin-card" href="#mediaGrab"><svg><use href="#i-mediaGrab"/></svg><h3>mediaGrab</h3><p>Video, MP3 or images from the page in your browser.</p></a>
+      <a class="plugin-card" href="#midiLink"><svg><use href="#i-midiLink"/></svg><h3>midiLink</h3><p>Bluetooth MIDI devices from the menu bar, and MIDI from one to another.</p></a>
     </div>
   </div>
 </section>
@@ -294,6 +296,22 @@
   </div>
 </section>
 
+<!-- midiLink -->
+<section class="ground wine" id="midiLink">
+  <div class="inner split">
+    <div class="copy">
+      <div class="plugin-name"><svg><use href="#i-midiLink"/></svg>midiLink</div>
+      <h2>Bluetooth MIDI,<br>no fuss.</h2>
+    </div>
+    <dl class="features" style="margin-top:0">
+      <div><dt class="soft">From the menu bar</dt><dd>Your instruments with a check when connected, your own names and icons, and a green light while they play.</dd></div>
+      <div><dt class="soft">Connects by itself</dt><dd>Switch the instrument on and it connects, with a notice; switch it off and it waits for it again, without using your battery.</dd></div>
+      <div><dt class="soft">Works with every app</dt><dd>Each instrument is a MIDI port any music app can use — even the ones macOS’s own Bluetooth MIDI does not pass on.</dd></div>
+      <div><dt class="soft">Routes</dt><dd>The MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app.</dd></div>
+    </dl>
+  </div>
+</section>
+
 <!-- SDK -->
 <section class="ground paper" id="sdk">
   <div class="inner">
@@ -372,7 +390,7 @@ docs/for-ai.md.</pre>
 
 <script>
   // The Settings window around each capture: the same sidebar the app draws.
-  const plugins = ['hideOnStart', 'rightClick', 'audioSwitch', 'mediaGrab']
+  const plugins = ['hideOnStart', 'rightClick', 'audioSwitch', 'mediaGrab', 'midiLink']
   const item = (name, icon, active) =>
     `<div class="item${name === active ? ' on' : ''}"><svg><use href="#${icon}"/></svg>${name}</div>`
   for (const win of document.querySelectorAll('.window[data-shot]')) {
