@@ -85,15 +85,15 @@
         "summary": "Pick any color on screen, named and copied in the format you need, or a palette from an image.",
         "about": "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.",
         "symbol": "eyedropper",
-        "version": "1.01",
+        "version": "1.02",
         "kind": "swift",
         "principalClass": "ColorPick.ColorPickPlugin",
         "sdk": 1,
         "minApp": "3.2"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/colorPick-1.01/colorPick.microplugin.zip",
-      "sha256": "45d6933fdd1a768150324dd8c2c96830b519dcf617be552ff05de0e546863887",
-      "size": 176281,
+      "url": "https://github.com/microbians/microtools/releases/download/colorPick-1.02/colorPick.microplugin.zip",
+      "sha256": "a8857c302eebecdbebcfa87b587414854ee79663b9185a2346d7d621a4debed5",
+      "size": 178801,
       "strings": {
         "de": {
           "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Nimmt eine Farbe irgendwo auf dem Bildschirm über die Menüleiste oder ein Tastenkürzel auf, gibt ihr einen Namen und kopiert sie als HEX, RGB, HSL, OKLCH oder Swift-Code. Die letzten Farben bleiben im Menü, um sie erneut zu kopieren. Sammle Farben in benannten Paletten und kopiere eine ganze Palette als CSS-Variablen, JSON oder Liste. Erstelle eine Palette aus einem Bildschirmbereich oder einer Bilddatei: ihre Hauptfarben, benannt von Apple Intelligence.",
