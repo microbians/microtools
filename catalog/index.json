@@ -358,15 +358,15 @@
         "summary": "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.",
         "about": "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.",
         "symbol": "pianokeys",
-        "version": "1.0",
+        "version": "1.01",
         "kind": "swift",
         "principalClass": "MidiLink.MidiLinkPlugin",
         "sdk": 1,
         "minApp": "3.0"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/midiLink-1.0/midiLink.microplugin.zip",
-      "sha256": "209d708c19f0b3e27cf3b624c4062fb8121529bdfc75b8ae2317d52eb8f83fac",
-      "size": 186527,
+      "url": "https://github.com/microbians/microtools/releases/download/midiLink-1.01/midiLink.microplugin.zip",
+      "sha256": "96554dc7cbb296c08a6d76d7f3814cccde7ff0d9b2ad01d7f42b2cd996dcf729",
+      "size": 187799,
       "strings": {
         "de": {
           "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Bluetooth-MIDI-Geräte in der Menüleiste, und MIDI von einem zum anderen.",
@@ -395,37 +395,37 @@
         "id": "rightClick",
         "title": "rightClick",
         "summary": "More tools in Finder’s right-click menu",
-        "about": "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.",
+        "about": "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.",
         "symbol": "cursorarrow.click.2",
-        "version": "1.01",
+        "version": "1.02",
         "kind": "swift",
         "principalClass": "RightClick.RightClickPlugin",
         "sdk": 1,
-        "minApp": "3.0"
+        "minApp": "3.3"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/rightClick-1.01/rightClick.microplugin.zip",
-      "sha256": "8bbe5ef57211d865b4a91b086c6b45f0a45e00907269e3232c65f3bf1eada334",
-      "size": 103320,
+      "url": "https://github.com/microbians/microtools/releases/download/rightClick-1.02/rightClick.microplugin.zip",
+      "sha256": "b3cd333ec8cd28fbce07838f2fa54e01af2f1feb4ddd298bc843268fe17a4334",
+      "size": 108951,
       "strings": {
         "de": {
           "More tools in Finder’s right-click menu": "Mehr Werkzeuge im Kontextmenü des Finder",
-          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 Alltagswerkzeuge im Kontextmenü des Finder und als Dienste in allen anderen Apps: Pfad kopieren, Namen kopieren, Pfad mit ~ kopieren, Pfad für Terminal kopieren, Als file://-URL kopieren, Inhalt kopieren, SHA-256 kopieren, Neue Textdatei, Im Terminal öffnen, Symbolischen Link erstellen, Quarantäne entfernen, Fotometadaten entfernen, Versteckte Dateien ein-/ausblenden. Schalte Werkzeuge ein oder aus und hol deine Favoriten auf die oberste Ebene."
+          "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "14 Alltagswerkzeuge im Kontextmenü des Finder und als Dienste in allen anderen Apps: Pfad kopieren, Namen kopieren, Pfad mit ~ kopieren, Pfad für Terminal kopieren, Als file://-URL kopieren, Inhalt kopieren, SHA-256 kopieren, Neue Textdatei, Im Terminal öffnen, Symbolischen Link erstellen, Quarantäne entfernen, Fotometadaten entfernen, In umgekehrter Reihenfolge zu Musik hinzufügen, Versteckte Dateien ein-/ausblenden. Schalte Werkzeuge ein oder aus und hol deine Favoriten auf die oberste Ebene."
         },
         "es": {
           "More tools in Finder’s right-click menu": "Más herramientas en el clic derecho de Finder",
-          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 herramientas de uso diario en el clic derecho de Finder, y como Servicios en el resto de apps: Copiar ruta, Copiar nombre, Copiar ruta con ~, Copiar ruta para Terminal, Copiar como URL file://, Copiar contenido, Copiar SHA-256, Nuevo archivo de texto, Abrir en Terminal, Crear enlace simbólico, Quitar cuarentena, Quitar metadatos de fotos, Mostrar/ocultar archivos ocultos. Activa o desactiva cada una y marca tus favoritas para tenerlas en el primer nivel."
+          "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "14 herramientas de uso diario en el clic derecho de Finder, y como Servicios en el resto de apps: Copiar ruta, Copiar nombre, Copiar ruta con ~, Copiar ruta para Terminal, Copiar como URL file://, Copiar contenido, Copiar SHA-256, Nuevo archivo de texto, Abrir en Terminal, Crear enlace simbólico, Quitar cuarentena, Quitar metadatos de fotos, Añadir a Música en orden inverso, Mostrar/ocultar archivos ocultos. Activa o desactiva cada una y marca tus favoritas para tenerlas en el primer nivel."
         },
         "fr": {
           "More tools in Finder’s right-click menu": "Plus d’outils dans le clic droit du Finder",
-          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 outils du quotidien dans le menu contextuel du Finder, et comme Services dans toutes les autres apps : Copier le chemin, Copier le nom, Copier le chemin avec ~, Copier le chemin pour Terminal, Copier comme URL file://, Copier le contenu, Copier le SHA-256, Nouveau fichier texte, Ouvrir dans Terminal, Créer un lien symbolique, Retirer la quarantaine, Retirer les métadonnées des photos, Afficher/masquer les fichiers cachés. Activez ou désactivez chaque outil et mettez vos favoris au premier niveau."
+          "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "14 outils du quotidien dans le menu contextuel du Finder, et comme Services dans toutes les autres apps : Copier le chemin, Copier le nom, Copier le chemin avec ~, Copier le chemin pour Terminal, Copier comme URL file://, Copier le contenu, Copier le SHA-256, Nouveau fichier texte, Ouvrir dans Terminal, Créer un lien symbolique, Retirer la quarantaine, Retirer les métadonnées des photos, Afficher/masquer les fichiers cachés. Activez ou désactivez chaque outil et mettez vos favoris au premier niveau."
         },
         "it": {
           "More tools in Finder’s right-click menu": "Più strumenti nel clic destro del Finder",
-          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 strumenti quotidiani nel menu del clic destro del Finder, e come Servizi in tutte le altre app: Copia percorso, Copia nome, Copia percorso con ~, Copia percorso per Terminale, Copia come URL file://, Copia contenuto, Copia SHA-256, Nuovo file di testo, Apri nel Terminale, Crea link simbolico, Rimuovi quarantena, Rimuovi metadati foto, Mostra/nascondi file nascosti. Attiva o disattiva ogni strumento e metti i preferiti al primo livello."
+          "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "14 strumenti quotidiani nel menu del clic destro del Finder, e come Servizi in tutte le altre app: Copia percorso, Copia nome, Copia percorso con ~, Copia percorso per Terminale, Copia come URL file://, Copia contenuto, Copia SHA-256, Nuovo file di testo, Apri nel Terminale, Crea link simbolico, Rimuovi quarantena, Rimuovi metadati foto, Aggiungi a Musica in ordine inverso, Mostra/nascondi file nascosti. Attiva o disattiva ogni strumento e metti i preferiti al primo livello."
         },
         "pt": {
           "More tools in Finder’s right-click menu": "Mais ferramentas no clique direito do Finder",
-          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 ferramentas do dia a dia no menu do clique direito do Finder, e como Serviços em todas as outras apps: Copiar caminho, Copiar nome, Copiar caminho com ~, Copiar caminho para o Terminal, Copiar como URL file://, Copiar conteúdo, Copiar SHA-256, Novo ficheiro de texto, Abrir no Terminal, Criar ligação simbólica, Remover quarentena, Remover metadados de fotos, Mostrar/ocultar ficheiros ocultos. Ative ou desative cada uma e ponha as favoritas no primeiro nível."
+          "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "14 ferramentas do dia a dia no menu do clique direito do Finder, e como Serviços em todas as outras apps: Copiar caminho, Copiar nome, Copiar caminho com ~, Copiar caminho para o Terminal, Copiar como URL file://, Copiar conteúdo, Copiar SHA-256, Novo ficheiro de texto, Abrir no Terminal, Criar ligação simbólica, Remover quarentena, Remover metadados de fotos, Mostrar/ocultar ficheiros ocultos. Ative ou desative cada uma e ponha as favoritas no primeiro nível."
         }
       }
     },
