@@ -7,15 +7,15 @@
         "summary": "Audio devices, profiles and rules that switch them for you.",
         "about": "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.",
         "symbol": "speaker.wave.2",
-        "version": "1.02",
+        "version": "1.03",
         "kind": "swift",
         "principalClass": "AudioSwitch.AudioSwitchPlugin",
         "sdk": 1,
         "minApp": "3.1"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.02/audioSwitch.microplugin.zip",
-      "sha256": "4b2960947c81a62098c37d8fb9c08fae7924cfac8008d3c0f151f189549328ff",
-      "size": 156405,
+      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.03/audioSwitch.microplugin.zip",
+      "sha256": "d069c254dc042d2f040436ddda3dbd11bacaad2f36613fd1c565efe30e4f158d",
+      "size": 165325,
       "strings": {
         "de": {
           "Audio devices, profiles and rules that switch them for you.": "Audiogeräte, Profile und Regeln, die für dich umschalten.",
@@ -82,38 +82,38 @@
       "manifest": {
         "id": "colorPick",
         "title": "colorPick",
-        "summary": "Pick any color on screen, named and copied in the format you need.",
-        "about": "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.",
+        "summary": "Pick any color on screen, named and copied in the format you need, or a palette from an image.",
+        "about": "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.",
         "symbol": "eyedropper",
-        "version": "1.0",
+        "version": "1.01",
         "kind": "swift",
         "principalClass": "ColorPick.ColorPickPlugin",
         "sdk": 1,
-        "minApp": "3.1"
+        "minApp": "3.2"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/colorPick-1.0/colorPick.microplugin.zip",
-      "sha256": "7ba958905840de6b6363d5d6fca2dcaa260b5016041f89d0e769d1ad8a4ae9c1",
-      "size": 153312,
+      "url": "https://github.com/microbians/microtools/releases/download/colorPick-1.01/colorPick.microplugin.zip",
+      "sha256": "45d6933fdd1a768150324dd8c2c96830b519dcf617be552ff05de0e546863887",
+      "size": 176281,
       "strings": {
         "de": {
-          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.": "Nimmt eine Farbe irgendwo auf dem Bildschirm über die Menüleiste oder ein Tastenkürzel auf, gibt ihr einen Namen und kopiert sie als HEX, RGB, HSL, OKLCH oder Swift-Code. Die letzten Farben bleiben im Menü, um sie erneut zu kopieren. Sammle Farben in benannten Paletten und kopiere eine ganze Palette als CSS-Variablen, JSON oder Liste.",
-          "Pick any color on screen, named and copied in the format you need.": "Nimm jede Farbe auf dem Bildschirm auf, benannt und im gewünschten Format kopiert."
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Nimmt eine Farbe irgendwo auf dem Bildschirm über die Menüleiste oder ein Tastenkürzel auf, gibt ihr einen Namen und kopiert sie als HEX, RGB, HSL, OKLCH oder Swift-Code. Die letzten Farben bleiben im Menü, um sie erneut zu kopieren. Sammle Farben in benannten Paletten und kopiere eine ganze Palette als CSS-Variablen, JSON oder Liste. Erstelle eine Palette aus einem Bildschirmbereich oder einer Bilddatei: ihre Hauptfarben, benannt von Apple Intelligence.",
+          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Nimm jede Farbe auf dem Bildschirm auf, benannt und im gewünschten Format kopiert, oder eine Palette aus einem Bild."
         },
         "es": {
-          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.": "Toma un color de cualquier parte de la pantalla desde la barra de menús o con un atajo de teclado, le pone nombre y lo copia como HEX, RGB, HSL, OKLCH o código Swift. Los últimos colores quedan en el menú para copiarlos otra vez. Guarda colores en paletas con nombre y copia una paleta entera como variables CSS, JSON o una lista.",
-          "Pick any color on screen, named and copied in the format you need.": "Elige cualquier color de la pantalla, con su nombre y copiado en el formato que necesites."
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Toma un color de cualquier parte de la pantalla desde la barra de menús o con un atajo de teclado, le pone nombre y lo copia como HEX, RGB, HSL, OKLCH o código Swift. Los últimos colores quedan en el menú para copiarlos otra vez. Guarda colores en paletas con nombre y copia una paleta entera como variables CSS, JSON o una lista. Crea una paleta a partir de una zona de la pantalla o un archivo de imagen: sus colores principales, con nombre de Apple Intelligence.",
+          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Elige cualquier color de la pantalla, con su nombre y copiado en el formato que necesites, o una paleta de una imagen."
         },
         "fr": {
-          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.": "Prélève une couleur n’importe où à l’écran depuis la barre des menus ou un raccourci clavier, lui donne un nom et la copie en HEX, RGB, HSL, OKLCH ou code Swift. Les dernières couleurs restent dans le menu pour les copier à nouveau. Rangez des couleurs dans des palettes nommées et copiez une palette entière en variables CSS, JSON ou liste.",
-          "Pick any color on screen, named and copied in the format you need.": "Prélevez n’importe quelle couleur à l’écran, nommée et copiée dans le format voulu."
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Prélève une couleur n’importe où à l’écran depuis la barre des menus ou un raccourci clavier, lui donne un nom et la copie en HEX, RGB, HSL, OKLCH ou code Swift. Les dernières couleurs restent dans le menu pour les copier à nouveau. Rangez des couleurs dans des palettes nommées et copiez une palette entière en variables CSS, JSON ou liste. Créez une palette depuis une zone de l’écran ou un fichier image : ses couleurs principales, nommée par Apple Intelligence.",
+          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Prélevez n’importe quelle couleur à l’écran, nommée et copiée dans le format voulu, ou une palette tirée d’une image."
         },
         "it": {
-          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.": "Preleva un colore ovunque sullo schermo dalla barra dei menu o con una scorciatoia da tastiera, gli dà un nome e lo copia come HEX, RGB, HSL, OKLCH o codice Swift. Gli ultimi colori restano nel menu per copiarli di nuovo. Conserva i colori in tavolozze con nome e copia un’intera tavolozza come variabili CSS, JSON o elenco.",
-          "Pick any color on screen, named and copied in the format you need.": "Preleva qualsiasi colore sullo schermo, con il suo nome e copiato nel formato che ti serve."
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Preleva un colore ovunque sullo schermo dalla barra dei menu o con una scorciatoia da tastiera, gli dà un nome e lo copia come HEX, RGB, HSL, OKLCH o codice Swift. Gli ultimi colori restano nel menu per copiarli di nuovo. Conserva i colori in tavolozze con nome e copia un’intera tavolozza come variabili CSS, JSON o elenco. Crea una tavolozza da un’area dello schermo o da un file immagine: i suoi colori principali, con il nome dato da Apple Intelligence.",
+          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Preleva qualsiasi colore sullo schermo, con il suo nome e copiato nel formato che ti serve, o una tavolozza da un’immagine."
         },
         "pt": {
-          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list.": "Captura uma cor em qualquer parte do ecrã a partir da barra de menus ou de um atalho de teclado, dá-lhe um nome e copia-a como HEX, RGB, HSL, OKLCH ou código Swift. As últimas cores ficam no menu para as copiar de novo. Guarde cores em paletas com nome e copie uma paleta inteira como variáveis CSS, JSON ou lista.",
-          "Pick any color on screen, named and copied in the format you need.": "Capture qualquer cor do ecrã, com nome e copiada no formato de que precisa."
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Captura uma cor em qualquer parte do ecrã a partir da barra de menus ou de um atalho de teclado, dá-lhe um nome e copia-a como HEX, RGB, HSL, OKLCH ou código Swift. As últimas cores ficam no menu para as copiar de novo. Guarde cores em paletas com nome e copie uma paleta inteira como variáveis CSS, JSON ou lista. Crie uma paleta a partir de uma zona do ecrã ou de um ficheiro de imagem: as suas cores principais, com nome dado pelo Apple Intelligence.",
+          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Capture qualquer cor do ecrã, com nome e copiada no formato de que precisa, ou uma paleta a partir de uma imagem."
         }
       }
     },
@@ -392,45 +392,6 @@
     },
     {
       "manifest": {
-        "id": "ocrGrab",
-        "title": "ocrGrab",
-        "summary": "Copy the text of any part of the screen, and read QR codes.",
-        "about": "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.",
-        "symbol": "text.viewfinder",
-        "version": "1.0",
-        "kind": "swift",
-        "principalClass": "OcrGrab.OcrGrabPlugin",
-        "sdk": 1,
-        "minApp": "3.1"
-      },
-      "url": "https://github.com/microbians/microtools/releases/download/ocrGrab-1.0/ocrGrab.microplugin.zip",
-      "sha256": "a9cfbeddd9df753b7252a2ad955f4f5f89414d039749b0914b99d139fc667aa9",
-      "size": 111364,
-      "strings": {
-        "de": {
-          "Copy the text of any part of the screen, and read QR codes.": "Kopiere den Text eines beliebigen Bildschirmbereichs und lies QR-Codes.",
-          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.": "Wähle einen Bildschirmbereich aus und sein Text wird kopiert, auf deinem Mac erkannt: aus Bildern, Videos, PDFs und Apps, in denen er sich nicht auswählen lässt. QR-Codes und Barcodes in der Auswahl kopieren ihren Inhalt, und Links darin können sich von selbst öffnen. Über die Menüleiste oder ein Tastenkürzel, mit Hinweis und Ton. Behalte die Zeilenumbrüche oder füge die Zeilen zu Absätzen zusammen, wähle die zu lesenden Sprachen und kopiere letzte Aufnahmen erneut aus dem Menü."
-        },
-        "es": {
-          "Copy the text of any part of the screen, and read QR codes.": "Copia el texto de cualquier parte de la pantalla y lee códigos QR.",
-          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.": "Selecciona una zona de la pantalla y su texto se copia, reconocido en tu Mac: de imágenes, vídeos, PDF y apps que no dejan seleccionarlo. Los códigos QR y de barras de la selección copian lo que contienen, y sus enlaces pueden abrirse solos. Desde la barra de menús o un atajo, con un aviso y un sonido. Mantén los saltos de línea o une las líneas en párrafos, elige los idiomas que leer y vuelve a copiar capturas recientes desde el menú."
-        },
-        "fr": {
-          "Copy the text of any part of the screen, and read QR codes.": "Copiez le texte de n’importe quelle partie de l’écran et lisez les codes QR.",
-          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.": "Sélectionnez une zone de l’écran et son texte est copié, reconnu sur votre Mac : depuis des images, des vidéos, des PDF, des apps qui ne permettent pas de le sélectionner. Les codes QR et codes-barres de la sélection copient ce qu’ils contiennent, et leurs liens peuvent s’ouvrir d’eux-mêmes. Depuis la barre des menus ou un raccourci, avec un avis et un son. Gardez les retours à la ligne ou joignez les lignes en paragraphes, choisissez les langues à lire et recopiez les captures récentes depuis le menu."
-        },
-        "it": {
-          "Copy the text of any part of the screen, and read QR codes.": "Copia il testo di qualsiasi parte dello schermo e leggi i codici QR.",
-          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.": "Seleziona un’area dello schermo e il suo testo viene copiato, riconosciuto sul tuo Mac: da immagini, video, PDF e app che non permettono di selezionarlo. I codici QR e a barre nella selezione copiano ciò che contengono, e i loro link possono aprirsi da soli. Dalla barra dei menu o con un’abbreviazione, con un avviso e un suono. Mantieni gli a capo o unisci le righe in paragrafi, scegli le lingue da leggere e copia di nuovo le acquisizioni recenti dal menu."
-        },
-        "pt": {
-          "Copy the text of any part of the screen, and read QR codes.": "Copie o texto de qualquer parte da tela e leia códigos QR.",
-          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes in the selection copy what they hold, and links in them can open by themselves. From the menu bar or a shortcut, with a notice and a sound. Keep the line breaks or join the lines into paragraphs, choose the languages to read, and copy recent captures again from the menu.": "Selecione uma área da tela e o texto dela é copiado, reconhecido no seu Mac: de imagens, vídeos, PDFs e apps que não deixam selecioná-lo. Códigos QR e de barras na seleção copiam o que contêm, e os links neles podem abrir sozinhos. Pela barra de menus ou por um atalho, com um aviso e um som. Mantenha as quebras de linha ou junte as linhas em parágrafos, escolha os idiomas a ler e copie de novo capturas recentes pelo menu."
-        }
-      }
-    },
-    {
-      "manifest": {
         "id": "rightClick",
         "title": "rightClick",
         "summary": "More tools in Finder’s right-click menu",
@@ -465,6 +426,45 @@
         "pt": {
           "More tools in Finder’s right-click menu": "Mais ferramentas no clique direito do Finder",
           "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 ferramentas do dia a dia no menu do clique direito do Finder, e como Serviços em todas as outras apps: Copiar caminho, Copiar nome, Copiar caminho com ~, Copiar caminho para o Terminal, Copiar como URL file://, Copiar conteúdo, Copiar SHA-256, Novo ficheiro de texto, Abrir no Terminal, Criar ligação simbólica, Remover quarentena, Remover metadados de fotos, Mostrar/ocultar ficheiros ocultos. Ative ou desative cada uma e ponha as favoritas no primeiro nível."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "shotGrab",
+        "title": "shotGrab",
+        "summary": "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.",
+        "about": "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.",
+        "symbol": "lucide:scan-eye",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "ShotGrab.ShotGrabPlugin",
+        "sdk": 1,
+        "minApp": "3.2"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/shotGrab-1.0/shotGrab.microplugin.zip",
+      "sha256": "b689b1b62f8f5056e6072cd1b4958abc8fc716b13a9703cc28f60e36e54ae874",
+      "size": 214375,
+      "strings": {
+        "de": {
+          "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Kopiert den Text aus jedem Bereich des Bildschirms, liest QR-Codes, erkennt, was ein Bild zeigt, und gibt neuen Bildschirmfotos einen Namen, der sagt, was sie zeigen.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.": "Wähle einen Bereich des Bildschirms und sein Text wird kopiert, auf deinem Mac erkannt: aus Bildern, Videos, PDFs und Apps, in denen er sich nicht auswählen lässt. QR-Codes und Barcodes kopieren ihren Inhalt, und ihre Links können sich von selbst öffnen. Und jedes neue Bildschirmfoto bekommt einen Namen, der sagt, was es zeigt: Apple Intelligence liest es auf deinem Mac – seinen Text, was das Bild zeigt, die App im Vordergrund – und ersetzt „Bildschirmfoto“ und das Datum durch ein paar Wörter in deiner Sprache (behalte das Datum, wenn du willst). Kopiere letzte Aufnahmen erneut und zeige oder widerrufe letzte Umbenennungen im Menü. „Bild erkennen“ sagt dir in wenigen Worten, was der gewählte Bereich zeigt, und kopiert es."
+        },
+        "es": {
+          "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Copia el texto de cualquier parte de la pantalla, lee códigos QR, identifica qué muestra una imagen y pone a las capturas nuevas un nombre que dice lo que muestran.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.": "Selecciona una zona de la pantalla y su texto se copia, reconocido en tu Mac: de imágenes, vídeos, PDF y apps que no dejan seleccionarlo. Los códigos QR y de barras copian lo que contienen, y sus enlaces pueden abrirse solos. Y cada captura de pantalla nueva recibe un nombre que dice lo que muestra: Apple Intelligence la lee en tu Mac —su texto, lo que es la imagen, la app en primer plano— y cambia «Captura de pantalla» y la fecha por unas pocas palabras en tu idioma (mantén la fecha si quieres). Vuelve a copiar capturas recientes, y muestra o deshaz los cambios de nombre recientes, desde el menú. Identificar imagen te dice en pocas palabras qué muestra la zona que eliges, y lo copia."
+        },
+        "fr": {
+          "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Copiez le texte de n’importe quelle partie de l’écran, lisez les codes QR, identifiez ce que montre une image et donnez aux nouvelles captures un nom qui dit ce qu’elles montrent.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.": "Sélectionnez une zone de l’écran et son texte est copié, reconnu sur votre Mac : depuis des images, des vidéos, des PDF, des apps qui ne permettent pas de le sélectionner. Les codes QR et codes-barres copient leur contenu, et leurs liens peuvent s’ouvrir d’eux-mêmes. Et chaque nouvelle capture d’écran reçoit un nom qui dit ce qu’elle montre : Apple Intelligence la lit sur votre Mac — son texte, ce qu’est l’image, l’app au premier plan — et remplace « Capture d’écran » et la date par quelques mots dans votre langue (gardez la date si vous voulez). Recopiez les captures récentes, et affichez ou annulez les renommages récents, depuis le menu. Identifier l’image vous dit en quelques mots ce que montre la zone choisie, et le copie."
+        },
+        "it": {
+          "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Copia il testo di qualsiasi parte dello schermo, legge i codici QR, identifica cosa mostra un’immagine e dà alle nuove istantanee un nome che dice cosa mostrano.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.": "Seleziona un’area dello schermo e il suo testo viene copiato, riconosciuto sul tuo Mac: da immagini, video, PDF, app che non permettono di selezionarlo. I codici QR e a barre copiano ciò che contengono, e i loro link possono aprirsi da soli. E ogni nuova istantanea dello schermo riceve un nome che dice cosa mostra: Apple Intelligence la legge sul tuo Mac — il suo testo, cosa rappresenta l’immagine, l’app in primo piano — e sostituisce «Istantanea schermo» e la data con poche parole nella tua lingua (mantieni la data se vuoi). Copia di nuovo le catture recenti, e mostra o annulla le rinomine recenti, dal menu. Identifica immagine ti dice in poche parole cosa mostra l’area che scegli, e lo copia."
+        },
+        "pt": {
+          "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Copia o texto de qualquer parte do ecrã, lê códigos QR, identifica o que uma imagem mostra e dá às novas capturas um nome que diz o que mostram.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.": "Selecione uma zona do ecrã e o seu texto é copiado, reconhecido no seu Mac: de imagens, vídeos, PDF e apps que não o deixam selecionar. Os códigos QR e de barras copiam o que contêm, e as suas ligações podem abrir-se sozinhas. E cada nova captura de ecrã recebe um nome que diz o que mostra: o Apple Intelligence lê-a no seu Mac — o texto, o que é a imagem, a app em primeiro plano — e troca “Captura de ecrã” e a data por poucas palavras na sua língua (mantenha a data se quiser). Volte a copiar capturas recentes, e mostre ou desfaça as mudanças de nome recentes, a partir do menu. Identificar imagem diz-te em poucas palavras o que mostra a área que escolhes, e copia-o."
         }
       }
     }
