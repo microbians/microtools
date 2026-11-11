@@ -55,7 +55,7 @@ mediaGrab.microplugin/
 | Plugin | What it does |
 | --- | --- |
 | hideOnStart | Hides the windows apps open at login. |
-| rightClick | 13 tools in Finder's right-click menu and in Services. |
+| rightClick | 14 tools in Finder's right-click menu and in Services. |
 | audioSwitch | Audio devices, profiles and rules that switch them for you. |
 | mediaGrab | Video, MP3 or images from the page in your browser. |
 | midiLink | Bluetooth MIDI devices from the menu bar, and MIDI from one to another. |
