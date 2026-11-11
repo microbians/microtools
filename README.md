@@ -59,7 +59,7 @@ mediaGrab.microplugin/
 | audioSwitch | Audio devices, profiles and rules that switch them for you. |
 | mediaGrab | Video, MP3 or images from the page in your browser. |
 | midiLink | Bluetooth MIDI devices from the menu bar, and MIDI from one to another. |
-| ocrGrab | Copy the text of any part of the screen, and read QR codes. |
+| shotGrab | Text, QR codes and what an image shows, from any part of the screen — and screenshots named by what they show. |
 | colorPick | Pick any color on screen, named and copied in the format you need. |
 | keepAwake | Keeps your Mac awake for a while, until you turn it off, or while a rule holds. |
 | deskClean | A clean desktop for screen sharing, recording or focus. |

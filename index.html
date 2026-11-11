@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>microTools — Small tools for your Mac</title>
-<meta name="description" content="One small menu bar app that hosts little Mac utilities as plugins: hideOnStart, rightClick, audioSwitch, mediaGrab, midiLink, ocrGrab, colorPick, keepAwake, deskClean, batteryCare, macTweaks, habitTrack — and the ones you write in JavaScript.">
+<meta name="description" content="One small menu bar app that hosts little Mac utilities as plugins: hideOnStart, rightClick, audioSwitch, mediaGrab, midiLink, shotGrab, colorPick, keepAwake, deskClean, batteryCare, macTweaks, habitTrack — and the ones you write in JavaScript.">
 <meta property="og:title" content="microTools — Small tools. One app.">
 <meta property="og:description" content="Little Mac utilities as plugins, in one menu bar app. Turn on only the ones you need.">
 <meta property="og:image" content="https://microbians.github.io/microtools/site/og.png">
@@ -179,7 +179,7 @@
     <symbol id="i-audioSwitch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
     <symbol id="i-mediaGrab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="m8 12 4 4 4-4"/></symbol>
     <symbol id="i-midiLink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M7 5v8M12 5v8M17 5v8M7 13v6M12 13v6M17 13v6"/></symbol>
-    <symbol id="i-ocrGrab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 8h8"/><path d="M7 12h10"/><path d="M7 16h6"/></symbol>
+    <symbol id="i-shotGrab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="1"/><path d="M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0"/></symbol>
     <symbol id="i-colorPick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 9-8.414 8.414A2 2 0 0 0 3 18.828v1.344a2 2 0 0 1-.586 1.414A2 2 0 0 1 3.828 21h1.344a2 2 0 0 0 1.414-.586L15 12"/><path d="m18 9 .4.4a1 1 0 1 1-3 3l-3.8-3.8a1 1 0 1 1 3-3l.4.4 3.4-3.4a1 1 0 1 1 3 3z"/><path d="m2 22 .414-.414"/></symbol>
     <symbol id="i-keepAwake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></symbol>
     <symbol id="i-deskClean" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></symbol>
@@ -194,7 +194,7 @@
   <div class="inner split">
     <div class="copy">
       <h1>Small tools.<br>One app.</h1>
-      <p class="lead soft">hideOnStart, rightClick, audioSwitch, mediaGrab, midiLink, ocrGrab, colorPick, keepAwake, deskClean, batteryCare, macTweaks and habitTrack live together in your menu bar. Turn on only the ones you need; new tools arrive as new plugins, not as one more app.</p>
+      <p class="lead soft">hideOnStart, rightClick, audioSwitch, mediaGrab, midiLink, shotGrab, colorPick, keepAwake, deskClean, batteryCare, macTweaks and habitTrack live together in your menu bar. Turn on only the ones you need; new tools arrive as new plugins, not as one more app.</p>
       <div class="buttons">
         <a class="button primary" href="https://microbians.gumroad.com/l/microtools">Get microTools <small>pay what you want</small></a>
         <a class="button secondary" href="#sdk">Write a plugin</a>
@@ -219,7 +219,7 @@
       <a class="plugin-card" href="#audioSwitch"><svg><use href="#i-audioSwitch"/></svg><h3>audioSwitch</h3><p>Audio devices, profiles and rules that switch them for you.</p></a>
       <a class="plugin-card" href="#mediaGrab"><svg><use href="#i-mediaGrab"/></svg><h3>mediaGrab</h3><p>Video, MP3 or images from the page in your browser.</p></a>
       <a class="plugin-card" href="#midiLink"><svg><use href="#i-midiLink"/></svg><h3>midiLink</h3><p>Bluetooth MIDI devices from the menu bar, and MIDI from one to another.</p></a>
-      <a class="plugin-card" href="#ocrGrab"><svg><use href="#i-ocrGrab"/></svg><h3>ocrGrab</h3><p>Copy the text of any part of the screen, and read QR codes.</p></a>
+      <a class="plugin-card" href="#shotGrab"><svg><use href="#i-shotGrab"/></svg><h3>shotGrab</h3><p>Text, QR codes and what an image shows, from any part of the screen — and screenshots named by what they show.</p></a>
       <a class="plugin-card" href="#colorPick"><svg><use href="#i-colorPick"/></svg><h3>colorPick</h3><p>Pick any color on screen, named and copied in the format you need.</p></a>
       <a class="plugin-card" href="#keepAwake"><svg><use href="#i-keepAwake"/></svg><h3>keepAwake</h3><p>Keeps your Mac awake for a while, until you turn it off, or while a rule holds.</p></a>
       <a class="plugin-card" href="#deskClean"><svg><use href="#i-deskClean"/></svg><h3>deskClean</h3><p>A clean desktop for screen sharing, recording or focus.</p></a>
@@ -284,7 +284,7 @@
       <div class="plugin-name"><svg><use href="#i-audioSwitch"/></svg>audioSwitch</div>
       <h2>Sound where<br>you want it.</h2>
       <dl class="features">
-        <div><dt class="soft">Devices</dt><dd>Rename them, give them an icon, set volumes, hide the ones you never use and give each a shortcut.</dd></div>
+        <div><dt class="soft">Devices</dt><dd>Rename them, give them an icon, set volumes and mute from the menu, hide the ones you never use and give each a shortcut.</dd></div>
         <div><dt class="soft">Profiles</dt><dd>Output, input, levels and microphone mute in one click.</dd></div>
         <div><dt class="soft">Rules</dt><dd>Switch by themselves when an app, a web page, the camera or a device turns up — and switch back when it ends.</dd></div>
       </dl>
@@ -327,19 +327,20 @@
   </div>
 </section>
 
-<!-- ocrGrab -->
-<section class="ground paper" id="ocrGrab">
+<!-- shotGrab -->
+<section class="ground paper" id="shotGrab">
   <div class="inner split flip">
     <div class="copy">
-      <div class="plugin-name"><svg><use href="#i-ocrGrab"/></svg>ocrGrab</div>
-      <h2>Copy the text<br>you can’t select.</h2>
+      <div class="plugin-name"><svg><use href="#i-shotGrab"/></svg>shotGrab</div>
+      <h2>Read anything<br>on your screen.</h2>
       <dl class="features">
-        <div><dt class="soft">Any part of the screen</dt><dd>Drag over images, videos, PDFs or apps that won’t let you select: the text is copied, read on your Mac.</dd></div>
-        <div><dt class="soft">QR codes and barcodes</dt><dd>Copy what they hold; links in them can open by themselves.</dd></div>
-        <div><dt class="soft">Your way</dt><dd>Keep the line breaks or join them into paragraphs, choose the languages, copy recent captures again from the menu.</dd></div>
+        <div><dt class="soft">Text and QR codes</dt><dd>Drag over images, videos, PDFs or apps that won’t let you select: the text is copied, read on your Mac. Codes copy what they hold.</dd></div>
+        <div><dt class="soft">Identify Image</dt><dd>Apple Intelligence tells you in a few words what the area shows, and copies it.</dd></div>
+        <div><dt class="soft">Search Image on the Web</dt><dd>The area you select, searched with Google Lens, Bing or Yandex.</dd></div>
+        <div><dt class="soft">Screenshots with names</dt><dd>Each new one is named by what it shows instead of “Screenshot” and the date. Keep the date if you like; undo from the menu.</dd></div>
       </dl>
     </div>
-    <div class="window" data-shot="ocrGrab-light" data-active="ocrGrab"></div>
+    <div class="window" data-shot="shotGrab-light" data-active="shotGrab"></div>
   </div>
 </section>
 
@@ -519,7 +520,7 @@ docs/for-ai.md.</pre>
 
 <script>
   // The Settings window around each capture: the same sidebar the app draws.
-  const plugins = ['hideOnStart', 'rightClick', 'audioSwitch', 'mediaGrab', 'midiLink', 'ocrGrab', 'colorPick',
+  const plugins = ['hideOnStart', 'rightClick', 'audioSwitch', 'mediaGrab', 'midiLink', 'shotGrab', 'colorPick',
                    'keepAwake', 'deskClean', 'batteryCare', 'macTweaks', 'habitTrack']
   const item = (name, icon, active) =>
     `<div class="item${name === active ? ' on' : ''}"><svg><use href="#${icon}"/></svg>${name}</div>`
