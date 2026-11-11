@@ -194,6 +194,279 @@
           "Keep track of the things you want to do several times a day or a week: drink 8 glasses of water a day, draw 5 times a week. Each habit has its own icon and color. One click in the menu bar marks one more, and the icon’s ring shows how much of today is done. Each habit keeps its history and streak, and can remind you at a time of day while it is not done.": "Acompanhe o que você quer fazer várias vezes por dia ou por semana: beber 8 copos de água por dia, desenhar 5 vezes por semana. Cada hábito tem o seu ícone e a sua cor. Um clique na barra de menus marca mais um, e o anel do ícone mostra quanto já foi feito hoje. Cada hábito guarda o seu histórico e a sua sequência, e pode lembrá-lo a uma hora do dia enquanto não estiver feito."
         }
       }
+    },
+    {
+      "manifest": {
+        "id": "hideOnStart",
+        "title": "hideOnStart",
+        "summary": "Hides the windows apps open at login.",
+        "about": "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.",
+        "symbol": "eye.slash",
+        "version": "1.01",
+        "kind": "swift",
+        "principalClass": "HideOnStart.HideOnStartPlugin",
+        "sdk": 1,
+        "minApp": "3.0"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/hideOnStart-1.01/hideOnStart.microplugin.zip",
+      "sha256": "3bc604d2f37a4de00fb305d9fc4909143c62b500ceaedb5fc060dc2a8e1fdf78",
+      "size": 95034,
+      "strings": {
+        "de": {
+          "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.": "Wähle die Apps, die bei jedem Start deines Mac Fenster öffnen: Sync-Helfer, Updater, Chat-Apps. Bei der Anmeldung werden ihre Fenster beim Erscheinen ausgeblendet, so lange du willst (30 Sekunden bis 10 Minuten). Apps ohne Dock-Symbol werden ihre Fenster geschlossen (benötigt Bedienungshilfen). Das Menüleistensymbol kann nur während der Überwachung erscheinen.",
+          "Hides the windows apps open at login.": "Blendet die Fenster aus, die Apps bei der Anmeldung öffnen."
+        },
+        "es": {
+          "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.": "Elige las apps que abren ventanas cada vez que arranca el Mac: asistentes de sincronización, actualizadores, chats. Al iniciar sesión, sus ventanas se ocultan según aparecen, durante el tiempo que elijas (de 30 segundos a 10 minutos). Las apps sin icono en el Dock cierran sus ventanas (necesita Accesibilidad). Su icono en la barra de menús puede mostrarse solo mientras vigila.",
+          "Hides the windows apps open at login.": "Oculta las ventanas que abren las apps al iniciar sesión."
+        },
+        "fr": {
+          "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.": "Choisissez les apps qui ouvrent des fenêtres à chaque démarrage du Mac : outils de synchronisation, programmes de mise à jour, messageries. À l’ouverture de session, leurs fenêtres sont masquées dès qu’elles apparaissent, pendant la durée choisie (de 30 secondes à 10 minutes). Les apps sans icône dans le Dock voient leurs fenêtres fermées (Accessibilité requise). Son icône dans la barre des menus peut n’apparaître que pendant la surveillance.",
+          "Hides the windows apps open at login.": "Masque les fenêtres que les apps ouvrent à l’ouverture de session."
+        },
+        "it": {
+          "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.": "Scegli le app che aprono finestre a ogni avvio del Mac: strumenti di sincronizzazione, programmi di aggiornamento, chat. All’accesso, le loro finestre vengono nascoste appena compaiono, per il tempo che scegli (da 30 secondi a 10 minuti). Le app senza icona nel Dock hanno le finestre chiuse (richiede Accessibilità). La sua icona nella barra dei menu può comparire solo mentre controlla.",
+          "Hides the windows apps open at login.": "Nasconde le finestre che le app aprono all’accesso."
+        },
+        "pt": {
+          "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.": "Escolha as apps que abrem janelas sempre que o Mac arranca: assistentes de sincronização, atualizadores, chats. Ao iniciar sessão, as janelas são ocultadas à medida que aparecem, durante o tempo que escolher (de 30 segundos a 10 minutos). As apps sem ícone na Dock têm as janelas fechadas (requer Acessibilidade). O ícone na barra de menus pode aparecer só enquanto vigia.",
+          "Hides the windows apps open at login.": "Oculta as janelas que as apps abrem ao iniciar sessão."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "keepAwake",
+        "title": "keepAwake",
+        "summary": "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.",
+        "about": "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.",
+        "symbol": "cup.and.saucer",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "KeepAwake.KeepAwakePlugin",
+        "sdk": 1,
+        "minApp": "3.1"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/keepAwake-1.0/keepAwake.microplugin.zip",
+      "sha256": "e1d13539160b4b0fbfd304e8c372f7d6c7e7afddac12a39134a99f0c8dd52f9e",
+      "size": 83447,
+      "strings": {
+        "de": {
+          "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.": "Hält deinen Mac eine Weile wach, bis du es ausschaltest, oder solange eine Regel gilt.",
+          "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.": "Verhindert, dass dein Mac in den Ruhezustand geht – 15 Minuten, eine Stunde, ein paar Stunden oder bis du es ausschaltest, über die Menüleiste oder per Kurzbefehl; das Symbol zeigt die verbleibende Zeit. Regeln halten ihn von selbst wach, solange eine App geöffnet oder im Vordergrund ist, eine Webseite geöffnet ist, Kamera oder Mikrofon benutzt werden, er im Akkubetrieb läuft oder ein externer Bildschirm angeschlossen ist. Hält auf Wunsch auch den Bildschirm an und lässt den Mac bei niedrigem Akkustand schlafen."
+        },
+        "es": {
+          "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.": "Mantiene tu Mac despierto un rato, hasta que lo apagues o mientras se cumpla una regla.",
+          "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.": "Evita que tu Mac entre en reposo durante 15 minutos, una hora, unas horas o hasta que lo apagues, desde la barra de menús o con un atajo; el icono muestra el tiempo que queda. Las reglas lo mantienen despierto solas mientras una app está abierta o delante, una página web está abierta, la cámara o el micrófono están en uso, funciona con batería o hay una pantalla externa conectada. Opcionalmente mantiene también la pantalla encendida, y deja dormir al Mac cuando queda poca batería."
+        },
+        "fr": {
+          "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.": "Garde votre Mac éveillé un moment, jusqu’à ce que vous l’arrêtiez, ou tant qu’une règle s’applique.",
+          "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.": "Empêche votre Mac de se mettre en veille pendant 15 minutes, une heure, quelques heures ou jusqu’à ce que vous l’arrêtiez, depuis la barre des menus ou avec un raccourci ; l’icône montre le temps restant. Les règles le gardent éveillé d’elles-mêmes tant qu’une app est ouverte ou au premier plan, qu’une page web est ouverte, que la caméra ou le micro est utilisé, qu’il fonctionne sur batterie ou qu’un écran externe est connecté. Peut aussi garder l’écran allumé, et laisser le Mac se mettre en veille quand la batterie est faible."
+        },
+        "it": {
+          "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.": "Tiene sveglio il Mac per un po’, finché non lo spegni o finché vale una regola.",
+          "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.": "Impedisce al Mac di andare in stop per 15 minuti, un’ora, qualche ora o finché non lo spegni, dalla barra dei menu o con un’abbreviazione; l’icona mostra il tempo rimasto. Le regole lo tengono sveglio da sole mentre un’app è aperta o in primo piano, una pagina web è aperta, la fotocamera o il microfono sono in uso, funziona a batteria o è collegato un monitor esterno. Può anche tenere acceso lo schermo, e lasciare andare in stop il Mac quando la batteria è scarica."
+        },
+        "pt": {
+          "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.": "Mantém o Mac acordado por um tempo, até você desligar, ou enquanto uma regra valer.",
+          "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.": "Impede que o Mac entre em repouso por 15 minutos, uma hora, algumas horas ou até você desligar, pela barra de menus ou com um atalho; o ícone mostra o tempo restante. As regras o mantêm acordado sozinhas enquanto um app está aberto ou em primeiro plano, uma página web está aberta, a câmera ou o microfone estão em uso, ele funciona na bateria ou há um monitor externo conectado. Opcionalmente mantém a tela ligada também, e deixa o Mac dormir quando a bateria está baixa."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "macTweaks",
+        "title": "macTweaks",
+        "summary": "The Mac’s hidden settings and repairs, without Terminal.",
+        "about": "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.",
+        "symbol": "wrench.and.screwdriver",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "MacTweaks.MacTweaksPlugin",
+        "sdk": 1,
+        "minApp": "3.1"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/macTweaks-1.0/macTweaks.microplugin.zip",
+      "sha256": "e2bd95446e87cc749f17b45f1d79a87d90d105a1b76ba69513484255f0b47b5c",
+      "size": 158254,
+      "strings": {
+        "de": {
+          "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Schalter für die Einstellungen, die macOS versteckt (unsichtbare Dateien, keine .DS_Store auf anderen Laufwerken, Rückschritttaste geht in Safari zurück, Emoji mit „:“, Apps aus beliebiger Quelle), und Tasten für die üblichen Reparaturen (Übersicht, Symbole, „Öffnen mit“, Spotlight, Rechte des Benutzerordners), lokale Time Machine-Schnappschüsse und Apps (Quarantäne entfernen, weitere Kopie öffnen, Einstellungen mit Sicherung zurücksetzen). Jeder sagt, was er ändert und wie man es rückgängig macht, zeigt die genauen Befehle vor dem Ausführen und fragt nur nach dem Passwort, wenn macOS es braucht.",
+          "The Mac’s hidden settings and repairs, without Terminal.": "Die versteckten Einstellungen des Mac und Reparaturen, ohne Terminal."
+        },
+        "es": {
+          "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Interruptores para los ajustes que macOS esconde (archivos ocultos, sin .DS_Store en otros discos, Borrar vuelve atrás en Safari, emoji con «:», apps de cualquier origen) y botones para las reparaciones de siempre (Vista Rápida, iconos, «Abrir con», Spotlight, permisos de la carpeta de inicio), las instantáneas locales de Time Machine y apps (quitar la cuarentena, abrir otra copia, restablecer los ajustes con copia de seguridad). Cada uno dice qué cambia y cómo deshacerlo, muestra los comandos exactos antes de ejecutarlos y pide tu contraseña solo cuando macOS la necesita.",
+          "The Mac’s hidden settings and repairs, without Terminal.": "Los ajustes ocultos del Mac y sus reparaciones, sin Terminal."
+        },
+        "fr": {
+          "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Des interrupteurs pour les réglages que macOS cache (fichiers cachés, pas de .DS_Store sur les autres disques, Effacer revient en arrière dans Safari, emoji avec « : », apps de toute provenance) et des boutons pour les réparations habituelles (Coup d’œil, icônes, « Ouvrir avec », Spotlight, autorisations du dossier de départ), les instantanés locaux de Time Machine et les apps (retirer la quarantaine, ouvrir une autre copie, réinitialiser les réglages avec une sauvegarde). Chacun dit ce qu’il change et comment l’annuler, montre les commandes exactes avant de les lancer et ne demande votre mot de passe que lorsque macOS en a besoin.",
+          "The Mac’s hidden settings and repairs, without Terminal.": "Les réglages cachés du Mac et ses réparations, sans Terminal."
+        },
+        "it": {
+          "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Interruttori per le impostazioni che macOS nasconde (file nascosti, niente .DS_Store su altri dischi, Cancella torna indietro in Safari, emoji con «:», app da qualsiasi provenienza) e pulsanti per le riparazioni di sempre (Quick Look, icone, «Apri con», Spotlight, permessi della cartella Inizio), le istantanee locali di Time Machine e le app (rimuovere la quarantena, aprire un’altra copia, ripristinare le impostazioni con un backup). Ognuno dice cosa cambia e come annullarlo, mostra i comandi esatti prima di eseguirli e chiede la password solo quando macOS ne ha bisogno.",
+          "The Mac’s hidden settings and repairs, without Terminal.": "Le impostazioni nascoste del Mac e le sue riparazioni, senza Terminale."
+        },
+        "pt": {
+          "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Interruptores para os ajustes que o macOS esconde (ficheiros ocultos, sem .DS_Store noutros discos, Apagar volta atrás no Safari, emoji com «:», apps de qualquer origem) e botões para as reparações habituais (Visualização rápida, ícones, «Abrir com», Spotlight, permissões da pasta pessoal), as cópias locais do Time Machine e apps (remover a quarentena, abrir outra cópia, repor os ajustes com cópia de segurança). Cada um diz o que muda e como desfazer, mostra os comandos exatos antes de os executar e só pede a palavra-passe quando o macOS precisa.",
+          "The Mac’s hidden settings and repairs, without Terminal.": "Os ajustes ocultos do Mac e as suas reparações, sem Terminal."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "mediaGrab",
+        "title": "mediaGrab",
+        "summary": "Video, MP3 or images from the page in your browser.",
+        "about": "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.",
+        "symbol": "arrow.down.circle",
+        "version": "1.01",
+        "kind": "swift",
+        "principalClass": "MediaGrab.MediaGrabPlugin",
+        "sdk": 1,
+        "minApp": "3.0"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/mediaGrab-1.01/mediaGrab.microplugin.zip",
+      "sha256": "ca7d6cd47a7f06f1659d96ef15579a6a4e93bf2c25488d9ad4f062b0451afb03",
+      "size": 292826,
+      "strings": {
+        "de": {
+          "Video, MP3 or images from the page in your browser.": "Video, MP3 oder Bilder der Seite in deinem Browser.",
+          "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.": "Lädt das Video, seinen Ton als getaggte MP3 oder die gewählten Bilder aus dem vorderen Tab in Safari, Chrome, Edge, Brave oder Arc, über die Menüleiste oder ein Kürzel. Videos von YouTube, Vimeo, Instagram und über tausend weiteren Seiten, bis zur besten Qualität, mit Untertiteln. MP3s bekommen ein quadratisches Cover sowie Titel, Interpret und Album. Wähle Ordner und Ordnung für jede Art. Nutzt die kostenlosen yt-dlp und ffmpeg, beim ersten Mal für dich geladen."
+        },
+        "es": {
+          "Video, MP3 or images from the page in your browser.": "Vídeo, MP3 o imágenes de la página que tienes en el navegador.",
+          "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.": "Descarga el vídeo, su audio como MP3 etiquetado o las imágenes que elijas de la pestaña de delante en Safari, Chrome, Edge, Brave o Arc, desde la barra de menús o con un atajo. Vídeo de YouTube, Vimeo, Instagram y más de mil sitios, hasta la mejor calidad, con subtítulos. Los MP3 llevan portada cuadrada y el título, artista y álbum de la canción. Elige carpeta y orden para cada tipo. Usa yt-dlp y ffmpeg, gratuitos, que se descargan solos la primera vez."
+        },
+        "fr": {
+          "Video, MP3 or images from the page in your browser.": "Vidéo, MP3 ou images de la page de votre navigateur.",
+          "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.": "Télécharge la vidéo, son audio en MP3 avec tags, ou les images que vous choisissez depuis l’onglet au premier plan dans Safari, Chrome, Edge, Brave ou Arc, depuis la barre des menus ou un raccourci. Vidéos de YouTube, Vimeo, Instagram et plus de mille autres sites, jusqu’à la meilleure qualité, avec sous-titres. Les MP3 ont une pochette carrée et le titre, l’artiste et l’album. Choisissez un dossier et un classement pour chaque type. Utilise yt-dlp et ffmpeg, gratuits, téléchargés pour vous la première fois."
+        },
+        "it": {
+          "Video, MP3 or images from the page in your browser.": "Video, MP3 o immagini dalla pagina nel browser.",
+          "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.": "Scarica il video, il suo audio come MP3 con tag o le immagini che scegli dalla scheda in primo piano in Safari, Chrome, Edge, Brave o Arc, dalla barra dei menu o con una scorciatoia. Video da YouTube, Vimeo, Instagram e oltre mille altri siti, fino alla qualità migliore, con sottotitoli. Gli MP3 hanno copertina quadrata e titolo, artista e album del brano. Scegli cartella e ordine per ogni tipo. Usa yt-dlp e ffmpeg, gratuiti, scaricati per te la prima volta."
+        },
+        "pt": {
+          "Video, MP3 or images from the page in your browser.": "Vídeo, MP3 ou imagens da página no seu navegador.",
+          "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.": "Descarrega o vídeo, o áudio como MP3 com etiquetas ou as imagens que escolher do separador da frente no Safari, Chrome, Edge, Brave ou Arc, a partir da barra de menus ou de um atalho. Vídeo do YouTube, Vimeo, Instagram e mais de mil outros sites, até à melhor qualidade, com legendas. Os MP3 têm capa quadrada e título, artista e álbum da música. Escolha pasta e organização para cada tipo. Usa o yt-dlp e o ffmpeg, gratuitos, descarregados por si na primeira vez."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "midiLink",
+        "title": "midiLink",
+        "summary": "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.",
+        "about": "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.",
+        "symbol": "pianokeys",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "MidiLink.MidiLinkPlugin",
+        "sdk": 1,
+        "minApp": "3.0"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/midiLink-1.0/midiLink.microplugin.zip",
+      "sha256": "209d708c19f0b3e27cf3b624c4062fb8121529bdfc75b8ae2317d52eb8f83fac",
+      "size": 186527,
+      "strings": {
+        "de": {
+          "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Bluetooth-MIDI-Geräte in der Menüleiste, und MIDI von einem zum anderen.",
+          "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.": "Findet deine Bluetooth-MIDI-Instrumente und verbindet oder trennt sie in der Menüleiste, mit eigenen Namen und Symbolen. Gemerkte verbinden sich beim Einschalten von selbst, mit Hinweis. Routen schicken das MIDI eines Ports an einen anderen: ein Bluetooth-Keyboard an einen USB-Synth oder an eine App. Blende im Menü aus, was du nicht sehen willst."
+        },
+        "es": {
+          "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Dispositivos MIDI Bluetooth desde la barra de menús, y MIDI de uno a otro.",
+          "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.": "Encuentra tus instrumentos MIDI Bluetooth y los conecta o desconecta desde la barra de menús, con tus propios nombres e iconos. Los recordados se vuelven a conectar solos al encenderlos, con un aviso. Las rutas mandan el MIDI de un puerto a otro: un teclado Bluetooth a un sintetizador USB o a una app. Oculta del menú los que no quieras ver."
+        },
+        "fr": {
+          "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Appareils MIDI Bluetooth depuis la barre des menus, et le MIDI de l’un à l’autre.",
+          "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.": "Trouve vos instruments MIDI Bluetooth et les connecte ou déconnecte depuis la barre des menus, avec vos propres noms et icônes. Ceux mémorisés se reconnectent seuls quand vous les allumez, avec une notification. Les routes envoient le MIDI d’un port à un autre : un clavier Bluetooth vers un synthé USB ou une app. Masquez du menu ceux que vous ne voulez pas voir."
+        },
+        "it": {
+          "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Dispositivi MIDI Bluetooth dalla barra dei menu, e MIDI dall’uno all’altro.",
+          "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.": "Trova i tuoi strumenti MIDI Bluetooth e li collega o scollega dalla barra dei menu, con nomi e icone tuoi. Quelli memorizzati si ricollegano da soli quando li accendi, con un avviso. Le rotte mandano il MIDI di una porta a un’altra: una tastiera Bluetooth a un synth USB o a un’app. Nascondi dal menu quelli che non vuoi vedere."
+        },
+        "pt": {
+          "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Dispositivos MIDI Bluetooth na barra de menus, e MIDI de um para outro.",
+          "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.": "Encontra os seus instrumentos MIDI Bluetooth e liga-os ou desliga-os na barra de menus, com nomes e ícones seus. Os memorizados voltam a ligar-se sozinhos ao ligá-los, com um aviso. As rotas enviam o MIDI de uma porta para outra: um teclado Bluetooth para um sintetizador USB ou para uma app. Oculte do menu os que não quer ver."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "rightClick",
+        "title": "rightClick",
+        "summary": "More tools in Finder’s right-click menu",
+        "about": "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.",
+        "symbol": "cursorarrow.click.2",
+        "version": "1.01",
+        "kind": "swift",
+        "principalClass": "RightClick.RightClickPlugin",
+        "sdk": 1,
+        "minApp": "3.0"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/rightClick-1.01/rightClick.microplugin.zip",
+      "sha256": "8bbe5ef57211d865b4a91b086c6b45f0a45e00907269e3232c65f3bf1eada334",
+      "size": 103320,
+      "strings": {
+        "de": {
+          "More tools in Finder’s right-click menu": "Mehr Werkzeuge im Kontextmenü des Finder",
+          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 Alltagswerkzeuge im Kontextmenü des Finder und als Dienste in allen anderen Apps: Pfad kopieren, Namen kopieren, Pfad mit ~ kopieren, Pfad für Terminal kopieren, Als file://-URL kopieren, Inhalt kopieren, SHA-256 kopieren, Neue Textdatei, Im Terminal öffnen, Symbolischen Link erstellen, Quarantäne entfernen, Fotometadaten entfernen, Versteckte Dateien ein-/ausblenden. Schalte Werkzeuge ein oder aus und hol deine Favoriten auf die oberste Ebene."
+        },
+        "es": {
+          "More tools in Finder’s right-click menu": "Más herramientas en el clic derecho de Finder",
+          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 herramientas de uso diario en el clic derecho de Finder, y como Servicios en el resto de apps: Copiar ruta, Copiar nombre, Copiar ruta con ~, Copiar ruta para Terminal, Copiar como URL file://, Copiar contenido, Copiar SHA-256, Nuevo archivo de texto, Abrir en Terminal, Crear enlace simbólico, Quitar cuarentena, Quitar metadatos de fotos, Mostrar/ocultar archivos ocultos. Activa o desactiva cada una y marca tus favoritas para tenerlas en el primer nivel."
+        },
+        "fr": {
+          "More tools in Finder’s right-click menu": "Plus d’outils dans le clic droit du Finder",
+          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 outils du quotidien dans le menu contextuel du Finder, et comme Services dans toutes les autres apps : Copier le chemin, Copier le nom, Copier le chemin avec ~, Copier le chemin pour Terminal, Copier comme URL file://, Copier le contenu, Copier le SHA-256, Nouveau fichier texte, Ouvrir dans Terminal, Créer un lien symbolique, Retirer la quarantaine, Retirer les métadonnées des photos, Afficher/masquer les fichiers cachés. Activez ou désactivez chaque outil et mettez vos favoris au premier niveau."
+        },
+        "it": {
+          "More tools in Finder’s right-click menu": "Più strumenti nel clic destro del Finder",
+          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 strumenti quotidiani nel menu del clic destro del Finder, e come Servizi in tutte le altre app: Copia percorso, Copia nome, Copia percorso con ~, Copia percorso per Terminale, Copia come URL file://, Copia contenuto, Copia SHA-256, Nuovo file di testo, Apri nel Terminale, Crea link simbolico, Rimuovi quarantena, Rimuovi metadati foto, Mostra/nascondi file nascosti. Attiva o disattiva ogni strumento e metti i preferiti al primo livello."
+        },
+        "pt": {
+          "More tools in Finder’s right-click menu": "Mais ferramentas no clique direito do Finder",
+          "13 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "13 ferramentas do dia a dia no menu do clique direito do Finder, e como Serviços em todas as outras apps: Copiar caminho, Copiar nome, Copiar caminho com ~, Copiar caminho para o Terminal, Copiar como URL file://, Copiar conteúdo, Copiar SHA-256, Novo ficheiro de texto, Abrir no Terminal, Criar ligação simbólica, Remover quarentena, Remover metadados de fotos, Mostrar/ocultar ficheiros ocultos. Ative ou desative cada uma e ponha as favoritas no primeiro nível."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "shotGrab",
+        "title": "shotGrab",
+        "summary": "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.",
+        "about": "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.",
+        "symbol": "lucide:scan-eye",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "ShotGrab.ShotGrabPlugin",
+        "sdk": 1,
+        "minApp": "3.2"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/shotGrab-1.0/shotGrab.microplugin.zip",
+      "sha256": "b689b1b62f8f5056e6072cd1b4958abc8fc716b13a9703cc28f60e36e54ae874",
+      "size": 214375,
+      "strings": {
+        "de": {
+          "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Kopiert den Text aus jedem Bereich des Bildschirms, liest QR-Codes, erkennt, was ein Bild zeigt, und gibt neuen Bildschirmfotos einen Namen, der sagt, was sie zeigen.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.": "Wähle einen Bereich des Bildschirms und sein Text wird kopiert, auf deinem Mac erkannt: aus Bildern, Videos, PDFs und Apps, in denen er sich nicht auswählen lässt. QR-Codes und Barcodes kopieren ihren Inhalt, und ihre Links können sich von selbst öffnen. Und jedes neue Bildschirmfoto bekommt einen Namen, der sagt, was es zeigt: Apple Intelligence liest es auf deinem Mac – seinen Text, was das Bild zeigt, die App im Vordergrund – und ersetzt „Bildschirmfoto“ und das Datum durch ein paar Wörter in deiner Sprache (behalte das Datum, wenn du willst). Kopiere letzte Aufnahmen erneut und zeige oder widerrufe letzte Umbenennungen im Menü. „Bild erkennen“ sagt dir in wenigen Worten, was der gewählte Bereich zeigt, und kopiert es."
+        },
+        "es": {
+          "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Copia el texto de cualquier parte de la pantalla, lee códigos QR, identifica qué muestra una imagen y pone a las capturas nuevas un nombre que dice lo que muestran.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.": "Selecciona una zona de la pantalla y su texto se copia, reconocido en tu Mac: de imágenes, vídeos, PDF y apps que no dejan seleccionarlo. Los códigos QR y de barras copian lo que contienen, y sus enlaces pueden abrirse solos. Y cada captura de pantalla nueva recibe un nombre que dice lo que muestra: Apple Intelligence la lee en tu Mac —su texto, lo que es la imagen, la app en primer plano— y cambia «Captura de pantalla» y la fecha por unas pocas palabras en tu idioma (mantén la fecha si quieres). Vuelve a copiar capturas recientes, y muestra o deshaz los cambios de nombre recientes, desde el menú. Identificar imagen te dice en pocas palabras qué muestra la zona que eliges, y lo copia."
+        },
+        "fr": {
+          "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Copiez le texte de n’importe quelle partie de l’écran, lisez les codes QR, identifiez ce que montre une image et donnez aux nouvelles captures un nom qui dit ce qu’elles montrent.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.": "Sélectionnez une zone de l’écran et son texte est copié, reconnu sur votre Mac : depuis des images, des vidéos, des PDF, des apps qui ne permettent pas de le sélectionner. Les codes QR et codes-barres copient leur contenu, et leurs liens peuvent s’ouvrir d’eux-mêmes. Et chaque nouvelle capture d’écran reçoit un nom qui dit ce qu’elle montre : Apple Intelligence la lit sur votre Mac — son texte, ce qu’est l’image, l’app au premier plan — et remplace « Capture d’écran » et la date par quelques mots dans votre langue (gardez la date si vous voulez). Recopiez les captures récentes, et affichez ou annulez les renommages récents, depuis le menu. Identifier l’image vous dit en quelques mots ce que montre la zone choisie, et le copie."
+        },
+        "it": {
+          "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Copia il testo di qualsiasi parte dello schermo, legge i codici QR, identifica cosa mostra un’immagine e dà alle nuove istantanee un nome che dice cosa mostrano.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.": "Seleziona un’area dello schermo e il suo testo viene copiato, riconosciuto sul tuo Mac: da immagini, video, PDF, app che non permettono di selezionarlo. I codici QR e a barre copiano ciò che contengono, e i loro link possono aprirsi da soli. E ogni nuova istantanea dello schermo riceve un nome che dice cosa mostra: Apple Intelligence la legge sul tuo Mac — il suo testo, cosa rappresenta l’immagine, l’app in primo piano — e sostituisce «Istantanea schermo» e la data con poche parole nella tua lingua (mantieni la data se vuoi). Copia di nuovo le catture recenti, e mostra o annulla le rinomine recenti, dal menu. Identifica immagine ti dice in poche parole cosa mostra l’area che scegli, e lo copia."
+        },
+        "pt": {
+          "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Copia o texto de qualquer parte do ecrã, lê códigos QR, identifica o que uma imagem mostra e dá às novas capturas um nome que diz o que mostram.",
+          "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.": "Selecione uma zona do ecrã e o seu texto é copiado, reconhecido no seu Mac: de imagens, vídeos, PDF e apps que não o deixam selecionar. Os códigos QR e de barras copiam o que contêm, e as suas ligações podem abrir-se sozinhas. E cada nova captura de ecrã recebe um nome que diz o que mostra: o Apple Intelligence lê-a no seu Mac — o texto, o que é a imagem, a app em primeiro plano — e troca “Captura de ecrã” e a data por poucas palavras na sua língua (mantenha a data se quiser). Volte a copiar capturas recentes, e mostre ou desfaça as mudanças de nome recentes, a partir do menu. Identificar imagem diz-te em poucas palavras o que mostra a área que escolhes, e copia-o."
+        }
+      }
     }
   ]
 }
