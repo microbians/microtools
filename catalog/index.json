@@ -514,15 +514,15 @@
         "summary": "Snippets, emoji and GIFs typed in any app.",
         "about": "Type an abbreviation in any app and typeDrop replaces it with its text: signatures, addresses, replies, with today's date, the time, the clipboard and where the cursor stays. Type a colon and a name, like :heart, to pick an emoji below the cursor, in English or your language. Type :gif, press a shortcut or use the menu to search KLIPY's GIFs and stickers and paste one, with your recent and favorite ones at hand. Choose apps where nothing is expanded; password fields are never seen.",
         "symbol": "character.cursor.ibeam",
-        "version": "1.0",
+        "version": "1.01",
         "kind": "swift",
         "principalClass": "TypeDrop.TypeDropPlugin",
         "sdk": 1,
         "minApp": "3.4"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/typeDrop-1.0/typeDrop.microplugin.zip",
-      "sha256": "06282d926809fce07a2674a1d8933355e4cf810d9961bfd9303ac31b97840ea8",
-      "size": 233107,
+      "url": "https://github.com/microbians/microtools/releases/download/typeDrop-1.01/typeDrop.microplugin.zip",
+      "sha256": "6c62348661bf51b1a44b79d39a8070b85c1fb1f356e674584f6f62389a6ed8f4",
+      "size": 233132,
       "strings": {
         "de": {
           "Snippets, emoji and GIFs typed in any app.": "Textbausteine, Emoji und GIFs in jeder App."
