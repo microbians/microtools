@@ -41,6 +41,45 @@
     },
     {
       "manifest": {
+        "id": "autoMount",
+        "title": "autoMount",
+        "summary": "Mounts your network disks and cloud servers at login, and again whenever they are back on the network.",
+        "about": "Choose network volumes (a NAS, another Mac's disk, a WebDAV cloud server) and autoMount mounts them when microTools starts at login, then checks every minute and mounts them again when they come back on the network. Each volume is always mounted once, at /Volumes/<name>: copies such as <name>-1 are unmounted, so links and apps that point there keep working. Passwords come from the keychain.",
+        "symbol": "externaldrive.connected.to.line.below",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "AutoMount.AutoMountPlugin",
+        "sdk": 1,
+        "minApp": "3.4"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/autoMount-1.0/autoMount.microplugin.zip",
+      "sha256": "0c4f36f339ddfa6859cb19bf5fecbe7a53754218c9dc3e52c692f74fb9e9c81b",
+      "size": 142146,
+      "strings": {
+        "de": {
+          "Choose network volumes (a NAS, another Mac's disk, a WebDAV cloud server) and autoMount mounts them when microTools starts at login, then checks every minute and mounts them again when they come back on the network. Each volume is always mounted once, at /Volumes/<name>: copies such as <name>-1 are unmounted, so links and apps that point there keep working. Passwords come from the keychain.": "Wähle Netzwerkvolumes (ein NAS, die Festplatte eines anderen Mac, einen WebDAV-Cloud-Server) und autoMount aktiviert sie, wenn microTools bei der Anmeldung startet, prüft dann jede Minute und aktiviert sie erneut, wenn sie wieder im Netzwerk sind. Jedes Volume wird immer nur einmal aktiviert, unter /Volumes/<Name>: Kopien wie <Name>-1 werden deaktiviert, damit Links und Apps, die dorthin zeigen, weiter funktionieren. Passwörter kommen aus dem Schlüsselbund.",
+          "Mounts your network disks and cloud servers at login, and again whenever they are back on the network.": "Aktiviert deine Netzwerkvolumes und Cloud-Server bei der Anmeldung und erneut, sobald sie wieder im Netzwerk sind."
+        },
+        "es": {
+          "Choose network volumes (a NAS, another Mac's disk, a WebDAV cloud server) and autoMount mounts them when microTools starts at login, then checks every minute and mounts them again when they come back on the network. Each volume is always mounted once, at /Volumes/<name>: copies such as <name>-1 are unmounted, so links and apps that point there keep working. Passwords come from the keychain.": "Elige volúmenes de red (un NAS, el disco de otro Mac, un servidor WebDAV en la nube) y autoMount los monta cuando microTools se abre al iniciar sesión; después comprueba cada minuto y los vuelve a montar cuando regresan a la red. Cada volumen se monta siempre una sola vez, en /Volumes/<nombre>: las copias como <nombre>-1 se desmontan, así los enlaces y las apps que apuntan ahí siguen funcionando. Las contraseñas salen del llavero.",
+          "Mounts your network disks and cloud servers at login, and again whenever they are back on the network.": "Monta tus discos de red y servidores en la nube al iniciar sesión, y otra vez cada vez que vuelven a estar en la red."
+        },
+        "fr": {
+          "Choose network volumes (a NAS, another Mac's disk, a WebDAV cloud server) and autoMount mounts them when microTools starts at login, then checks every minute and mounts them again when they come back on the network. Each volume is always mounted once, at /Volumes/<name>: copies such as <name>-1 are unmounted, so links and apps that point there keep working. Passwords come from the keychain.": "Choisissez des volumes réseau (un NAS, le disque d’un autre Mac, un serveur cloud WebDAV) et autoMount les monte quand microTools s’ouvre à l’ouverture de session, puis vérifie chaque minute et les remonte quand ils reviennent sur le réseau. Chaque volume est toujours monté une seule fois, dans /Volumes/<nom> : les copies comme <nom>-1 sont démontées, ainsi les liens et les apps qui y pointent continuent de fonctionner. Les mots de passe viennent du trousseau.",
+          "Mounts your network disks and cloud servers at login, and again whenever they are back on the network.": "Monte vos disques réseau et serveurs cloud à l’ouverture de session, puis à nouveau dès qu’ils reviennent sur le réseau."
+        },
+        "it": {
+          "Choose network volumes (a NAS, another Mac's disk, a WebDAV cloud server) and autoMount mounts them when microTools starts at login, then checks every minute and mounts them again when they come back on the network. Each volume is always mounted once, at /Volumes/<name>: copies such as <name>-1 are unmounted, so links and apps that point there keep working. Passwords come from the keychain.": "Scegli dei volumi di rete (un NAS, il disco di un altro Mac, un server cloud WebDAV) e autoMount li monta quando microTools si apre all’accesso, poi controlla ogni minuto e li rimonta quando tornano in rete. Ogni volume viene sempre montato una sola volta, in /Volumes/<nome>: le copie come <nome>-1 vengono smontate, così i link e le app che puntano lì continuano a funzionare. Le password vengono dal portachiavi.",
+          "Mounts your network disks and cloud servers at login, and again whenever they are back on the network.": "Monta i tuoi dischi di rete e server cloud all’accesso, e di nuovo ogni volta che tornano in rete."
+        },
+        "pt": {
+          "Choose network volumes (a NAS, another Mac's disk, a WebDAV cloud server) and autoMount mounts them when microTools starts at login, then checks every minute and mounts them again when they come back on the network. Each volume is always mounted once, at /Volumes/<name>: copies such as <name>-1 are unmounted, so links and apps that point there keep working. Passwords come from the keychain.": "Escolha volumes de rede (um NAS, o disco de outro Mac, um servidor WebDAV na nuvem) e o autoMount monta-os quando o microTools abre ao iniciar sessão; depois verifica a cada minuto e volta a montá-los quando regressam à rede. Cada volume é sempre montado uma única vez, em /Volumes/<nome>: as cópias como <nome>-1 são desmontadas, para que os links e as apps que apontam para lá continuem a funcionar. As palavras-passe vêm do porta-chaves.",
+          "Mounts your network disks and cloud servers at login, and again whenever they are back on the network.": "Monta os seus discos de rede e servidores na nuvem ao iniciar sessão, e de novo sempre que voltam à rede."
+        }
+      }
+    },
+    {
+      "manifest": {
         "id": "batteryCare",
         "title": "batteryCare",
         "summary": "Your Mac’s and your Bluetooth devices’ battery, from the menu bar.",
@@ -465,6 +504,40 @@
         "pt": {
           "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Copia o texto de qualquer parte do ecrã, lê códigos QR, identifica o que uma imagem mostra e dá às novas capturas um nome que diz o que mostram.",
           "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.": "Selecione uma zona do ecrã e o seu texto é copiado, reconhecido no seu Mac: de imagens, vídeos, PDF e apps que não o deixam selecionar. Os códigos QR e de barras copiam o que contêm, e as suas ligações podem abrir-se sozinhas. E cada nova captura de ecrã recebe um nome que diz o que mostra: o Apple Intelligence lê-a no seu Mac — o texto, o que é a imagem, a app em primeiro plano — e troca “Captura de ecrã” e a data por poucas palavras na sua língua (mantenha a data se quiser). Volte a copiar capturas recentes, e mostre ou desfaça as mudanças de nome recentes, a partir do menu. Identificar imagem diz-te em poucas palavras o que mostra a área que escolhes, e copia-o."
+        }
+      }
+    },
+    {
+      "manifest": {
+        "id": "typeDrop",
+        "title": "typeDrop",
+        "summary": "Snippets, emoji and GIFs typed in any app.",
+        "about": "Type an abbreviation in any app and typeDrop replaces it with its text: signatures, addresses, replies, with today's date, the time, the clipboard and where the cursor stays. Type a colon and a name, like :heart, to pick an emoji below the cursor, in English or your language. Type :gif, press a shortcut or use the menu to search KLIPY's GIFs and stickers and paste one, with your recent and favorite ones at hand. Choose apps where nothing is expanded; password fields are never seen.",
+        "symbol": "character.cursor.ibeam",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "TypeDrop.TypeDropPlugin",
+        "sdk": 1,
+        "minApp": "3.4"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/typeDrop-1.0/typeDrop.microplugin.zip",
+      "sha256": "06282d926809fce07a2674a1d8933355e4cf810d9961bfd9303ac31b97840ea8",
+      "size": 233107,
+      "strings": {
+        "de": {
+          "Snippets, emoji and GIFs typed in any app.": "Textbausteine, Emoji und GIFs in jeder App."
+        },
+        "es": {
+          "Snippets, emoji and GIFs typed in any app.": "Snippets, emojis y GIFs escritos en cualquier app."
+        },
+        "fr": {
+          "Snippets, emoji and GIFs typed in any app.": "Extraits, emoji et GIF dans n’importe quelle app."
+        },
+        "it": {
+          "Snippets, emoji and GIFs typed in any app.": "Snippet, emoji e GIF in qualsiasi app."
+        },
+        "pt": {
+          "Snippets, emoji and GIFs typed in any app.": "Snippets, emojis e GIFs em qualquer app."
         }
       }
     }
