@@ -7,15 +7,15 @@
         "summary": "Audio devices, profiles and rules that switch them for you.",
         "about": "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.",
         "symbol": "speaker.wave.2",
-        "version": "1.03",
+        "version": "1.04",
         "kind": "swift",
         "principalClass": "AudioSwitch.AudioSwitchPlugin",
         "sdk": 1,
         "minApp": "3.1"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.03/audioSwitch.microplugin.zip",
-      "sha256": "d069c254dc042d2f040436ddda3dbd11bacaad2f36613fd1c565efe30e4f158d",
-      "size": 165325,
+      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.04/audioSwitch.microplugin.zip",
+      "sha256": "0e2a96ff78145641a40dc82fa71d3b49b4f24c351c4b7bfdce9a0a69141e6311",
+      "size": 185284,
       "strings": {
         "de": {
           "Audio devices, profiles and rules that switch them for you.": "Audiogeräte, Profile und Regeln, die für dich umschalten.",
@@ -85,35 +85,35 @@
         "summary": "Pick any color on screen, named and copied in the format you need, or a palette from an image.",
         "about": "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.",
         "symbol": "eyedropper",
-        "version": "1.02",
+        "version": "1.03",
         "kind": "swift",
         "principalClass": "ColorPick.ColorPickPlugin",
         "sdk": 1,
-        "minApp": "3.2"
+        "minApp": "3.4"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/colorPick-1.02/colorPick.microplugin.zip",
-      "sha256": "a8857c302eebecdbebcfa87b587414854ee79663b9185a2346d7d621a4debed5",
-      "size": 178801,
+      "url": "https://github.com/microbians/microtools/releases/download/colorPick-1.03/colorPick.microplugin.zip",
+      "sha256": "a9fda2e3aeb5ed19c74822c98fade7eac9b7515d5323bafc253054d71fa08cd3",
+      "size": 188907,
       "strings": {
         "de": {
-          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Nimmt eine Farbe irgendwo auf dem Bildschirm über die Menüleiste oder ein Tastenkürzel auf, gibt ihr einen Namen und kopiert sie als HEX, RGB, HSL, OKLCH oder Swift-Code. Die letzten Farben bleiben im Menü, um sie erneut zu kopieren. Sammle Farben in benannten Paletten und kopiere eine ganze Palette als CSS-Variablen, JSON oder Liste. Erstelle eine Palette aus einem Bildschirmbereich oder einer Bilddatei: ihre Hauptfarben, benannt von Apple Intelligence.",
-          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Nimm jede Farbe auf dem Bildschirm auf, benannt und im gewünschten Format kopiert, oder eine Palette aus einem Bild."
+          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Nimm jede Farbe auf dem Bildschirm auf, benannt und im gewünschten Format kopiert, oder eine Palette aus einem Bild.",
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Nimmt eine Farbe irgendwo auf dem Bildschirm über die Menüleiste oder ein Tastenkürzel auf, gibt ihr einen Namen und kopiert sie als HEX, RGB, HSL, OKLCH oder Swift-Code. Die letzten Farben bleiben im Menü, um sie erneut zu kopieren. Sammle Farben in benannten Paletten und kopiere eine ganze Palette als CSS-Variablen, JSON oder Liste. Erstelle eine Palette aus einem Bildschirmbereich oder einer Bilddatei: ihre Hauptfarben, benannt von Apple Intelligence."
         },
         "es": {
-          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Toma un color de cualquier parte de la pantalla desde la barra de menús o con un atajo de teclado, le pone nombre y lo copia como HEX, RGB, HSL, OKLCH o código Swift. Los últimos colores quedan en el menú para copiarlos otra vez. Guarda colores en paletas con nombre y copia una paleta entera como variables CSS, JSON o una lista. Crea una paleta a partir de una zona de la pantalla o un archivo de imagen: sus colores principales, con nombre de Apple Intelligence.",
-          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Elige cualquier color de la pantalla, con su nombre y copiado en el formato que necesites, o una paleta de una imagen."
+          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Elige cualquier color de la pantalla, con su nombre y copiado en el formato que necesites, o una paleta de una imagen.",
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Toma un color de cualquier parte de la pantalla desde la barra de menús o con un atajo de teclado, le pone nombre y lo copia como HEX, RGB, HSL, OKLCH o código Swift. Los últimos colores quedan en el menú para copiarlos otra vez. Guarda colores en paletas con nombre y copia una paleta entera como variables CSS, JSON o una lista. Crea una paleta a partir de una zona de la pantalla o un archivo de imagen: sus colores principales, con nombre de Apple Intelligence."
         },
         "fr": {
-          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Prélève une couleur n’importe où à l’écran depuis la barre des menus ou un raccourci clavier, lui donne un nom et la copie en HEX, RGB, HSL, OKLCH ou code Swift. Les dernières couleurs restent dans le menu pour les copier à nouveau. Rangez des couleurs dans des palettes nommées et copiez une palette entière en variables CSS, JSON ou liste. Créez une palette depuis une zone de l’écran ou un fichier image : ses couleurs principales, nommée par Apple Intelligence.",
-          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Prélevez n’importe quelle couleur à l’écran, nommée et copiée dans le format voulu, ou une palette tirée d’une image."
+          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Prélevez n’importe quelle couleur à l’écran, nommée et copiée dans le format voulu, ou une palette tirée d’une image.",
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Prélève une couleur n’importe où à l’écran depuis la barre des menus ou un raccourci clavier, lui donne un nom et la copie en HEX, RGB, HSL, OKLCH ou code Swift. Les dernières couleurs restent dans le menu pour les copier à nouveau. Rangez des couleurs dans des palettes nommées et copiez une palette entière en variables CSS, JSON ou liste. Créez une palette depuis une zone de l’écran ou un fichier image : ses couleurs principales, nommée par Apple Intelligence."
         },
         "it": {
-          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Preleva un colore ovunque sullo schermo dalla barra dei menu o con una scorciatoia da tastiera, gli dà un nome e lo copia come HEX, RGB, HSL, OKLCH o codice Swift. Gli ultimi colori restano nel menu per copiarli di nuovo. Conserva i colori in tavolozze con nome e copia un’intera tavolozza come variabili CSS, JSON o elenco. Crea una tavolozza da un’area dello schermo o da un file immagine: i suoi colori principali, con il nome dato da Apple Intelligence.",
-          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Preleva qualsiasi colore sullo schermo, con il suo nome e copiato nel formato che ti serve, o una tavolozza da un’immagine."
+          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Preleva qualsiasi colore sullo schermo, con il suo nome e copiato nel formato che ti serve, o una tavolozza da un’immagine.",
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Preleva un colore ovunque sullo schermo dalla barra dei menu o con una scorciatoia da tastiera, gli dà un nome e lo copia come HEX, RGB, HSL, OKLCH o codice Swift. Gli ultimi colori restano nel menu per copiarli di nuovo. Conserva i colori in tavolozze con nome e copia un’intera tavolozza come variabili CSS, JSON o elenco. Crea una tavolozza da un’area dello schermo o da un file immagine: i suoi colori principali, con il nome dato da Apple Intelligence."
         },
         "pt": {
-          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Captura uma cor em qualquer parte do ecrã a partir da barra de menus ou de um atalho de teclado, dá-lhe um nome e copia-a como HEX, RGB, HSL, OKLCH ou código Swift. As últimas cores ficam no menu para as copiar de novo. Guarde cores em paletas com nome e copie uma paleta inteira como variáveis CSS, JSON ou lista. Crie uma paleta a partir de uma zona do ecrã ou de um ficheiro de imagem: as suas cores principais, com nome dado pelo Apple Intelligence.",
-          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Capture qualquer cor do ecrã, com nome e copiada no formato de que precisa, ou uma paleta a partir de uma imagem."
+          "Pick any color on screen, named and copied in the format you need, or a palette from an image.": "Capture qualquer cor do ecrã, com nome e copiada no formato de que precisa, ou uma paleta a partir de uma imagem.",
+          "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.": "Captura uma cor em qualquer parte do ecrã a partir da barra de menus ou de um atalho de teclado, dá-lhe um nome e copia-a como HEX, RGB, HSL, OKLCH ou código Swift. As últimas cores ficam no menu para as copiar de novo. Guarde cores em paletas com nome e copie uma paleta inteira como variáveis CSS, JSON ou lista. Crie uma paleta a partir de uma zona do ecrã ou de um ficheiro de imagem: as suas cores principais, com nome dado pelo Apple Intelligence."
         }
       }
     },
@@ -280,15 +280,15 @@
         "summary": "The Mac’s hidden settings and repairs, without Terminal.",
         "about": "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.",
         "symbol": "wrench.and.screwdriver",
-        "version": "1.0",
+        "version": "1.01",
         "kind": "swift",
         "principalClass": "MacTweaks.MacTweaksPlugin",
         "sdk": 1,
-        "minApp": "3.1"
+        "minApp": "3.4"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/macTweaks-1.0/macTweaks.microplugin.zip",
-      "sha256": "e2bd95446e87cc749f17b45f1d79a87d90d105a1b76ba69513484255f0b47b5c",
-      "size": 158254,
+      "url": "https://github.com/microbians/microtools/releases/download/macTweaks-1.01/macTweaks.microplugin.zip",
+      "sha256": "bab203136912d39ae55efd8d92f344a5a69b961dda11deeeb7bd842f9016cde1",
+      "size": 158560,
       "strings": {
         "de": {
           "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Schalter für die Einstellungen, die macOS versteckt (unsichtbare Dateien, keine .DS_Store auf anderen Laufwerken, Rückschritttaste geht in Safari zurück, Emoji mit „:“, Apps aus beliebiger Quelle), und Tasten für die üblichen Reparaturen (Übersicht, Symbole, „Öffnen mit“, Spotlight, Rechte des Benutzerordners), lokale Time Machine-Schnappschüsse und Apps (Quarantäne entfernen, weitere Kopie öffnen, Einstellungen mit Sicherung zurücksetzen). Jeder sagt, was er ändert und wie man es rückgängig macht, zeigt die genauen Befehle vor dem Ausführen und fragt nur nach dem Passwort, wenn macOS es braucht.",
@@ -319,15 +319,15 @@
         "summary": "Video, MP3 or images from the page in your browser.",
         "about": "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.",
         "symbol": "arrow.down.circle",
-        "version": "1.01",
+        "version": "1.02",
         "kind": "swift",
         "principalClass": "MediaGrab.MediaGrabPlugin",
         "sdk": 1,
-        "minApp": "3.0"
+        "minApp": "3.4"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/mediaGrab-1.01/mediaGrab.microplugin.zip",
-      "sha256": "ca7d6cd47a7f06f1659d96ef15579a6a4e93bf2c25488d9ad4f062b0451afb03",
-      "size": 292826,
+      "url": "https://github.com/microbians/microtools/releases/download/mediaGrab-1.02/mediaGrab.microplugin.zip",
+      "sha256": "6972da0fde0fb539d63e763c3af184084d5bd0d601d25863f9d0227fba316045",
+      "size": 293135,
       "strings": {
         "de": {
           "Video, MP3 or images from the page in your browser.": "Video, MP3 oder Bilder der Seite in deinem Browser.",
@@ -397,15 +397,15 @@
         "summary": "More tools in Finder’s right-click menu",
         "about": "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.",
         "symbol": "cursorarrow.click.2",
-        "version": "1.02",
+        "version": "1.03",
         "kind": "swift",
         "principalClass": "RightClick.RightClickPlugin",
         "sdk": 1,
-        "minApp": "3.3"
+        "minApp": "3.4"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/rightClick-1.02/rightClick.microplugin.zip",
-      "sha256": "b3cd333ec8cd28fbce07838f2fa54e01af2f1feb4ddd298bc843268fe17a4334",
-      "size": 108951,
+      "url": "https://github.com/microbians/microtools/releases/download/rightClick-1.03/rightClick.microplugin.zip",
+      "sha256": "ee0b5c662a530204ccb434428be959599e5205c9a8b8e6febb014434cb195e81",
+      "size": 100410,
       "strings": {
         "de": {
           "More tools in Finder’s right-click menu": "Mehr Werkzeuge im Kontextmenü des Finder",
@@ -436,15 +436,15 @@
         "summary": "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.",
         "about": "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.",
         "symbol": "lucide:scan-eye",
-        "version": "1.0",
+        "version": "1.01",
         "kind": "swift",
         "principalClass": "ShotGrab.ShotGrabPlugin",
         "sdk": 1,
-        "minApp": "3.2"
+        "minApp": "3.4"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/shotGrab-1.0/shotGrab.microplugin.zip",
-      "sha256": "b689b1b62f8f5056e6072cd1b4958abc8fc716b13a9703cc28f60e36e54ae874",
-      "size": 214375,
+      "url": "https://github.com/microbians/microtools/releases/download/shotGrab-1.01/shotGrab.microplugin.zip",
+      "sha256": "1984a82f4723a33f50cc26b667e847ea63a0bc73dbd3aad7425e6a5d3e1f99f8",
+      "size": 216424,
       "strings": {
         "de": {
           "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.": "Kopiert den Text aus jedem Bereich des Bildschirms, liest QR-Codes, erkennt, was ein Bild zeigt, und gibt neuen Bildschirmfotos einen Namen, der sagt, was sie zeigen.",
