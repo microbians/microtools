@@ -2,20 +2,20 @@
   "plugins": [
     {
       "manifest": {
-        "id": "audioSwitch",
-        "title": "audioSwitch",
         "summary": "Audio devices, profiles and rules that switch them for you.",
-        "about": "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.",
-        "symbol": "speaker.wave.2",
-        "version": "1.04",
         "kind": "swift",
+        "version": "1.05",
+        "about": "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.",
         "principalClass": "AudioSwitch.AudioSwitchPlugin",
+        "title": "audioSwitch",
         "sdk": 1,
+        "symbol": "speaker.wave.2",
+        "id": "audioSwitch",
         "minApp": "3.1"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.04/audioSwitch.microplugin.zip",
-      "sha256": "0e2a96ff78145641a40dc82fa71d3b49b4f24c351c4b7bfdce9a0a69141e6311",
-      "size": 185284,
+      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.05/audioSwitch.microplugin.zip",
+      "sha256": "244a8b22825930b37075fed532721819cc245808ecd2d0826becd48c96db867a",
+      "size": 278448,
       "strings": {
         "de": {
           "Audio devices, profiles and rules that switch them for you.": "Audiogeräte, Profile und Regeln, die für dich umschalten.",
@@ -599,6 +599,46 @@
         }
       },
       "thumbnail": "thumbs/shotGrab.png"
+    },
+    {
+      "manifest": {
+        "id": "smoothScroll",
+        "title": "smoothScroll",
+        "summary": "Smooth scrolling for your mouse wheel, in its own direction.",
+        "about": "smoothScroll turns each notch of a mouse wheel into a smooth glide, like a trackpad, and lets the wheel scroll the other way without changing the trackpad. Hold a key to scroll faster, sideways or without smoothing; choose how far, how quick and how long it glides, and leave the apps you choose as they are.",
+        "symbol": "computermouse",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "SmoothScroll.SmoothScrollPlugin",
+        "sdk": 1,
+        "minApp": "3.4"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/smoothScroll-1.0/smoothScroll.microplugin.zip",
+      "sha256": "6e1027541453c5085611c5e77f119bcf397e26db8e1db3795d6c87c2ec635978",
+      "size": 165994,
+      "strings": {
+        "de": {
+          "smoothScroll turns each notch of a mouse wheel into a smooth glide, like a trackpad, and lets the wheel scroll the other way without changing the trackpad. Hold a key to scroll faster, sideways or without smoothing; choose how far, how quick and how long it glides, and leave the apps you choose as they are.": "smoothScroll macht aus jeder Raste des Mausrads ein weiches Gleiten wie auf einem Trackpad und lässt das Rad in die andere Richtung scrollen, ohne das Trackpad zu ändern. Halte eine Taste, um schneller, seitwärts oder ohne Glättung zu scrollen; wähle Weite, Beschleunigung und Dauer, und lass die Apps deiner Wahl, wie sie sind.",
+          "Smooth scrolling for your mouse wheel, in its own direction.": "Weiches Scrollen für das Mausrad, in seiner eigenen Richtung."
+        },
+        "es": {
+          "smoothScroll turns each notch of a mouse wheel into a smooth glide, like a trackpad, and lets the wheel scroll the other way without changing the trackpad. Hold a key to scroll faster, sideways or without smoothing; choose how far, how quick and how long it glides, and leave the apps you choose as they are.": "smoothScroll convierte cada paso de la rueda del ratón en un deslizamiento suave, como un trackpad, y permite que la rueda vaya en la dirección contraria sin cambiar el trackpad. Mantén una tecla para ir más rápido, en horizontal o sin suavizado; elige cuánto avanza, cuánto acelera y cuánto dura, y deja como están las apps que elijas.",
+          "Smooth scrolling for your mouse wheel, in its own direction.": "Scroll suave para la rueda del ratón, con su propia dirección."
+        },
+        "fr": {
+          "smoothScroll turns each notch of a mouse wheel into a smooth glide, like a trackpad, and lets the wheel scroll the other way without changing the trackpad. Hold a key to scroll faster, sideways or without smoothing; choose how far, how quick and how long it glides, and leave the apps you choose as they are.": "smoothScroll transforme chaque cran de la molette en un glissement fluide, comme un trackpad, et permet à la molette de défiler dans l’autre sens sans changer le trackpad. Maintenez une touche pour défiler plus vite, horizontalement ou sans lissage ; réglez la distance, l’accélération et la durée, et laissez telles quelles les apps de votre choix.",
+          "Smooth scrolling for your mouse wheel, in its own direction.": "Défilement fluide pour la molette de la souris, dans son propre sens."
+        },
+        "it": {
+          "smoothScroll turns each notch of a mouse wheel into a smooth glide, like a trackpad, and lets the wheel scroll the other way without changing the trackpad. Hold a key to scroll faster, sideways or without smoothing; choose how far, how quick and how long it glides, and leave the apps you choose as they are.": "smoothScroll trasforma ogni scatto della rotella in uno scorrimento fluido, come un trackpad, e permette alla rotella di scorrere al contrario senza cambiare il trackpad. Tieni premuto un tasto per scorrere più veloce, in orizzontale o senza fluidità; scegli distanza, accelerazione e durata, e lascia com’è nelle app che scegli.",
+          "Smooth scrolling for your mouse wheel, in its own direction.": "Scorrimento fluido per la rotella del mouse, nella sua direzione."
+        },
+        "pt": {
+          "smoothScroll turns each notch of a mouse wheel into a smooth glide, like a trackpad, and lets the wheel scroll the other way without changing the trackpad. Hold a key to scroll faster, sideways or without smoothing; choose how far, how quick and how long it glides, and leave the apps you choose as they are.": "smoothScroll transforma cada passo da roda do mouse num deslizar suave, como um trackpad, e deixa a roda rolar ao contrário sem mudar o trackpad. Segure uma tecla para rolar mais rápido, na horizontal ou sem suavização; escolha distância, aceleração e duração, e deixe como estão as apps que escolher.",
+          "Smooth scrolling for your mouse wheel, in its own direction.": "Rolagem suave para a roda do mouse, na sua própria direção."
+        }
+      },
+      "thumbnail": "thumbs/smoothScroll.png"
     },
     {
       "manifest": {
