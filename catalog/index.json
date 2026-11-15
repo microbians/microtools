@@ -1,4 +1,7 @@
 {
+  "app": {
+    "version": "3.5"
+  },
   "plugins": [
     {
       "manifest": {
