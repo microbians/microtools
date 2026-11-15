@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>microTools — Small tools for your Mac</title>
-<meta name="description" content="One small menu bar app that hosts little Mac utilities as plugins: hideOnStart, rightClick, audioSwitch, mediaGrab, midiLink, shotGrab, colorPick, keepAwake, deskClean, batteryCare, macTweaks, habitTrack — and the ones you write in JavaScript.">
+<meta name="description" content="One small menu bar app that hosts little Mac utilities as plugins: hideOnStart, rightClick, audioSwitch, mediaGrab, midiLink, shotGrab, colorPick, keepAwake, deskClean, batteryCare, macTweaks, habitTrack, typeDrop, autoMount, openPorts, focusDim — and the ones you write in JavaScript.">
 <meta property="og:title" content="microTools — Small tools. One app.">
 <meta property="og:description" content="Little Mac utilities as plugins, in one menu bar app. Turn on only the ones you need.">
 <meta property="og:image" content="https://microbians.github.io/microtools/site/og.png">
@@ -77,6 +77,9 @@
   .signature { display: flex; align-items: center; gap: clamp(16px, 2vw, 40px); margin-top: clamp(48px, 7vw, 120px); }
   .signature .lockup { font-size: clamp(44px, 4.6vw, 88px); }
   .signature p { margin: 0; font-size: clamp(16px, 1.5vw, 26px); line-height: 1.2; white-space: nowrap; }
+  .powered { display: inline-flex; align-items: center; gap: 8px; margin-top: clamp(24px, 3vw, 48px); font-size: 15px; color: inherit; text-decoration: none; }
+  .powered img { height: 22px; width: auto; }
+  .powered:hover { text-decoration: underline; }
 
   .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(28px, 3vw, 48px); }
   .button {
@@ -110,17 +113,21 @@
   .window main { min-width: 0; overflow: hidden; border-left: 1px solid var(--line); }
   .window .title { color: var(--side-ink); font-weight: 700; padding: 13px 16px; border-bottom: 1px solid var(--line); }
   .window main img { width: 100%; height: auto; }
+  /* A plugin's thumbnail in place of its Settings window (catalog/thumbs). */
+  .thumb { display: block; width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 30px 80px rgb(0 0 0 / .28), 0 0 0 1px rgb(0 0 0 / .1); }
   @media (max-width: 600px) { .window { grid-template-columns: 1fr; } .window aside { display: none; } }
 
   /* Plugin index */
   .plugins { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: clamp(32px, 4vw, 64px); }
   .plugin-card {
-    display: block; padding: 28px; border-radius: 20px; background: #fff; text-decoration: none;
+    display: block; border-radius: 20px; background: #fff; text-decoration: none; overflow: hidden;
     box-shadow: 0 0 0 1px rgb(0 0 0 / .06);
   }
   .plugin-card:hover { box-shadow: 0 0 0 1.5px var(--ruby); }
-  .plugin-card svg { width: 30px; height: 30px; color: var(--ruby); }
-  .plugin-card h3 { margin: 18px 0 6px; font-size: 24px; font-weight: 600; letter-spacing: -.01em; }
+  /* Its thumbnail (catalog/thumbs, drawn by promo/src/render.sh thumbs): what it does, its icon in the corner. */
+  .plugin-card img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+  .plugin-card div { padding: 20px 24px 26px; }
+  .plugin-card h3 { margin: 0 0 6px; font-size: 24px; font-weight: 600; letter-spacing: -.01em; }
   .plugin-card p { margin: 0; color: var(--ink-soft); font-size: 17px; line-height: 1.35; }
 
   .plugin-name { display: inline-flex; align-items: center; gap: 12px; font-size: clamp(18px, 1.5vw, 24px); font-weight: 600; margin-bottom: clamp(18px, 2vw, 32px); }
@@ -186,6 +193,10 @@
     <symbol id="i-batteryCare" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14v-4"/><path d="M10 14v-4"/><path d="M22 14v-4"/><rect x="2" y="6" width="16" height="12" rx="2"/></symbol>
     <symbol id="i-macTweaks" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></symbol>
     <symbol id="i-habitTrack" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-typeDrop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1"/><path d="M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5"/><path d="M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1"/><path d="M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7"/><path d="M9 7v10"/></symbol>
+    <symbol id="i-autoMount" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><path d="M6 16h.01"/><path d="M10 16h.01"/></symbol>
+    <symbol id="i-openPorts" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/></symbol>
+    <symbol id="i-focusDim" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
   </defs>
 </svg>
 
@@ -194,7 +205,7 @@
   <div class="inner split">
     <div class="copy">
       <h1>Small tools.<br>One app.</h1>
-      <p class="lead soft">hideOnStart, rightClick, audioSwitch, mediaGrab, midiLink, shotGrab, colorPick, keepAwake, deskClean, batteryCare, macTweaks and habitTrack live together in your menu bar. Turn on only the ones you need; new tools arrive as new plugins, not as one more app.</p>
+      <p class="lead soft">Sixteen small tools for your Mac — windows, audio, screen, files, typing and more — in one menu bar app. Turn on only the ones you need. New tools arrive as plugins, not as one more app.</p>
       <div class="buttons">
         <a class="button primary" href="https://microbians.gumroad.com/l/microtools">Get microTools <small>pay what you want</small></a>
         <a class="button secondary" href="#sdk">Write a plugin</a>
@@ -203,6 +214,7 @@
         <span class="lockup">microTools<svg><use href="#mark"/></svg></span>
         <p>Small tools<br>for your Mac.</p>
       </div>
+      <a class="powered soft" href="https://microbians.com">Powered by <img src="site/microbians-white.png" alt="microbians"> microbians.com</a>
     </div>
     <div class="window" data-shot="general-light" data-active="General"></div>
   </div>
@@ -211,21 +223,25 @@
 <!-- Plugin index -->
 <section class="ground paper" id="plugins">
   <div class="inner">
-    <h2>Twelve tools inside.<br>More to come.</h2>
+    <h2>Sixteen tools inside.<br>More to come.</h2>
     <p class="lead soft">Each plugin has its own settings, and its own menu bar icon or a place in microTools’ menu. Switch them on and off in Settings › General; new ones install from there with one click.</p>
     <div class="plugins">
-      <a class="plugin-card" href="#hideOnStart"><svg><use href="#i-hideOnStart"/></svg><h3>hideOnStart</h3><p>Hides the windows apps open at login.</p></a>
-      <a class="plugin-card" href="#rightClick"><svg><use href="#i-rightClick"/></svg><h3>rightClick</h3><p>14 tools in Finder’s right-click menu and in Services.</p></a>
-      <a class="plugin-card" href="#audioSwitch"><svg><use href="#i-audioSwitch"/></svg><h3>audioSwitch</h3><p>Audio devices, profiles and rules that switch them for you.</p></a>
-      <a class="plugin-card" href="#mediaGrab"><svg><use href="#i-mediaGrab"/></svg><h3>mediaGrab</h3><p>Video, MP3 or images from the page in your browser.</p></a>
-      <a class="plugin-card" href="#midiLink"><svg><use href="#i-midiLink"/></svg><h3>midiLink</h3><p>Bluetooth MIDI devices from the menu bar, and MIDI from one to another.</p></a>
-      <a class="plugin-card" href="#shotGrab"><svg><use href="#i-shotGrab"/></svg><h3>shotGrab</h3><p>Text, QR codes and what an image shows, from any part of the screen — and screenshots named by what they show.</p></a>
-      <a class="plugin-card" href="#colorPick"><svg><use href="#i-colorPick"/></svg><h3>colorPick</h3><p>Pick any color on screen, named and copied in the format you need, or a palette from an image.</p></a>
-      <a class="plugin-card" href="#keepAwake"><svg><use href="#i-keepAwake"/></svg><h3>keepAwake</h3><p>Keeps your Mac awake for a while, until you turn it off, or while a rule holds.</p></a>
-      <a class="plugin-card" href="#deskClean"><svg><use href="#i-deskClean"/></svg><h3>deskClean</h3><p>A clean desktop for screen sharing, recording or focus.</p></a>
-      <a class="plugin-card" href="#batteryCare"><svg><use href="#i-batteryCare"/></svg><h3>batteryCare</h3><p>Your Mac’s and your Bluetooth devices’ battery, from the menu bar.</p></a>
-      <a class="plugin-card" href="#macTweaks"><svg><use href="#i-macTweaks"/></svg><h3>macTweaks</h3><p>The Mac’s hidden settings and repairs, without Terminal.</p></a>
-      <a class="plugin-card" href="#habitTrack"><svg><use href="#i-habitTrack"/></svg><h3>habitTrack</h3><p>Habits to do a few times a day or a week, marked from the menu bar with one click.</p></a>
+      <a class="plugin-card" href="#hideOnStart"><img src="catalog/thumbs/hideOnStart.png" alt="" loading="lazy"><div><h3>hideOnStart</h3><p>Hides the windows apps open at login.</p></div></a>
+      <a class="plugin-card" href="#rightClick"><img src="catalog/thumbs/rightClick.png" alt="" loading="lazy"><div><h3>rightClick</h3><p>14 tools in Finder’s right-click menu and in Services.</p></div></a>
+      <a class="plugin-card" href="#audioSwitch"><img src="catalog/thumbs/audioSwitch.png" alt="" loading="lazy"><div><h3>audioSwitch</h3><p>Audio devices, profiles and rules that switch them for you.</p></div></a>
+      <a class="plugin-card" href="#mediaGrab"><img src="catalog/thumbs/mediaGrab.png" alt="" loading="lazy"><div><h3>mediaGrab</h3><p>Video, MP3 or images from the page in your browser.</p></div></a>
+      <a class="plugin-card" href="#midiLink"><img src="catalog/thumbs/midiLink.png" alt="" loading="lazy"><div><h3>midiLink</h3><p>Bluetooth MIDI devices from the menu bar, and MIDI from one to another.</p></div></a>
+      <a class="plugin-card" href="#shotGrab"><img src="catalog/thumbs/shotGrab.png" alt="" loading="lazy"><div><h3>shotGrab</h3><p>Text, QR codes and what an image shows, from any part of the screen — and screenshots named by what they show.</p></div></a>
+      <a class="plugin-card" href="#colorPick"><img src="catalog/thumbs/colorPick.png" alt="" loading="lazy"><div><h3>colorPick</h3><p>Pick any color on screen, named and copied in the format you need, or a palette from an image.</p></div></a>
+      <a class="plugin-card" href="#keepAwake"><img src="catalog/thumbs/keepAwake.png" alt="" loading="lazy"><div><h3>keepAwake</h3><p>Keeps your Mac awake for a while, until you turn it off, or while a rule holds.</p></div></a>
+      <a class="plugin-card" href="#deskClean"><img src="catalog/thumbs/deskClean.png" alt="" loading="lazy"><div><h3>deskClean</h3><p>A clean desktop for screen sharing, recording or focus.</p></div></a>
+      <a class="plugin-card" href="#batteryCare"><img src="catalog/thumbs/batteryCare.png" alt="" loading="lazy"><div><h3>batteryCare</h3><p>Your Mac’s and your Bluetooth devices’ battery, from the menu bar.</p></div></a>
+      <a class="plugin-card" href="#macTweaks"><img src="catalog/thumbs/macTweaks.png" alt="" loading="lazy"><div><h3>macTweaks</h3><p>The Mac’s hidden settings and repairs, without Terminal.</p></div></a>
+      <a class="plugin-card" href="#habitTrack"><img src="catalog/thumbs/habitTrack.png" alt="" loading="lazy"><div><h3>habitTrack</h3><p>Habits to do a few times a day or a week, marked from the menu bar with one click.</p></div></a>
+      <a class="plugin-card" href="#typeDrop"><img src="catalog/thumbs/typeDrop.png" alt="" loading="lazy"><div><h3>typeDrop</h3><p>Snippets, emoji and GIFs typed in any app.</p></div></a>
+      <a class="plugin-card" href="#autoMount"><img src="catalog/thumbs/autoMount.png" alt="" loading="lazy"><div><h3>autoMount</h3><p>Mounts your network disks and cloud servers at login, and again whenever they are back on the network.</p></div></a>
+      <a class="plugin-card" href="#openPorts"><img src="catalog/thumbs/openPorts.png" alt="" loading="lazy"><div><h3>openPorts</h3><p>Lists the servers running on your Mac, with their ports, project and uptime, and stops them.</p></div></a>
+      <a class="plugin-card" href="#focusDim"><img src="catalog/thumbs/focusDim.png" alt="" loading="lazy"><div><h3>focusDim</h3><p>Dims the windows behind the one you are working in.</p></div></a>
     </div>
   </div>
 </section>
@@ -441,6 +457,70 @@
   </div>
 </section>
 
+<!-- typeDrop -->
+<section class="ground paper" id="typeDrop">
+  <div class="inner split">
+    <div class="copy">
+      <div class="plugin-name"><svg><use href="#i-typeDrop"/></svg>typeDrop</div>
+      <h2>Type less,<br>in any app.</h2>
+      <dl class="features">
+        <div><dt class="soft">Snippets</dt><dd>An abbreviation becomes your text, with today’s date, the time, the clipboard and where the cursor lands.</dd></div>
+        <div><dt class="soft">Emoji by name</dt><dd>Type “:” and a name, pick it from the list without leaving the keyboard.</dd></div>
+        <div><dt class="soft">GIFs</dt><dd>Search one with “:gif”, a shortcut or the menu, and it is pasted where you are typing.</dd></div>
+      </dl>
+    </div>
+    <img class="thumb" src="catalog/thumbs/typeDrop.png" alt="typeDrop offering emoji for “:party”" loading="lazy">
+  </div>
+</section>
+
+<!-- autoMount -->
+<section class="ground wine" id="autoMount">
+  <div class="inner split flip">
+    <div class="copy">
+      <div class="plugin-name"><svg><use href="#i-autoMount"/></svg>autoMount</div>
+      <h2>Your disks,<br>always there.</h2>
+      <dl class="features">
+        <div><dt class="soft">At login</dt><dd>A NAS, another Mac’s disk or a WebDAV cloud server, mounted when microTools starts.</dd></div>
+        <div><dt class="soft">Back on the network</dt><dd>Checked every minute and after sleep: mounted again as soon as it is reachable.</dd></div>
+        <div><dt class="soft">Always the same place</dt><dd>Once, at /Volumes/&lt;name&gt;: copies such as &lt;name&gt;-1 are unmounted, so links and apps keep working. Passwords come from the keychain.</dd></div>
+      </dl>
+    </div>
+    <img class="thumb" src="catalog/thumbs/autoMount.png" alt="autoMount’s menu with network volumes" loading="lazy">
+  </div>
+</section>
+
+<!-- openPorts -->
+<section class="ground paper" id="openPorts">
+  <div class="inner split">
+    <div class="copy">
+      <div class="plugin-name"><svg><use href="#i-openPorts"/></svg>openPorts</div>
+      <h2>What’s running,<br>on which port.</h2>
+      <dl class="features">
+        <div><dt class="soft">Every server</dt><dd>Dev servers, databases and proxies, with their project, Git branch, ports and how long they have been running.</dd></div>
+        <div><dt class="soft">One click</dt><dd>Open a port in the browser, show its folder in the Finder, copy its URL.</dd></div>
+        <div><dt class="soft">Stop them</dt><dd>One or all at once, when a server is left behind.</dd></div>
+      </dl>
+    </div>
+    <img class="thumb" src="catalog/thumbs/openPorts.png" alt="openPorts’ menu with three servers" loading="lazy">
+  </div>
+</section>
+
+<!-- focusDim -->
+<section class="ground ruby" id="focusDim">
+  <div class="inner split flip">
+    <div class="copy">
+      <div class="plugin-name"><svg><use href="#i-focusDim"/></svg>focusDim</div>
+      <h2>One window<br>in the light.</h2>
+      <dl class="features">
+        <div><dt class="soft">Everything behind, dimmed</dt><dd>Other windows and the desktop darken, on every screen; the menu bar and the Dock stay as they are.</dd></div>
+        <div><dt class="soft">As dark as you like</dt><dd>From a touch to almost black.</dd></div>
+        <div><dt class="soft">Nothing in the way</dt><dd>Clicks still reach the dimmed windows, and it needs no permission.</dd></div>
+      </dl>
+    </div>
+    <img class="thumb" src="catalog/thumbs/focusDim.png" alt="A window in front, the one behind it dimmed" loading="lazy">
+  </div>
+</section>
+
 <!-- SDK -->
 <section class="ground paper" id="sdk">
   <div class="inner">
@@ -522,7 +602,8 @@ docs/for-ai.md.</pre>
 <script>
   // The Settings window around each capture: the same sidebar the app draws.
   const plugins = ['hideOnStart', 'rightClick', 'audioSwitch', 'mediaGrab', 'midiLink', 'shotGrab', 'colorPick',
-                   'keepAwake', 'deskClean', 'batteryCare', 'macTweaks', 'habitTrack']
+                   'keepAwake', 'deskClean', 'batteryCare', 'macTweaks', 'habitTrack', 'typeDrop', 'autoMount',
+                   'openPorts', 'focusDim']
   const item = (name, icon, active) =>
     `<div class="item${name === active ? ' on' : ''}"><svg><use href="#${icon}"/></svg>${name}</div>`
   for (const win of document.querySelectorAll('.window[data-shot]')) {
