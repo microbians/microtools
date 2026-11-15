@@ -56,7 +56,7 @@ mediaGrab.microplugin/
 | Plugin | What it does |
 | --- | --- |
 | hideOnStart | Hides the windows apps open at login. |
-| rightClick | 14 tools in Finder's right-click menu and in Services. |
+| rightClick | 15 tools in Finder's right-click menu and in Services. |
 | audioSwitch | Audio devices, profiles and rules that switch them for you. |
 | mediaGrab | Video, MP3 or images from the page in your browser. |
 | midiLink | Bluetooth MIDI devices from the menu bar, and MIDI from one to another. |
@@ -72,5 +72,6 @@ mediaGrab.microplugin/
 | openPorts | Lists the servers running on your Mac, with their ports, project and uptime, and stops them. |
 | focusDim | Dims the windows behind the one you are working in. |
 | smoothScroll | Smooth scrolling for your mouse wheel, in its own direction. |
+| appSweep | Finds the files a deleted app left behind, and moves them to the Trash. |
 
 Made by [microbians](https://microbians.com).
