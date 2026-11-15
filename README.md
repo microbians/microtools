@@ -27,6 +27,7 @@ mediaGrab.microplugin/
     Resources/
       manifest.json            what microTools shows before loading the code
       main.js                  JavaScript plugins: the code
+      thumbnail.png            its picture in Settings › General (1440 × 900; docs/javascript.md › Thumbnail)
       es.lproj/Localizable.strings
 ```
 
@@ -66,5 +67,10 @@ mediaGrab.microplugin/
 | batteryCare | Your Mac's and your Bluetooth devices' battery, from the menu bar. |
 | macTweaks | The Mac's hidden settings and repairs, without Terminal. |
 | habitTrack | Habits to do a few times a day or a week, marked from the menu bar with one click. |
+| typeDrop | Snippets, emoji and GIFs typed in any app. |
+| autoMount | Mounts your network disks and cloud servers at login, and again whenever they are back on the network. |
+| openPorts | Lists the servers running on your Mac, with their ports, project and uptime, and stops them. |
+| focusDim | Dims the windows behind the one you are working in. |
+| smoothScroll | Smooth scrolling for your mouse wheel, in its own direction. |
 
 Made by [microbians](https://microbians.com).

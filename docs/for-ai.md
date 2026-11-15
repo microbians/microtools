@@ -23,6 +23,7 @@ You are asked to build a plugin for **microTools**, a macOS menu bar app that ho
     Resources/
       manifest.json
       main.js
+      thumbnail.png                  (1440 × 900: step 5)
       en.lproj/Localizable.strings   (a comment line only: English keys are the text)
       es.lproj/Localizable.strings   (and other languages the user wants)
 ```
@@ -49,7 +50,22 @@ You are asked to build a plugin for **microTools**, a macOS menu bar app that ho
 - Handle failures: wrap `await` calls in `try/catch` and show a notice with a short reason.
 - No `require`, `import`, DOM, `window`, `document`, `localStorage`: use `microtools.save`/`load`.
 
-## 5. Check before handing it over
+## 5. Draw its thumbnail
+
+`Contents/Resources/thumbnail.png`, 1440 × 900, as described in `docs/javascript.md` › Thumbnail: few elements
+drawn big (it is seen ~300 pt wide), its menu or a scene of its effect, a flat ground, the bare symbol bottom-left
+(white on dark, near-black on light), no personal data. Draw it with code (an SVG or a canvas script you keep next
+to the plugin) so it can be redrawn when the plugin changes. Look at it scaled to 300 pt wide before handing over.
+
+## 6. Destructive actions
+
+- Never delete: move to the Trash (`microtools.trashFile`), and only what the user chose or confirmed.
+- An empty or failed result is not an instruction: if a list comes back empty where it had items, do nothing and
+  say so.
+- Build every path from a granted folder and an exact name you found there — never from text the user typed or a
+  web page returned.
+
+## 7. Check before handing it over
 
 - `manifest.json` is valid JSON; every setting key used in `main.js` exists in `settings`.
 - Every `.lproj` has the same keys.

@@ -134,6 +134,27 @@ if (folder) {
 }
 ```
 
+## Thumbnail
+
+`Contents/Resources/thumbnail.png` (optional, microTools 3.4 or later shows it): one picture of what the plugin
+does, on its card in Settings › General. 1440 × 900 pixels (16:10).
+
+It is shown about **300 points wide**, so draw for that size:
+
+- **Few elements, drawn big.** One menu, one panel or one small scene — not a whole window. Let it run off the
+  edges rather than shrinking it to fit: three big rows read, ten small ones don't.
+- **Its UI when the UI is the point** (a menu, a list), **a scene of its effect otherwise** (windows dimmed, a
+  page gliding, files going to the Trash).
+- **A flat ground** with a soft top-to-bottom shade, one color per plugin. No glows, no gradient text.
+- **Its icon in the bottom-left corner**, the bare symbol (no tile), about 150 px, 70 px from the edges: white on a
+  dark ground, near-black on a light one.
+- **Nothing personal**: no real names, folders, addresses, accounts or projects — use neutral examples
+  (`website`, `api`, `Photo Editor.app`). Photos only if you may publish them (CC0 or your own); keep their
+  source and license next to your drawing files.
+- Check it at 300 pt wide before shipping: if a text can't be read there, make it bigger or remove it.
+
+Without a thumbnail, the card shows the plugin's symbol.
+
 ## Errors
 
 An uncaught error stops the call that threw it; microTools logs it and shows it at the top of the plugin's pane.
