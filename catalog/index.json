@@ -2,6 +2,46 @@
   "plugins": [
     {
       "manifest": {
+        "id": "appSweep",
+        "title": "appSweep",
+        "summary": "Finds the files a deleted app left behind, and moves them to the Trash.",
+        "about": "Delete an app from Applications and appSweep shows what it left behind: settings, caches, containers, saved state, login items and install receipts. Tick what to remove and it all goes to the Trash, so nothing is lost by mistake. Uninstall an app still installed the same way, the app included.",
+        "symbol": "xmark.bin",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "AppSweep.AppSweepPlugin",
+        "sdk": 1,
+        "minApp": "3.4"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/appSweep-1.0/appSweep.microplugin.zip",
+      "sha256": "d8a8b044ff170be25dd02c1c3803e26ef18ba67f1a97493e8a4e0e2088c13ce9",
+      "size": 218125,
+      "strings": {
+        "de": {
+          "Finds the files a deleted app left behind, and moves them to the Trash.": "Findet die Dateien, die eine gelöschte App zurücklässt, und legt sie in den Papierkorb.",
+          "Delete an app from Applications and appSweep shows what it left behind: settings, caches, containers, saved state, login items and install receipts. Tick what to remove and it all goes to the Trash, so nothing is lost by mistake. Uninstall an app still installed the same way, the app included.": "Lösche eine App aus Programme und appSweep zeigt, was sie zurückgelassen hat: Einstellungen, Caches, Container, gespeicherten Zustand, Anmeldeobjekte und Installationsbelege. Hake an, was weg soll, und alles kommt in den Papierkorb – so geht nichts aus Versehen verloren. Deinstalliere eine noch installierte App genauso, samt App."
+        },
+        "es": {
+          "Finds the files a deleted app left behind, and moves them to the Trash.": "Encuentra los archivos que deja una app borrada y los mueve a la Papelera.",
+          "Delete an app from Applications and appSweep shows what it left behind: settings, caches, containers, saved state, login items and install receipts. Tick what to remove and it all goes to the Trash, so nothing is lost by mistake. Uninstall an app still installed the same way, the app included.": "Borra una app de Aplicaciones y appSweep te muestra lo que ha dejado: ajustes, cachés, contenedores, estado guardado, ítems de inicio y recibos de instalación. Marca lo que quieras quitar y todo va a la Papelera, así no se pierde nada por error. Desinstala igual una app que siga instalada, incluida la app."
+        },
+        "fr": {
+          "Finds the files a deleted app left behind, and moves them to the Trash.": "Trouve les fichiers laissés par une app supprimée et les met à la Corbeille.",
+          "Delete an app from Applications and appSweep shows what it left behind: settings, caches, containers, saved state, login items and install receipts. Tick what to remove and it all goes to the Trash, so nothing is lost by mistake. Uninstall an app still installed the same way, the app included.": "Supprimez une app d’Applications et appSweep montre ce qu’elle a laissé : réglages, caches, conteneurs, état enregistré, éléments d’ouverture et reçus d’installation. Cochez ce qu’il faut retirer et tout part à la Corbeille, rien n’est perdu par erreur. Désinstallez de la même façon une app encore installée, l’app comprise."
+        },
+        "it": {
+          "Finds the files a deleted app left behind, and moves them to the Trash.": "Trova i file lasciati da un’app eliminata e li sposta nel Cestino.",
+          "Delete an app from Applications and appSweep shows what it left behind: settings, caches, containers, saved state, login items and install receipts. Tick what to remove and it all goes to the Trash, so nothing is lost by mistake. Uninstall an app still installed the same way, the app included.": "Elimina un’app da Applicazioni e appSweep mostra cosa ha lasciato: impostazioni, cache, contenitori, stato salvato, elementi di login e ricevute di installazione. Spunta cosa rimuovere e tutto va nel Cestino, così non si perde nulla per errore. Disinstalla allo stesso modo un’app ancora installata, app compresa."
+        },
+        "pt": {
+          "Finds the files a deleted app left behind, and moves them to the Trash.": "Encontra os arquivos que uma app apagada deixou e move-os para o Lixo.",
+          "Delete an app from Applications and appSweep shows what it left behind: settings, caches, containers, saved state, login items and install receipts. Tick what to remove and it all goes to the Trash, so nothing is lost by mistake. Uninstall an app still installed the same way, the app included.": "Apague uma app de Aplicativos e o appSweep mostra o que ela deixou: ajustes, caches, contêineres, estado salvo, itens de início e recibos de instalação. Marque o que remover e tudo vai para o Lixo, assim nada se perde por engano. Desinstale da mesma forma uma app ainda instalada, incluindo a app."
+        }
+      },
+      "thumbnail": "thumbs/appSweep.png"
+    },
+    {
+      "manifest": {
         "summary": "Audio devices, profiles and rules that switch them for you.",
         "kind": "swift",
         "version": "1.05",
@@ -242,16 +282,16 @@
     },
     {
       "manifest": {
+        "principalClass": "HabitTrack.HabitTrackPlugin",
+        "symbol": "checkmark.circle",
         "id": "habitTrack",
+        "version": "1.0",
         "title": "habitTrack",
         "summary": "Habits to do a few times a day or a week, marked from the menu bar with one click.",
-        "about": "Keep track of the things you want to do several times a day or a week: drink 8 glasses of water a day, draw 5 times a week. Each habit has its own icon and color. One click in the menu bar marks one more, and the icon’s ring shows how much of today is done. Each habit keeps its history and streak, and can remind you at a time of day while it is not done.",
-        "symbol": "checkmark.circle",
-        "version": "1.0",
-        "kind": "swift",
-        "principalClass": "HabitTrack.HabitTrackPlugin",
+        "minApp": "3.1",
         "sdk": 1,
-        "minApp": "3.1"
+        "kind": "swift",
+        "about": "Keep track of the things you want to do several times a day or a week: drink 8 glasses of water a day, draw 5 times a week. Each habit has its own icon and color. One click in the menu bar marks one more, and the icon’s ring shows how much of today is done. Each habit keeps its history and streak, and can remind you at a time of day while it is not done."
       },
       "url": "https://github.com/microbians/microtools/releases/download/habitTrack-1.0/habitTrack.microplugin.zip",
       "sha256": "716c8459fc51f1c170a7c0665195b6966fe147d3d1945d70987f8abca76ac765",
@@ -522,40 +562,40 @@
     },
     {
       "manifest": {
-        "id": "rightClick",
-        "title": "rightClick",
-        "summary": "More tools in Finder’s right-click menu",
-        "about": "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.",
-        "symbol": "cursorarrow.click.2",
-        "version": "1.03",
-        "kind": "swift",
         "principalClass": "RightClick.RightClickPlugin",
+        "version": "1.04",
+        "symbol": "cursorarrow.click.2",
+        "summary": "More tools in Finder’s right-click menu",
+        "title": "rightClick",
+        "kind": "swift",
         "sdk": 1,
-        "minApp": "3.4"
+        "minApp": "3.4",
+        "about": "15 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Hide/Unhide, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.",
+        "id": "rightClick"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/rightClick-1.03/rightClick.microplugin.zip",
-      "sha256": "ee0b5c662a530204ccb434428be959599e5205c9a8b8e6febb014434cb195e81",
-      "size": 100410,
+      "url": "https://github.com/microbians/microtools/releases/download/rightClick-1.04/rightClick.microplugin.zip",
+      "sha256": "e5f0f96f5270afc59d4ce274a83b88ba6287df423d61bc277fe836da070d35d9",
+      "size": 202807,
       "strings": {
         "de": {
           "More tools in Finder’s right-click menu": "Mehr Werkzeuge im Kontextmenü des Finder",
-          "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "14 Alltagswerkzeuge im Kontextmenü des Finder und als Dienste in allen anderen Apps: Pfad kopieren, Namen kopieren, Pfad mit ~ kopieren, Pfad für Terminal kopieren, Als file://-URL kopieren, Inhalt kopieren, SHA-256 kopieren, Neue Textdatei, Im Terminal öffnen, Symbolischen Link erstellen, Quarantäne entfernen, Fotometadaten entfernen, In umgekehrter Reihenfolge zu Musik hinzufügen, Versteckte Dateien ein-/ausblenden. Schalte Werkzeuge ein oder aus und hol deine Favoriten auf die oberste Ebene."
+          "15 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Hide/Unhide, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "15 Alltagswerkzeuge im Kontextmenü des Finder und als Dienste in allen anderen Apps: Pfad kopieren, Namen kopieren, Pfad mit ~ kopieren, Pfad für Terminal kopieren, Als file://-URL kopieren, Inhalt kopieren, SHA-256 kopieren, Neue Textdatei, Im Terminal öffnen, Symbolischen Link erstellen, Quarantäne entfernen, Ausblenden/Einblenden, Fotometadaten entfernen, In umgekehrter Reihenfolge zu Musik hinzufügen, Versteckte Dateien ein-/ausblenden. Schalte Werkzeuge ein oder aus und hol deine Favoriten auf die oberste Ebene."
         },
         "es": {
           "More tools in Finder’s right-click menu": "Más herramientas en el clic derecho de Finder",
-          "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "14 herramientas de uso diario en el clic derecho de Finder, y como Servicios en el resto de apps: Copiar ruta, Copiar nombre, Copiar ruta con ~, Copiar ruta para Terminal, Copiar como URL file://, Copiar contenido, Copiar SHA-256, Nuevo archivo de texto, Abrir en Terminal, Crear enlace simbólico, Quitar cuarentena, Quitar metadatos de fotos, Añadir a Música en orden inverso, Mostrar/ocultar archivos ocultos. Activa o desactiva cada una y marca tus favoritas para tenerlas en el primer nivel."
+          "15 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Hide/Unhide, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "15 herramientas de uso diario en el clic derecho de Finder, y como Servicios en el resto de apps: Copiar ruta, Copiar nombre, Copiar ruta con ~, Copiar ruta para Terminal, Copiar como URL file://, Copiar contenido, Copiar SHA-256, Nuevo archivo de texto, Abrir en Terminal, Crear enlace simbólico, Quitar cuarentena, Ocultar/Mostrar, Quitar metadatos de fotos, Añadir a Música en orden inverso, Mostrar/ocultar archivos ocultos. Activa o desactiva cada una y marca tus favoritas para tenerlas en el primer nivel."
         },
         "fr": {
           "More tools in Finder’s right-click menu": "Plus d’outils dans le clic droit du Finder",
-          "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "14 outils du quotidien dans le menu contextuel du Finder, et comme Services dans toutes les autres apps : Copier le chemin, Copier le nom, Copier le chemin avec ~, Copier le chemin pour Terminal, Copier comme URL file://, Copier le contenu, Copier le SHA-256, Nouveau fichier texte, Ouvrir dans Terminal, Créer un lien symbolique, Retirer la quarantaine, Retirer les métadonnées des photos, Afficher/masquer les fichiers cachés. Activez ou désactivez chaque outil et mettez vos favoris au premier niveau."
+          "15 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Hide/Unhide, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "15 outils du quotidien dans le menu contextuel du Finder, et comme Services dans toutes les autres apps : Copier le chemin, Copier le nom, Copier le chemin avec ~, Copier le chemin pour Terminal, Copier comme URL file://, Copier le contenu, Copier le SHA-256, Nouveau fichier texte, Ouvrir dans Terminal, Créer un lien symbolique, Retirer la quarantaine, Masquer/Afficher, Retirer les métadonnées des photos, Afficher/masquer les fichiers cachés. Activez ou désactivez chaque outil et mettez vos favoris au premier niveau."
         },
         "it": {
           "More tools in Finder’s right-click menu": "Più strumenti nel clic destro del Finder",
-          "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "14 strumenti quotidiani nel menu del clic destro del Finder, e come Servizi in tutte le altre app: Copia percorso, Copia nome, Copia percorso con ~, Copia percorso per Terminale, Copia come URL file://, Copia contenuto, Copia SHA-256, Nuovo file di testo, Apri nel Terminale, Crea link simbolico, Rimuovi quarantena, Rimuovi metadati foto, Aggiungi a Musica in ordine inverso, Mostra/nascondi file nascosti. Attiva o disattiva ogni strumento e metti i preferiti al primo livello."
+          "15 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Hide/Unhide, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "15 strumenti quotidiani nel menu del clic destro del Finder, e come Servizi in tutte le altre app: Copia percorso, Copia nome, Copia percorso con ~, Copia percorso per Terminale, Copia come URL file://, Copia contenuto, Copia SHA-256, Nuovo file di testo, Apri nel Terminale, Crea link simbolico, Rimuovi quarantena, Nascondi/Mostra, Rimuovi metadati foto, Aggiungi a Musica in ordine inverso, Mostra/nascondi file nascosti. Attiva o disattiva ogni strumento e metti i preferiti al primo livello."
         },
         "pt": {
           "More tools in Finder’s right-click menu": "Mais ferramentas no clique direito do Finder",
-          "14 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "14 ferramentas do dia a dia no menu do clique direito do Finder, e como Serviços em todas as outras apps: Copiar caminho, Copiar nome, Copiar caminho com ~, Copiar caminho para o Terminal, Copiar como URL file://, Copiar conteúdo, Copiar SHA-256, Novo ficheiro de texto, Abrir no Terminal, Criar ligação simbólica, Remover quarentena, Remover metadados de fotos, Mostrar/ocultar ficheiros ocultos. Ative ou desative cada uma e ponha as favoritas no primeiro nível."
+          "15 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Hide/Unhide, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.": "15 ferramentas do dia a dia no menu do clique direito do Finder, e como Serviços em todas as outras apps: Copiar caminho, Copiar nome, Copiar caminho com ~, Copiar caminho para o Terminal, Copiar como URL file://, Copiar conteúdo, Copiar SHA-256, Novo ficheiro de texto, Abrir no Terminal, Criar ligação simbólica, Remover quarentena, Ocultar/Mostrar, Remover metadados de fotos, Mostrar/ocultar ficheiros ocultos. Ative ou desative cada uma e ponha as favoritas no primeiro nível."
         }
       },
       "thumbnail": "thumbs/rightClick.png"
