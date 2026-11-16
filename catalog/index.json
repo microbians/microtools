@@ -7,20 +7,20 @@
   "plugins": [
     {
       "manifest": {
-        "summary": "Finds the files a deleted app left behind, and moves them to the Trash.",
-        "principalClass": "AppSweep.AppSweepPlugin",
-        "minApp": "3.4",
         "title": "appSweep",
+        "principalClass": "AppSweep.AppSweepPlugin",
         "sdk": 1,
-        "about": "Delete an app from Applications and appSweep shows what it left behind: settings, caches, containers, saved state, login items and install receipts. Tick what to remove and it all goes to the Trash, so nothing is lost by mistake. Uninstall an app still installed the same way, the app included.",
-        "version": "1.01",
-        "id": "appSweep",
+        "version": "1.02",
         "kind": "swift",
-        "symbol": "xmark.bin"
+        "id": "appSweep",
+        "minApp": "3.4",
+        "symbol": "xmark.bin",
+        "about": "Delete an app from Applications and appSweep shows what it left behind: settings, caches, containers, saved state, login items and install receipts. Tick what to remove and it all goes to the Trash, so nothing is lost by mistake. Uninstall an app still installed the same way, the app included.",
+        "summary": "Finds the files a deleted app left behind, and moves them to the Trash."
       },
-      "url": "https://github.com/microbians/microtools/releases/download/appSweep-1.01/appSweep.microplugin.zip",
-      "sha256": "8247d65fc7abfe43086e8ea0a3b7b307a2dff4480d620073c71de2cf4947cb32",
-      "size": 230487,
+      "url": "https://github.com/microbians/microtools/releases/download/appSweep-1.02/appSweep.microplugin.zip",
+      "sha256": "d435181d4a31e07a5f3f13e526601fd4288532839e96d3c91b78dc02cf0500b9",
+      "size": 268646,
       "strings": {
         "de": {
           "Finds the files a deleted app left behind, and moves them to the Trash.": "Findet die Dateien, die eine gelöschte App zurücklässt, und legt sie in den Papierkorb.",
