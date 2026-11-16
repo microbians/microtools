@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "about": "appSweep's vendor rules. A vendor applies to an app whose bundle id starts with one of its ids, and only when no other installed app does: then every entry named like those ids (com.vendor.*) and, in the folders that use names, the exact names listed are offered too. The newest copy is read from the catalog (catalog/appsweep-vendors.json).",
+  "vendors": [
+    { "ids": ["com.adobe"], "names": ["Adobe", "Adobe Systems"] },
+    { "ids": ["com.microsoft"], "names": ["Microsoft", "Microsoft AutoUpdate"] },
+    { "ids": ["com.google"], "names": ["Google"] },
+    { "ids": ["com.native-instruments"], "names": ["Native Instruments"] },
+    { "ids": ["com.jetbrains"], "names": ["JetBrains"] },
+    { "ids": ["com.spitfireaudio"], "names": ["Spitfire Audio"] },
+    { "ids": ["com.ableton"], "names": ["Ableton"] },
+    { "ids": ["com.autodesk"], "names": ["Autodesk"] },
+    { "ids": ["com.parallels"], "names": ["Parallels"] },
+    { "ids": ["us.zoom"], "names": ["zoom.us"] },
+    { "ids": ["com.docker"], "names": ["Docker", "Docker Desktop"] }
+  ]
+}
