@@ -365,6 +365,46 @@
     },
     {
       "manifest": {
+        "id": "imageLink",
+        "title": "imageLink",
+        "summary": "Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut.",
+        "about": "Right-click images in Finder and choose Upload Image, or upload what you copied with a keyboard shortcut: the image goes to Catbox (no account needed) or ImgBB (with your free key) and its link is copied, as a plain link, Markdown or HTML. The last uploads stay in the menu to copy their link again or open them.",
+        "symbol": "icloud.and.arrow.up",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "ImageLink.ImageLinkPlugin",
+        "sdk": 1,
+        "minApp": "3.4"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/imageLink-1.0/imageLink.microplugin.zip",
+      "sha256": "5ab212e4485c82ebb4b946385a13a45e1b8180e17f4217b7a835a3f433722020",
+      "size": 210356,
+      "strings": {
+        "de": {
+          "Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut.": "Lädt ein Bild hoch und kopiert seinen Link – über das Kontextmenü des Finder, die Zwischenablage oder einen Kurzbefehl.",
+          "Right-click images in Finder and choose Upload Image, or upload what you copied with a keyboard shortcut: the image goes to Catbox (no account needed) or ImgBB (with your free key) and its link is copied, as a plain link, Markdown or HTML. The last uploads stay in the menu to copy their link again or open them.": "Klicke im Finder mit der rechten Maustaste auf Bilder und wähle „Bild hochladen“, oder lade Kopiertes per Tastaturkurzbefehl hoch: Das Bild geht zu Catbox (ohne Konto) oder ImgBB (mit deinem kostenlosen Schlüssel) und sein Link wird kopiert, als Link, Markdown oder HTML. Die letzten Uploads bleiben im Menü, um den Link erneut zu kopieren oder sie zu öffnen."
+        },
+        "es": {
+          "Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut.": "Sube una imagen y copia su enlace, desde el clic derecho de Finder, el portapapeles o un atajo.",
+          "Right-click images in Finder and choose Upload Image, or upload what you copied with a keyboard shortcut: the image goes to Catbox (no account needed) or ImgBB (with your free key) and its link is copied, as a plain link, Markdown or HTML. The last uploads stay in the menu to copy their link again or open them.": "Haz clic derecho en imágenes en Finder y elige Subir imagen, o sube lo que hayas copiado con un atajo de teclado: la imagen va a Catbox (sin cuenta) o a ImgBB (con tu clave gratuita) y se copia su enlace, como enlace, Markdown o HTML. Las últimas subidas quedan en el menú para copiar su enlace otra vez o abrirlas."
+        },
+        "fr": {
+          "Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut.": "Envoie une image et copie son lien, depuis le clic droit du Finder, le presse-papiers ou un raccourci.",
+          "Right-click images in Finder and choose Upload Image, or upload what you copied with a keyboard shortcut: the image goes to Catbox (no account needed) or ImgBB (with your free key) and its link is copied, as a plain link, Markdown or HTML. The last uploads stay in the menu to copy their link again or open them.": "Faites un clic droit sur des images dans le Finder et choisissez Envoyer l’image, ou envoyez ce que vous avez copié avec un raccourci clavier : l’image part sur Catbox (sans compte) ou ImgBB (avec votre clé gratuite) et son lien est copié, en lien simple, Markdown ou HTML. Les derniers envois restent dans le menu pour recopier leur lien ou les ouvrir."
+        },
+        "it": {
+          "Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut.": "Carica un’immagine e ne copia il link, dal clic destro del Finder, dagli appunti o con una scorciatoia.",
+          "Right-click images in Finder and choose Upload Image, or upload what you copied with a keyboard shortcut: the image goes to Catbox (no account needed) or ImgBB (with your free key) and its link is copied, as a plain link, Markdown or HTML. The last uploads stay in the menu to copy their link again or open them.": "Fai clic destro sulle immagini nel Finder e scegli Carica immagine, oppure carica ciò che hai copiato con una scorciatoia: l’immagine va su Catbox (senza account) o ImgBB (con la tua chiave gratuita) e il suo link viene copiato, come link, Markdown o HTML. Gli ultimi caricamenti restano nel menu per copiarne di nuovo il link o aprirli."
+        },
+        "pt": {
+          "Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut.": "Envia uma imagem e copia o link, a partir do clique direito do Finder, da área de transferência ou de um atalho.",
+          "Right-click images in Finder and choose Upload Image, or upload what you copied with a keyboard shortcut: the image goes to Catbox (no account needed) or ImgBB (with your free key) and its link is copied, as a plain link, Markdown or HTML. The last uploads stay in the menu to copy their link again or open them.": "Clique com o botão direito em imagens no Finder e escolha Enviar imagem, ou envie o que copiou com um atalho de teclado: a imagem vai para o Catbox (sem conta) ou o ImgBB (com a sua chave gratuita) e o link é copiado, como link, Markdown ou HTML. Os últimos envios ficam no menu para copiar o link de novo ou abri-los."
+        }
+      },
+      "thumbnail": "thumbs/imageLink.png"
+    },
+    {
+      "manifest": {
         "id": "keepAwake",
         "title": "keepAwake",
         "summary": "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.",
