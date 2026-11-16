@@ -7,20 +7,20 @@
   "plugins": [
     {
       "manifest": {
-        "title": "appSweep",
-        "principalClass": "AppSweep.AppSweepPlugin",
-        "sdk": 1,
-        "version": "1.02",
-        "kind": "swift",
         "id": "appSweep",
-        "minApp": "3.4",
-        "symbol": "xmark.bin",
+        "sdk": 1,
+        "principalClass": "AppSweep.AppSweepPlugin",
+        "summary": "Finds the files a deleted app left behind, and moves them to the Trash.",
+        "minApp": "3.9",
+        "version": "1.03",
+        "kind": "swift",
         "about": "Delete an app from Applications and appSweep shows what it left behind: settings, caches, containers, saved state, login items and install receipts. Tick what to remove and it all goes to the Trash, so nothing is lost by mistake. Uninstall an app still installed the same way, the app included.",
-        "summary": "Finds the files a deleted app left behind, and moves them to the Trash."
+        "symbol": "xmark.bin",
+        "title": "appSweep"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/appSweep-1.02/appSweep.microplugin.zip",
-      "sha256": "d435181d4a31e07a5f3f13e526601fd4288532839e96d3c91b78dc02cf0500b9",
-      "size": 268646,
+      "url": "https://github.com/microbians/microtools/releases/download/appSweep-1.03/appSweep.microplugin.zip",
+      "sha256": "494a7cdf10f6dc34f75374c26c223557ae9531b4dad71e61f7d21c291476073d",
+      "size": 313395,
       "strings": {
         "de": {
           "Finds the files a deleted app left behind, and moves them to the Trash.": "Findet die Dateien, die eine gelöschte App zurücklässt, und legt sie in den Papierkorb.",
@@ -727,35 +727,40 @@
     },
     {
       "manifest": {
-        "id": "typeDrop",
-        "title": "typeDrop",
+        "version": "1.02",
+        "minApp": "3.4",
         "summary": "Snippets, emoji and GIFs typed in any app.",
-        "about": "Type an abbreviation in any app and typeDrop replaces it with its text: signatures, addresses, replies, with today's date, the time, the clipboard and where the cursor stays. Type a colon and a name, like :heart, to pick an emoji below the cursor, in English or your language. Type :gif, press a shortcut or use the menu to search KLIPY's GIFs and stickers and paste one, with your recent and favorite ones at hand. Choose apps where nothing is expanded; password fields are never seen.",
-        "symbol": "character.cursor.ibeam",
-        "version": "1.01",
-        "kind": "swift",
+        "id": "typeDrop",
         "principalClass": "TypeDrop.TypeDropPlugin",
+        "kind": "swift",
         "sdk": 1,
-        "minApp": "3.4"
+        "title": "typeDrop",
+        "symbol": "character.cursor.ibeam",
+        "about": "Type an abbreviation in any app and typeDrop replaces it with its text: signatures, addresses, replies, with today's date, the time, the clipboard and where the cursor stays. Type a colon and a name, like :heart, to pick an emoji below the cursor, in English or your language. Type :gif, press a shortcut or use the menu to search KLIPY's GIFs and stickers and paste one, with your recent and favorite ones at hand. Choose apps where nothing is expanded; password fields are never seen."
       },
-      "url": "https://github.com/microbians/microtools/releases/download/typeDrop-1.01/typeDrop.microplugin.zip",
-      "sha256": "6c62348661bf51b1a44b79d39a8070b85c1fb1f356e674584f6f62389a6ed8f4",
-      "size": 233132,
+      "url": "https://github.com/microbians/microtools/releases/download/typeDrop-1.02/typeDrop.microplugin.zip",
+      "sha256": "cde91e1919bcd4bf54b79f791ae3a93cc785e654b7916a882893b03fedefdd4c",
+      "size": 377529,
       "strings": {
         "de": {
-          "Snippets, emoji and GIFs typed in any app.": "Textbausteine, Emoji und GIFs in jeder App."
+          "Snippets, emoji and GIFs typed in any app.": "Textbausteine, Emoji und GIFs in jeder App.",
+          "Type an abbreviation in any app and typeDrop replaces it with its text: signatures, addresses, replies, with today's date, the time, the clipboard and where the cursor stays. Type a colon and a name, like :heart, to pick an emoji below the cursor, in English or your language. Type :gif, press a shortcut or use the menu to search KLIPY's GIFs and stickers and paste one, with your recent and favorite ones at hand. Choose apps where nothing is expanded; password fields are never seen.": "Tippe in jeder App ein Kürzel, und typeDrop ersetzt es durch seinen Text: Signaturen, Adressen, Antworten, mit dem heutigen Datum, der Uhrzeit, der Zwischenablage und der Stelle, an der der Cursor bleibt. Tippe einen Doppelpunkt und einen Namen wie :heart, um unter dem Cursor ein Emoji auszuwählen – auf Englisch oder in deiner Sprache. Tippe :gif, drücke einen Kurzbefehl oder nutze das Menü, um GIFs und Sticker von KLIPY zu suchen und einzufügen, mit deinen letzten und Favoriten griffbereit. Wähle Apps, in denen nichts ersetzt wird; Passwortfelder werden nie gelesen."
         },
         "es": {
-          "Snippets, emoji and GIFs typed in any app.": "Snippets, emojis y GIFs escritos en cualquier app."
+          "Snippets, emoji and GIFs typed in any app.": "Snippets, emojis y GIFs escritos en cualquier app.",
+          "Type an abbreviation in any app and typeDrop replaces it with its text: signatures, addresses, replies, with today's date, the time, the clipboard and where the cursor stays. Type a colon and a name, like :heart, to pick an emoji below the cursor, in English or your language. Type :gif, press a shortcut or use the menu to search KLIPY's GIFs and stickers and paste one, with your recent and favorite ones at hand. Choose apps where nothing is expanded; password fields are never seen.": "Escribe una abreviatura en cualquier app y typeDrop la sustituye por su texto: firmas, direcciones, respuestas, con la fecha de hoy, la hora, el portapapeles y dónde se queda el cursor. Escribe dos puntos y un nombre, como :heart, para elegir un emoji debajo del cursor, en inglés o en tu idioma. Escribe :gif, pulsa un atajo o usa el menú para buscar GIF y stickers de KLIPY y pegar uno, con los recientes y favoritos a mano. Elige apps donde no se expanda nada; los campos de contraseña nunca se leen."
         },
         "fr": {
-          "Snippets, emoji and GIFs typed in any app.": "Extraits, emoji et GIF dans n’importe quelle app."
+          "Snippets, emoji and GIFs typed in any app.": "Extraits, emoji et GIF dans n’importe quelle app.",
+          "Type an abbreviation in any app and typeDrop replaces it with its text: signatures, addresses, replies, with today's date, the time, the clipboard and where the cursor stays. Type a colon and a name, like :heart, to pick an emoji below the cursor, in English or your language. Type :gif, press a shortcut or use the menu to search KLIPY's GIFs and stickers and paste one, with your recent and favorite ones at hand. Choose apps where nothing is expanded; password fields are never seen.": "Tapez une abréviation dans n’importe quelle app et typeDrop la remplace par son texte : signatures, adresses, réponses, avec la date du jour, l’heure, le presse-papiers et l’endroit où reste le curseur. Tapez deux-points et un nom, comme :heart, pour choisir un emoji sous le curseur, en anglais ou dans votre langue. Tapez :gif, utilisez un raccourci ou le menu pour chercher des GIF et des stickers KLIPY et en coller un, avec vos récents et favoris à portée de main. Choisissez les apps où rien n’est développé ; les champs de mot de passe ne sont jamais lus."
         },
         "it": {
-          "Snippets, emoji and GIFs typed in any app.": "Snippet, emoji e GIF in qualsiasi app."
+          "Snippets, emoji and GIFs typed in any app.": "Snippet, emoji e GIF in qualsiasi app.",
+          "Type an abbreviation in any app and typeDrop replaces it with its text: signatures, addresses, replies, with today's date, the time, the clipboard and where the cursor stays. Type a colon and a name, like :heart, to pick an emoji below the cursor, in English or your language. Type :gif, press a shortcut or use the menu to search KLIPY's GIFs and stickers and paste one, with your recent and favorite ones at hand. Choose apps where nothing is expanded; password fields are never seen.": "Digita un’abbreviazione in qualsiasi app e typeDrop la sostituisce con il suo testo: firme, indirizzi, risposte, con la data di oggi, l’ora, gli appunti e il punto in cui resta il cursore. Digita due punti e un nome, come :heart, per scegliere un’emoji sotto il cursore, in inglese o nella tua lingua. Digita :gif, premi una scorciatoia o usa il menu per cercare GIF e sticker di KLIPY e incollarne uno, con i recenti e i preferiti a portata di mano. Scegli le app in cui non si espande nulla; i campi password non vengono mai letti."
         },
         "pt": {
-          "Snippets, emoji and GIFs typed in any app.": "Snippets, emojis e GIFs em qualquer app."
+          "Snippets, emoji and GIFs typed in any app.": "Snippets, emojis e GIFs em qualquer app.",
+          "Type an abbreviation in any app and typeDrop replaces it with its text: signatures, addresses, replies, with today's date, the time, the clipboard and where the cursor stays. Type a colon and a name, like :heart, to pick an emoji below the cursor, in English or your language. Type :gif, press a shortcut or use the menu to search KLIPY's GIFs and stickers and paste one, with your recent and favorite ones at hand. Choose apps where nothing is expanded; password fields are never seen.": "Escreva uma abreviatura em qualquer app e o typeDrop substitui-a pelo seu texto: assinaturas, moradas, respostas, com a data de hoje, a hora, a área de transferência e o lugar onde fica o cursor. Escreva dois pontos e um nome, como :heart, para escolher um emoji por baixo do cursor, em inglês ou na sua língua. Escreva :gif, use um atalho ou o menu para procurar GIF e autocolantes do KLIPY e colar um, com os recentes e favoritos à mão. Escolha apps onde nada é expandido; os campos de palavra-passe nunca são lidos."
         }
       },
       "thumbnail": "thumbs/typeDrop.png"
