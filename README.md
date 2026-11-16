@@ -71,7 +71,7 @@ mediaGrab.microplugin/
 | autoMount | Mounts your network disks and cloud servers at login, and again whenever they are back on the network. |
 | openPorts | Lists the servers running on your Mac, with their ports, project and uptime, and stops them. |
 | focusDim | Dims the windows behind the one you are working in. |
-| smoothScroll | Smooth scrolling for your mouse wheel, in its own direction. |
+| smoothScroll | Trackpad-smooth scrolling for mice whose wheel jumps, in its own direction. |
 | appSweep | Finds the files a deleted app left behind, and moves them to the Trash. |
 | imageLink | Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut. |
 
