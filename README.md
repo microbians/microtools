@@ -73,5 +73,6 @@ mediaGrab.microplugin/
 | focusDim | Dims the windows behind the one you are working in. |
 | smoothScroll | Smooth scrolling for your mouse wheel, in its own direction. |
 | appSweep | Finds the files a deleted app left behind, and moves them to the Trash. |
+| imageLink | Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut. |
 
 Made by [microbians](https://microbians.com).
