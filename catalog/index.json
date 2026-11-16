@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "3.7",
-    "url": "https://raw.githubusercontent.com/microbians/microtools/main/ed4df348d4bfc2c08976f296",
-    "sha256": "b26f7a49976679595da11503236b78fc3f9e5e86f8fa779b7d201bc148f6de24"
+    "version": "3.8",
+    "url": "https://raw.githubusercontent.com/microbians/microtools/main/6a68c00eab1be02d01a9f80b",
+    "sha256": "7a8448cf660dd5065fffc4412dd86f67b4ea806774a95285807fbcb0f67768fa"
   },
   "plugins": [
     {
