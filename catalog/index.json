@@ -365,20 +365,20 @@
     },
     {
       "manifest": {
-        "id": "imageLink",
-        "title": "imageLink",
-        "summary": "Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut.",
-        "about": "Right-click images in Finder and choose Upload Image, or upload what you copied with a keyboard shortcut: the image goes to Catbox (no account needed) or ImgBB (with your free key) and its link is copied, as a plain link, Markdown or HTML. The last uploads stay in the menu to copy their link again or open them.",
-        "symbol": "icloud.and.arrow.up",
-        "version": "1.0",
-        "kind": "swift",
-        "principalClass": "ImageLink.ImageLinkPlugin",
         "sdk": 1,
-        "minApp": "3.4"
+        "title": "imageLink",
+        "principalClass": "ImageLink.ImageLinkPlugin",
+        "minApp": "3.6",
+        "about": "Right-click images in Finder and choose Upload Image, or upload what you copied with a keyboard shortcut: the image goes to Catbox (no account needed) or ImgBB (with your free key) and its link is copied, as a plain link, Markdown or HTML. The last uploads stay in the menu to copy their link again or open them.",
+        "id": "imageLink",
+        "version": "1.01",
+        "kind": "swift",
+        "summary": "Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut.",
+        "symbol": "icloud.and.arrow.up"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/imageLink-1.0/imageLink.microplugin.zip",
-      "sha256": "5ab212e4485c82ebb4b946385a13a45e1b8180e17f4217b7a835a3f433722020",
-      "size": 210356,
+      "url": "https://github.com/microbians/microtools/releases/download/imageLink-1.01/imageLink.microplugin.zip",
+      "sha256": "177c7b29795fa8e0988c6c5239c50af928d9953826d9a095e3ff69f99f104a92",
+      "size": 213552,
       "strings": {
         "de": {
           "Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut.": "Lädt ein Bild hoch und kopiert seinen Link – über das Kontextmenü des Finder, die Zwischenablage oder einen Kurzbefehl.",
