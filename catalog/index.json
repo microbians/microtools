@@ -54,13 +54,13 @@
         "kind": "swift",
         "title": "audioSwitch",
         "id": "audioSwitch",
-        "minApp": "3.8",
-        "version": "1.06",
+        "minApp": "4.0",
+        "version": "1.07",
         "about": "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends."
       },
-      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.06/audioSwitch.microplugin.zip",
-      "sha256": "39b15a1fbf5b4483d886290788c4ae75cdabd5098745c423509784172f40b6c9",
-      "size": 284632,
+      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.07/audioSwitch.microplugin.zip",
+      "sha256": "87061c74001111a495e8a002a7d780576fe089490e6b54998174ece354c1d8c1",
+      "size": 322110,
       "strings": {
         "de": {
           "Audio devices, profiles and rules that switch them for you.": "Audiogeräte, Profile und Regeln, die für dich umschalten.",
@@ -212,15 +212,15 @@
         "summary": "A clean desktop for screen sharing, recording or focus.",
         "about": "Hides the desktop icons and widgets with one click or a keyboard shortcut, without restarting Finder: your wallpaper covers them. Rules hide them by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, or an external display is connected, and bring them back when it ends. It can also turn on Do Not Disturb through a shortcut of the Shortcuts app. Everything comes back when you switch it off or quit.",
         "symbol": "macwindow.on.rectangle",
-        "version": "1.0",
+        "version": "1.01",
         "kind": "swift",
         "principalClass": "DeskClean.DeskCleanPlugin",
         "sdk": 1,
-        "minApp": "3.1"
+        "minApp": "4.0"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/deskClean-1.0/deskClean.microplugin.zip",
-      "sha256": "86cb90a7a834353b9b633ff6be000527a56ee43959ebf4a51771b6ac70fbdb76",
-      "size": 128496,
+      "url": "https://github.com/microbians/microtools/releases/download/deskClean-1.01/deskClean.microplugin.zip",
+      "sha256": "4249e63d58ac0aabdb5aabab0ef994f3a1ed0e1554c59dd802ee6a522cdd41cc",
+      "size": 211540,
       "strings": {
         "de": {
           "A clean desktop for screen sharing, recording or focus.": "Ein aufgeräumter Schreibtisch für Bildschirmfreigabe, Aufnahmen oder Fokus.",
