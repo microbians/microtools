@@ -452,15 +452,15 @@
         "summary": "The Mac’s hidden settings and repairs, without Terminal.",
         "about": "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.",
         "symbol": "wrench.and.screwdriver",
-        "version": "1.01",
+        "version": "1.02",
         "kind": "swift",
         "principalClass": "MacTweaks.MacTweaksPlugin",
         "sdk": 1,
         "minApp": "3.4"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/macTweaks-1.01/macTweaks.microplugin.zip",
-      "sha256": "bab203136912d39ae55efd8d92f344a5a69b961dda11deeeb7bd842f9016cde1",
-      "size": 158560,
+      "url": "https://github.com/microbians/microtools/releases/download/macTweaks-1.02/macTweaks.microplugin.zip",
+      "sha256": "32d9eba7c2b759378a4f4307aa17ce865da29d12d1d810a60ad6a8bd4228050d",
+      "size": 264528,
       "strings": {
         "de": {
           "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.": "Schalter für die Einstellungen, die macOS versteckt (unsichtbare Dateien, keine .DS_Store auf anderen Laufwerken, Rückschritttaste geht in Safari zurück, Emoji mit „:“, Apps aus beliebiger Quelle), und Tasten für die üblichen Reparaturen (Übersicht, Symbole, „Öffnen mit“, Spotlight, Rechte des Benutzerordners), lokale Time Machine-Schnappschüsse und Apps (Quarantäne entfernen, weitere Kopie öffnen, Einstellungen mit Sicherung zurücksetzen). Jeder sagt, was er ändert und wie man es rückgängig macht, zeigt die genauen Befehle vor dem Ausführen und fragt nur nach dem Passwort, wenn macOS es braucht.",
