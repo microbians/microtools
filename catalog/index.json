@@ -54,13 +54,13 @@
         "kind": "swift",
         "title": "audioSwitch",
         "id": "audioSwitch",
-        "minApp": "4.0",
-        "version": "1.07",
+        "minApp": "4.03",
+        "version": "1.08",
         "about": "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends."
       },
-      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.07/audioSwitch.microplugin.zip",
-      "sha256": "87061c74001111a495e8a002a7d780576fe089490e6b54998174ece354c1d8c1",
-      "size": 322110,
+      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.08/audioSwitch.microplugin.zip",
+      "sha256": "add056e1c1e7591876376d46c28b63c8a00b37022538c88f1d25757b803313e5",
+      "size": 315710,
       "strings": {
         "de": {
           "Audio devices, profiles and rules that switch them for you.": "Audiogeräte, Profile und Regeln, die für dich umschalten.",
@@ -724,6 +724,40 @@
         }
       },
       "thumbnail": "thumbs/smoothScroll.png"
+    },
+    {
+      "manifest": {
+        "id": "songCard",
+        "title": "songCard",
+        "summary": "The song playing, with its cover, controls and lyrics.",
+        "about": "songCard shows the song playing in Music or Spotify: its cover and name under the menu bar icon when it changes, and a small card you can drag anywhere, above every window, below them like a widget, or as a normal window. Play, pause, skip, favorite and rate from it or with your own shortcuts; search the song on YouTube, show its lyrics, or find its cover and save it in the song's file.",
+        "symbol": "music.note",
+        "version": "1.0",
+        "kind": "swift",
+        "principalClass": "SongCard.SongCardPlugin",
+        "sdk": 1,
+        "minApp": "4.03"
+      },
+      "url": "https://github.com/microbians/microtools/releases/download/songCard-1.0/songCard.microplugin.zip",
+      "sha256": "3c86d79f352b02bcdf79d489f303e08bc9cc955ef077592ebc50791d91337235",
+      "size": 201278,
+      "strings": {
+        "de": {
+          "The song playing, with its cover, controls and lyrics.": "Der laufende Titel mit Cover, Tasten und Songtext."
+        },
+        "es": {
+          "The song playing, with its cover, controls and lyrics.": "La canción que suena, con su portada, controles y letra."
+        },
+        "fr": {
+          "The song playing, with its cover, controls and lyrics.": "Le morceau en cours, avec sa pochette, ses commandes et ses paroles."
+        },
+        "it": {
+          "The song playing, with its cover, controls and lyrics.": "Il brano in riproduzione, con copertina, comandi e testo."
+        },
+        "pt": {
+          "The song playing, with its cover, controls and lyrics.": "A música a tocar, com a capa, os controlos e a letra."
+        }
+      }
     },
     {
       "manifest": {
