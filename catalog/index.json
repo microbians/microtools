@@ -252,15 +252,15 @@
         "summary": "Dims the windows behind the one you are working in.",
         "about": "focusDim darkens every window behind the one in front, on every screen, so the window you are working in stands out. Choose how dark; clicks still go through to the dimmed windows.",
         "symbol": "square.2.layers.3d.top.filled",
-        "version": "1.0",
+        "version": "1.01",
         "kind": "swift",
         "principalClass": "FocusDim.FocusDimPlugin",
         "sdk": 1,
         "minApp": "3.4"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/focusDim-1.0/focusDim.microplugin.zip",
-      "sha256": "32cf8e534bc722e62d2ce4b762d74c4df7e648b88bfc77c9f32605cde62d6ea7",
-      "size": 117315,
+      "url": "https://github.com/microbians/microtools/releases/download/focusDim-1.01/focusDim.microplugin.zip",
+      "sha256": "b81c37ce09ca7e62c397d0f2d975db58e735c630f23c80f8e0b3f784e57a9dd6",
+      "size": 117459,
       "strings": {
         "de": {
           "focusDim darkens every window behind the one in front, on every screen, so the window you are working in stands out. Choose how dark; clicks still go through to the dimmed windows.": "focusDim dunkelt jedes Fenster hinter dem vordersten ab, auf allen Bildschirmen, damit das Fenster, in dem du arbeitest, hervorsticht. Wähle die Stärke; Klicks erreichen die abgedunkelten Fenster weiterhin.",
