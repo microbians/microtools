@@ -56,7 +56,7 @@ mediaGrab.microplugin/
 | Plugin | What it does |
 | --- | --- |
 | hideOnStart | Hides the windows apps open at login. |
-| rightClick | 15 tools in Finder's right-click menu and in Services. |
+| rightClick | 15 tools in the right-click menu, in Finder and every other app. |
 | audioSwitch | Audio devices, profiles and rules that switch them for you. |
 | mediaGrab | Video, MP3 or images from the page in your browser. |
 | midiLink | Bluetooth MIDI devices from the menu bar, and MIDI from one to another. |
@@ -74,5 +74,6 @@ mediaGrab.microplugin/
 | smoothScroll | Trackpad-smooth scrolling for mice whose wheel jumps, in its own direction. |
 | appSweep | Finds the files a deleted app left behind, and moves them to the Trash. |
 | imageLink | Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut. |
+| songCard | The song playing, with its cover, controls and lyrics. |
 
 Made by [microbians](https://microbians.com).
