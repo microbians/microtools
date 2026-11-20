@@ -7,16 +7,16 @@
   "plugins": [
     {
       "manifest": {
-        "id": "appSweep",
-        "sdk": 1,
-        "principalClass": "AppSweep.AppSweepPlugin",
         "summary": "Finds the files a deleted app left behind, and moves them to the Trash.",
         "minApp": "3.9",
+        "title": "appSweep",
         "version": "1.03",
-        "kind": "swift",
+        "sdk": 1,
         "about": "Delete an app from Applications and appSweep shows what it left behind: settings, caches, containers, saved state, login items and install receipts. Tick what to remove and it all goes to the Trash, so nothing is lost by mistake. Uninstall an app still installed the same way, the app included.",
-        "symbol": "xmark.bin",
-        "title": "appSweep"
+        "kind": "swift",
+        "principalClass": "AppSweep_1795181045.AppSweepPlugin",
+        "id": "appSweep",
+        "symbol": "xmark.bin"
       },
       "url": "https://github.com/microbians/microtools/releases/download/appSweep-1.03/appSweep.microplugin.zip",
       "sha256": "494a7cdf10f6dc34f75374c26c223557ae9531b4dad71e61f7d21c291476073d",
@@ -47,20 +47,20 @@
     },
     {
       "manifest": {
-        "sdk": 1,
-        "principalClass": "AudioSwitch.AudioSwitchPlugin",
-        "symbol": "speaker.wave.2",
-        "summary": "Audio devices, profiles and rules that switch them for you.",
-        "kind": "swift",
-        "title": "audioSwitch",
         "id": "audioSwitch",
-        "minApp": "4.03",
-        "version": "1.08",
-        "about": "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends."
+        "summary": "Audio devices, profiles and rules that switch them for you.",
+        "principalClass": "AudioSwitch_1795181045.AudioSwitchPlugin",
+        "about": "Pick the output and input from the menu bar; rename devices, give them an icon, set volumes, hide the ones you never use and give each a keyboard shortcut. Profiles set output, input, levels and microphone mute in one click or shortcut. Rules switch profiles by themselves when an app is open or in front, a web page is open, the camera or microphone is in use, or a device is connected, and restore the previous settings when it ends.",
+        "title": "audioSwitch",
+        "kind": "swift",
+        "symbol": "speaker.wave.2",
+        "sdk": 1,
+        "version": "1.09",
+        "minApp": "4.03"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.08/audioSwitch.microplugin.zip",
-      "sha256": "add056e1c1e7591876376d46c28b63c8a00b37022538c88f1d25757b803313e5",
-      "size": 315710,
+      "url": "https://github.com/microbians/microtools/releases/download/audioSwitch-1.09/audioSwitch.microplugin.zip",
+      "sha256": "7f51376dcf6be85c8415834f3d2e7fc1b5d7cefc1056c9dab2439c371ac2a874",
+      "size": 317738,
       "strings": {
         "de": {
           "Audio devices, profiles and rules that switch them for you.": "Audiogeräte, Profile und Regeln, die für dich umschalten.",
@@ -87,16 +87,16 @@
     },
     {
       "manifest": {
-        "id": "autoMount",
-        "title": "autoMount",
-        "summary": "Mounts your network disks and cloud servers at login, and again whenever they are back on the network.",
-        "about": "Choose network volumes (a NAS, another Mac's disk, a WebDAV cloud server) and autoMount mounts them when microTools starts at login, then checks every minute and mounts them again when they come back on the network. Each volume is always mounted once, at /Volumes/<name>: copies such as <name>-1 are unmounted, so links and apps that point there keep working. Passwords come from the keychain.",
-        "symbol": "externaldrive.connected.to.line.below",
-        "version": "1.0",
-        "kind": "swift",
-        "principalClass": "AutoMount.AutoMountPlugin",
         "sdk": 1,
-        "minApp": "3.4"
+        "id": "autoMount",
+        "principalClass": "AutoMount_1795181045.AutoMountPlugin",
+        "version": "1.0",
+        "title": "autoMount",
+        "about": "Choose network volumes (a NAS, another Mac's disk, a WebDAV cloud server) and autoMount mounts them when microTools starts at login, then checks every minute and mounts them again when they come back on the network. Each volume is always mounted once, at /Volumes/<name>: copies such as <name>-1 are unmounted, so links and apps that point there keep working. Passwords come from the keychain.",
+        "kind": "swift",
+        "summary": "Mounts your network disks and cloud servers at login, and again whenever they are back on the network.",
+        "minApp": "3.4",
+        "symbol": "externaldrive.connected.to.line.below"
       },
       "url": "https://github.com/microbians/microtools/releases/download/autoMount-1.0/autoMount.microplugin.zip",
       "sha256": "0c4f36f339ddfa6859cb19bf5fecbe7a53754218c9dc3e52c692f74fb9e9c81b",
@@ -127,16 +127,16 @@
     },
     {
       "manifest": {
-        "id": "batteryCare",
-        "title": "batteryCare",
-        "summary": "Your Mac’s and your Bluetooth devices’ battery, from the menu bar.",
         "about": "Tells you when your Mac has charged up to your limit (80 % by default), so you can unplug it and keep the battery healthy, and when it runs low. Lists the battery of your keyboard, mouse, trackpad and AirPods in the menu, and tells you when one of them gets low, with a threshold of its own for each device.",
-        "symbol": "battery.75percent",
-        "version": "1.0",
-        "kind": "swift",
-        "principalClass": "BatteryCare.BatteryCarePlugin",
+        "minApp": "3.1",
+        "summary": "Your Mac’s and your Bluetooth devices’ battery, from the menu bar.",
+        "title": "batteryCare",
         "sdk": 1,
-        "minApp": "3.1"
+        "version": "1.0",
+        "principalClass": "BatteryCare_1795181045.BatteryCarePlugin",
+        "kind": "swift",
+        "symbol": "battery.75percent",
+        "id": "batteryCare"
       },
       "url": "https://github.com/microbians/microtools/releases/download/batteryCare-1.0/batteryCare.microplugin.zip",
       "sha256": "5f37f7a6532be18d3a3d9e0f2b71a86135327e6c08ed3ff35ac7beb7e6dac1a7",
@@ -168,15 +168,15 @@
     {
       "manifest": {
         "id": "colorPick",
+        "minApp": "3.4",
+        "version": "1.03",
+        "principalClass": "ColorPick_1795181045.ColorPickPlugin",
         "title": "colorPick",
-        "summary": "Pick any color on screen, named and copied in the format you need, or a palette from an image.",
+        "kind": "swift",
+        "sdk": 1,
         "about": "Picks a color anywhere on screen from the menu bar or a keyboard shortcut, gives it a name and copies it as HEX, RGB, HSL, OKLCH or Swift code. The last colors stay in the menu to copy again. Keep colors in named palettes and copy a whole palette as CSS variables, JSON or a list. Make a palette from an area of the screen or an image file: its main colors, named by Apple Intelligence.",
         "symbol": "eyedropper",
-        "version": "1.03",
-        "kind": "swift",
-        "principalClass": "ColorPick.ColorPickPlugin",
-        "sdk": 1,
-        "minApp": "3.4"
+        "summary": "Pick any color on screen, named and copied in the format you need, or a palette from an image."
       },
       "url": "https://github.com/microbians/microtools/releases/download/colorPick-1.03/colorPick.microplugin.zip",
       "sha256": "a9fda2e3aeb5ed19c74822c98fade7eac9b7515d5323bafc253054d71fa08cd3",
@@ -207,16 +207,16 @@
     },
     {
       "manifest": {
-        "id": "deskClean",
-        "title": "deskClean",
-        "summary": "A clean desktop for screen sharing, recording or focus.",
-        "about": "Hides the desktop icons and widgets with one click or a keyboard shortcut, without restarting Finder: your wallpaper covers them. Rules hide them by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, or an external display is connected, and bring them back when it ends. It can also turn on Do Not Disturb through a shortcut of the Shortcuts app. Everything comes back when you switch it off or quit.",
-        "symbol": "macwindow.on.rectangle",
-        "version": "1.01",
         "kind": "swift",
-        "principalClass": "DeskClean.DeskCleanPlugin",
+        "about": "Hides the desktop icons and widgets with one click or a keyboard shortcut, without restarting Finder: your wallpaper covers them. Rules hide them by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, or an external display is connected, and bring them back when it ends. It can also turn on Do Not Disturb through a shortcut of the Shortcuts app. Everything comes back when you switch it off or quit.",
         "sdk": 1,
-        "minApp": "4.0"
+        "principalClass": "DeskClean_1795181045.DeskCleanPlugin",
+        "version": "1.01",
+        "symbol": "macwindow.on.rectangle",
+        "title": "deskClean",
+        "id": "deskClean",
+        "minApp": "4.0",
+        "summary": "A clean desktop for screen sharing, recording or focus."
       },
       "url": "https://github.com/microbians/microtools/releases/download/deskClean-1.01/deskClean.microplugin.zip",
       "sha256": "4249e63d58ac0aabdb5aabab0ef994f3a1ed0e1554c59dd802ee6a522cdd41cc",
@@ -247,16 +247,16 @@
     },
     {
       "manifest": {
-        "id": "focusDim",
+        "minApp": "3.4",
         "title": "focusDim",
+        "symbol": "square.2.layers.3d.top.filled",
+        "kind": "swift",
+        "version": "1.01",
+        "sdk": 1,
+        "id": "focusDim",
         "summary": "Dims the windows behind the one you are working in.",
         "about": "focusDim darkens every window behind the one in front, on every screen, so the window you are working in stands out. Choose how dark; clicks still go through to the dimmed windows.",
-        "symbol": "square.2.layers.3d.top.filled",
-        "version": "1.01",
-        "kind": "swift",
-        "principalClass": "FocusDim.FocusDimPlugin",
-        "sdk": 1,
-        "minApp": "3.4"
+        "principalClass": "FocusDim_1795181045.FocusDimPlugin"
       },
       "url": "https://github.com/microbians/microtools/releases/download/focusDim-1.01/focusDim.microplugin.zip",
       "sha256": "b81c37ce09ca7e62c397d0f2d975db58e735c630f23c80f8e0b3f784e57a9dd6",
@@ -287,16 +287,16 @@
     },
     {
       "manifest": {
-        "principalClass": "HabitTrack.HabitTrackPlugin",
-        "symbol": "checkmark.circle",
-        "id": "habitTrack",
-        "version": "1.0",
         "title": "habitTrack",
-        "summary": "Habits to do a few times a day or a week, marked from the menu bar with one click.",
         "minApp": "3.1",
+        "summary": "Habits to do a few times a day or a week, marked from the menu bar with one click.",
         "sdk": 1,
-        "kind": "swift",
-        "about": "Keep track of the things you want to do several times a day or a week: drink 8 glasses of water a day, draw 5 times a week. Each habit has its own icon and color. One click in the menu bar marks one more, and the icon’s ring shows how much of today is done. Each habit keeps its history and streak, and can remind you at a time of day while it is not done."
+        "id": "habitTrack",
+        "about": "Keep track of the things you want to do several times a day or a week: drink 8 glasses of water a day, draw 5 times a week. Each habit has its own icon and color. One click in the menu bar marks one more, and the icon’s ring shows how much of today is done. Each habit keeps its history and streak, and can remind you at a time of day while it is not done.",
+        "symbol": "checkmark.circle",
+        "version": "1.0",
+        "principalClass": "HabitTrack_1795181045.HabitTrackPlugin",
+        "kind": "swift"
       },
       "url": "https://github.com/microbians/microtools/releases/download/habitTrack-1.0/habitTrack.microplugin.zip",
       "sha256": "716c8459fc51f1c170a7c0665195b6966fe147d3d1945d70987f8abca76ac765",
@@ -327,16 +327,16 @@
     },
     {
       "manifest": {
-        "id": "hideOnStart",
         "title": "hideOnStart",
         "summary": "Hides the windows apps open at login.",
-        "about": "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.",
-        "symbol": "eye.slash",
-        "version": "1.01",
         "kind": "swift",
-        "principalClass": "HideOnStart.HideOnStartPlugin",
+        "id": "hideOnStart",
+        "principalClass": "HideOnStart_1795181045.HideOnStartPlugin",
+        "minApp": "3.0",
+        "about": "Pick the apps that open windows every time your Mac starts: sync helpers, updaters, chat apps. At login, their windows are hidden as they show up, for the time you choose (30 seconds to 10 minutes). Apps without a Dock icon get their windows closed (needs Accessibility). Its menu bar icon can show only while it watches.",
         "sdk": 1,
-        "minApp": "3.0"
+        "symbol": "eye.slash",
+        "version": "1.01"
       },
       "url": "https://github.com/microbians/microtools/releases/download/hideOnStart-1.01/hideOnStart.microplugin.zip",
       "sha256": "3bc604d2f37a4de00fb305d9fc4909143c62b500ceaedb5fc060dc2a8e1fdf78",
@@ -367,16 +367,16 @@
     },
     {
       "manifest": {
-        "sdk": 1,
+        "principalClass": "ImageLink_1795181045.ImageLinkPlugin",
+        "symbol": "icloud.and.arrow.up",
+        "summary": "Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut.",
         "title": "imageLink",
-        "principalClass": "ImageLink.ImageLinkPlugin",
+        "kind": "swift",
         "minApp": "3.6",
         "about": "Right-click images in Finder and choose Upload Image, or upload what you copied with a keyboard shortcut: the image goes to Catbox (no account needed) or ImgBB (with your free key) and its link is copied, as a plain link, Markdown or HTML. The last uploads stay in the menu to copy their link again or open them.",
+        "sdk": 1,
         "id": "imageLink",
-        "version": "1.01",
-        "kind": "swift",
-        "summary": "Uploads an image and copies its link, from Finder’s right-click menu, the clipboard or a shortcut.",
-        "symbol": "icloud.and.arrow.up"
+        "version": "1.01"
       },
       "url": "https://github.com/microbians/microtools/releases/download/imageLink-1.01/imageLink.microplugin.zip",
       "sha256": "177c7b29795fa8e0988c6c5239c50af928d9953826d9a095e3ff69f99f104a92",
@@ -407,16 +407,16 @@
     },
     {
       "manifest": {
-        "id": "keepAwake",
         "title": "keepAwake",
-        "summary": "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.",
-        "about": "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low.",
-        "symbol": "cup.and.saucer",
         "version": "1.0",
-        "kind": "swift",
-        "principalClass": "KeepAwake.KeepAwakePlugin",
+        "minApp": "3.1",
+        "summary": "Keeps your Mac awake for a while, until you turn it off, or while a rule holds.",
         "sdk": 1,
-        "minApp": "3.1"
+        "principalClass": "KeepAwake_1795181045.KeepAwakePlugin",
+        "symbol": "cup.and.saucer",
+        "id": "keepAwake",
+        "kind": "swift",
+        "about": "Keeps your Mac from sleeping for 15 minutes, an hour, a few hours or until you turn it off, from the menu bar or with a shortcut; the icon shows the time left. Rules keep it awake by themselves while an app is open or in front, a web page is open, the camera or microphone is in use, it runs on battery or an external display is connected. Optionally keeps the display on too, and lets the Mac sleep when the battery runs low."
       },
       "url": "https://github.com/microbians/microtools/releases/download/keepAwake-1.0/keepAwake.microplugin.zip",
       "sha256": "e1d13539160b4b0fbfd304e8c372f7d6c7e7afddac12a39134a99f0c8dd52f9e",
@@ -448,15 +448,15 @@
     {
       "manifest": {
         "id": "macTweaks",
+        "minApp": "3.4",
         "title": "macTweaks",
-        "summary": "The Mac’s hidden settings and repairs, without Terminal.",
-        "about": "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.",
         "symbol": "wrench.and.screwdriver",
-        "version": "1.03",
         "kind": "swift",
-        "principalClass": "MacTweaks.MacTweaksPlugin",
+        "principalClass": "MacTweaks_1795181045.MacTweaksPlugin",
         "sdk": 1,
-        "minApp": "3.4"
+        "about": "Switches for the settings macOS hides (hidden files, no .DS_Store on other drives, Delete goes back in Safari, emoji with “:”, apps from anywhere) and buttons for the usual repairs (Quick Look, icons, “Open With”, Spotlight, home folder permissions), Time Machine local snapshots and apps (remove quarantine, open another copy, reset settings with a backup). Each one says what it changes and how to undo it, shows the exact commands before running them, and asks for your password only when macOS needs it.",
+        "version": "1.03",
+        "summary": "The Mac’s hidden settings and repairs, without Terminal."
       },
       "url": "https://github.com/microbians/microtools/releases/download/macTweaks-1.03/macTweaks.microplugin.zip",
       "sha256": "4ebfacb6d25d568750de7b544ef1c9836c26e4df287886f73a28987a182c0ff2",
@@ -487,20 +487,20 @@
     },
     {
       "manifest": {
-        "id": "mediaGrab",
-        "title": "mediaGrab",
-        "summary": "Video, MP3 or images from the page in your browser.",
-        "about": "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.",
+        "version": "1.03",
         "symbol": "arrow.down.circle",
-        "version": "1.02",
         "kind": "swift",
-        "principalClass": "MediaGrab.MediaGrabPlugin",
+        "about": "Downloads the video, its audio as a tagged MP3, or the images you pick from the front tab in Safari, Chrome, Edge, Brave or Arc, from the menu bar or a shortcut. Video from YouTube, Vimeo, Instagram and over a thousand other sites, up to the best quality, with subtitles. MP3s get a square cover and the song’s title, artist and album. Choose a folder and an order for each kind. Uses the free yt-dlp and ffmpeg, downloaded for you the first time.",
+        "summary": "Video, MP3 or images from the page in your browser.",
+        "id": "mediaGrab",
         "sdk": 1,
-        "minApp": "3.4"
+        "title": "mediaGrab",
+        "minApp": "4.04",
+        "principalClass": "MediaGrab_1795181045.MediaGrabPlugin"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/mediaGrab-1.02/mediaGrab.microplugin.zip",
-      "sha256": "6972da0fde0fb539d63e763c3af184084d5bd0d601d25863f9d0227fba316045",
-      "size": 293135,
+      "url": "https://github.com/microbians/microtools/releases/download/mediaGrab-1.03/mediaGrab.microplugin.zip",
+      "sha256": "e1557def5cdd6036112b4556f0dafc11ee6d1e83cd313a7a7f852b3c8ffdbec7",
+      "size": 398944,
       "strings": {
         "de": {
           "Video, MP3 or images from the page in your browser.": "Video, MP3 oder Bilder der Seite in deinem Browser.",
@@ -527,16 +527,16 @@
     },
     {
       "manifest": {
-        "id": "midiLink",
         "title": "midiLink",
-        "summary": "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.",
-        "about": "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.",
-        "symbol": "pianokeys",
+        "principalClass": "MidiLink_1795181045.MidiLinkPlugin",
         "version": "1.01",
-        "kind": "swift",
-        "principalClass": "MidiLink.MidiLinkPlugin",
+        "id": "midiLink",
+        "symbol": "pianokeys",
+        "about": "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.",
         "sdk": 1,
-        "minApp": "3.0"
+        "kind": "swift",
+        "minApp": "3.0",
+        "summary": "Bluetooth MIDI devices from the menu bar, and MIDI from one to another."
       },
       "url": "https://github.com/microbians/microtools/releases/download/midiLink-1.01/midiLink.microplugin.zip",
       "sha256": "96554dc7cbb296c08a6d76d7f3814cccde7ff0d9b2ad01d7f42b2cd996dcf729",
@@ -567,16 +567,16 @@
     },
     {
       "manifest": {
-        "id": "openPorts",
+        "version": "1.0",
+        "symbol": "server.rack",
+        "about": "openPorts shows every dev server, database and proxy running on your Mac in the menu bar: its project (the Git repository or folder it was started from), ports, branch, process and how long it has been running. Open each port in the browser, show its folder in the Finder, copy its URL, or stop one or all of them.",
         "title": "openPorts",
         "summary": "Lists the servers running on your Mac, with their ports, project and uptime, and stops them.",
-        "about": "openPorts shows every dev server, database and proxy running on your Mac in the menu bar: its project (the Git repository or folder it was started from), ports, branch, process and how long it has been running. Open each port in the browser, show its folder in the Finder, copy its URL, or stop one or all of them.",
-        "symbol": "server.rack",
-        "version": "1.0",
+        "id": "openPorts",
+        "minApp": "3.4",
         "kind": "swift",
-        "principalClass": "OpenPorts.OpenPortsPlugin",
         "sdk": 1,
-        "minApp": "3.4"
+        "principalClass": "OpenPorts_1795181045.OpenPortsPlugin"
       },
       "url": "https://github.com/microbians/microtools/releases/download/openPorts-1.0/openPorts.microplugin.zip",
       "sha256": "33402c9cba170fefd596ae16d353629f62503b71bdb920fadb5fe92cc4d67332",
@@ -607,16 +607,16 @@
     },
     {
       "manifest": {
-        "principalClass": "RightClick.RightClickPlugin",
-        "version": "1.04",
-        "symbol": "cursorarrow.click.2",
-        "summary": "More tools in Finder’s right-click menu",
-        "title": "rightClick",
-        "kind": "swift",
-        "sdk": 1,
-        "minApp": "3.4",
+        "id": "rightClick",
         "about": "15 everyday tools in Finder’s right-click menu, and as Services in every other app: Copy Path, Copy Name, Copy Path with ~, Copy Path for Terminal, Copy as file:// URL, Copy Contents, Copy SHA-256, New Text File, Open in Terminal, Make Symbolic Link, Remove Quarantine, Hide/Unhide, Remove Photo Metadata, Add to Music in Reverse Order, Show/Hide Hidden Files. Switch tools on or off and star your favorites to the top level.",
-        "id": "rightClick"
+        "sdk": 1,
+        "title": "rightClick",
+        "principalClass": "RightClick_1795181045.RightClickPlugin",
+        "version": "1.04",
+        "kind": "swift",
+        "minApp": "3.4",
+        "summary": "More tools in Finder’s right-click menu",
+        "symbol": "cursorarrow.click.2"
       },
       "url": "https://github.com/microbians/microtools/releases/download/rightClick-1.04/rightClick.microplugin.zip",
       "sha256": "e5f0f96f5270afc59d4ce274a83b88ba6287df423d61bc277fe836da070d35d9",
@@ -647,16 +647,16 @@
     },
     {
       "manifest": {
+        "sdk": 1,
+        "kind": "swift",
+        "minApp": "3.4",
         "id": "shotGrab",
-        "title": "shotGrab",
+        "principalClass": "ShotGrab_1795181045.ShotGrabPlugin",
         "summary": "Copy the text of any part of the screen, read QR codes, identify what an image shows, and give new screenshots a name that says what they show.",
         "about": "Select an area of the screen and its text is copied, recognized on your Mac: from images, videos, PDFs, apps that don’t let you select it. QR codes and barcodes copy what they hold, and their links can open by themselves. And each new screenshot gets a name that says what it shows: Apple Intelligence reads it on your Mac — its text, what the picture is, the app in front — and replaces “Screenshot” and the date with a few words in your language (keep the date if you like). Copy recent captures again, and show or undo recent renames, from the menu. Identify Image tells you in a few words what the area you select shows, and copies it.",
         "symbol": "lucide:scan-eye",
-        "version": "1.01",
-        "kind": "swift",
-        "principalClass": "ShotGrab.ShotGrabPlugin",
-        "sdk": 1,
-        "minApp": "3.4"
+        "title": "shotGrab",
+        "version": "1.01"
       },
       "url": "https://github.com/microbians/microtools/releases/download/shotGrab-1.01/shotGrab.microplugin.zip",
       "sha256": "1984a82f4723a33f50cc26b667e847ea63a0bc73dbd3aad7425e6a5d3e1f99f8",
@@ -687,16 +687,16 @@
     },
     {
       "manifest": {
-        "minApp": "3.4",
-        "about": "smoothScroll turns each notch of a mouse wheel into a smooth glide, like a trackpad, and lets the wheel scroll the other way without changing the trackpad. Hold a key to scroll faster, sideways or without smoothing; choose how far, how quick and how long it glides, and leave the apps you choose as they are.",
-        "version": "1.01",
-        "id": "smoothScroll",
-        "title": "smoothScroll",
-        "principalClass": "SmoothScroll.SmoothScrollPlugin",
-        "sdk": 1,
-        "summary": "Trackpad-smooth scrolling for mice whose wheel jumps, in its own direction.",
         "kind": "swift",
-        "symbol": "computermouse"
+        "title": "smoothScroll",
+        "about": "smoothScroll turns each notch of a mouse wheel into a smooth glide, like a trackpad, and lets the wheel scroll the other way without changing the trackpad. Hold a key to scroll faster, sideways or without smoothing; choose how far, how quick and how long it glides, and leave the apps you choose as they are.",
+        "sdk": 1,
+        "id": "smoothScroll",
+        "minApp": "3.4",
+        "version": "1.01",
+        "summary": "Trackpad-smooth scrolling for mice whose wheel jumps, in its own direction.",
+        "symbol": "computermouse",
+        "principalClass": "SmoothScroll_1795181045.SmoothScrollPlugin"
       },
       "url": "https://github.com/microbians/microtools/releases/download/smoothScroll-1.01/smoothScroll.microplugin.zip",
       "sha256": "4d7780eebf94fb26f5d7faeab68d4a2f4393416d8cd1646c3d55281b1db4024c",
@@ -727,20 +727,20 @@
     },
     {
       "manifest": {
-        "id": "songCard",
-        "title": "songCard",
-        "summary": "The song playing, with its cover, controls and lyrics.",
-        "about": "songCard shows the song playing in Music or Spotify: its cover and name under the menu bar icon when it changes, and a small card you can drag anywhere, above every window, below them like a widget, or as a normal window. Play, pause, skip, favorite and rate from it or with your own shortcuts; search the song on YouTube, show its lyrics, or find its cover and save it in the song's file.",
+        "principalClass": "SongCard_1795181045.SongCardPlugin",
         "symbol": "music.note",
-        "version": "1.01",
-        "kind": "swift",
-        "principalClass": "SongCard.SongCardPlugin",
         "sdk": 1,
-        "minApp": "4.03"
+        "summary": "The song playing, with its cover, controls and lyrics.",
+        "kind": "swift",
+        "title": "songCard",
+        "about": "songCard shows the song playing in Music or Spotify: its cover and name under the menu bar icon when it changes, and a small card you can drag anywhere, above every window, below them like a widget, or as a normal window. Play, pause, skip, favorite and rate from it or with your own shortcuts; search the song on YouTube and show its lyrics. Identify a song by its sound and edit its title, artist, album, cover and lyrics; check each song's data while you listen; scrobble to Last.fm.",
+        "minApp": "4.04",
+        "id": "songCard",
+        "version": "1.03"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/songCard-1.01/songCard.microplugin.zip",
-      "sha256": "466b6de873738d8dc970ae7e272c673cd1beb7b67b75507c282bbc885bedd00b",
-      "size": 338215,
+      "url": "https://github.com/microbians/microtools/releases/download/songCard-1.03/songCard.microplugin.zip",
+      "sha256": "f3721d23b084bdc53d6a5c16b2d7dabe48b356479f9793dd4b22d7bb8dc82c97",
+      "size": 601600,
       "strings": {
         "de": {
           "The song playing, with its cover, controls and lyrics.": "Der laufende Titel mit Cover, Tasten und Songtext."
@@ -762,16 +762,16 @@
     },
     {
       "manifest": {
-        "version": "1.02",
-        "minApp": "3.4",
-        "summary": "Snippets, emoji and GIFs typed in any app.",
-        "id": "typeDrop",
-        "principalClass": "TypeDrop.TypeDropPlugin",
-        "kind": "swift",
         "sdk": 1,
-        "title": "typeDrop",
+        "id": "typeDrop",
+        "principalClass": "TypeDrop_1795181045.TypeDropPlugin",
         "symbol": "character.cursor.ibeam",
-        "about": "Type an abbreviation in any app and typeDrop replaces it with its text: signatures, addresses, replies, with today's date, the time, the clipboard and where the cursor stays. Type a colon and a name, like :heart, to pick an emoji below the cursor, in English or your language. Type :gif, press a shortcut or use the menu to search KLIPY's GIFs and stickers and paste one, with your recent and favorite ones at hand. Choose apps where nothing is expanded; password fields are never seen."
+        "version": "1.02",
+        "summary": "Snippets, emoji and GIFs typed in any app.",
+        "title": "typeDrop",
+        "about": "Type an abbreviation in any app and typeDrop replaces it with its text: signatures, addresses, replies, with today's date, the time, the clipboard and where the cursor stays. Type a colon and a name, like :heart, to pick an emoji below the cursor, in English or your language. Type :gif, press a shortcut or use the menu to search KLIPY's GIFs and stickers and paste one, with your recent and favorite ones at hand. Choose apps where nothing is expanded; password fields are never seen.",
+        "minApp": "3.4",
+        "kind": "swift"
       },
       "url": "https://github.com/microbians/microtools/releases/download/typeDrop-1.02/typeDrop.microplugin.zip",
       "sha256": "cde91e1919bcd4bf54b79f791ae3a93cc785e654b7916a882893b03fedefdd4c",
