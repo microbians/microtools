@@ -527,20 +527,20 @@
     },
     {
       "manifest": {
-        "kind": "swift",
-        "principalClass": "MidiLink_1795200785.MidiLinkPlugin",
-        "summary": "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.",
+        "minApp": "3.0",
         "title": "midiLink",
-        "version": "1.01",
         "id": "midiLink",
-        "symbol": "pianokeys",
         "sdk": 1,
         "about": "Finds your Bluetooth MIDI instruments and connects or disconnects them from the menu bar, with your own names and icons. Remembered ones connect again by themselves when they are switched on, with a notice. Routes send the MIDI of one port to another: a Bluetooth keyboard to a USB synth or to an app. Hide the ones you don’t want in the menu.",
-        "minApp": "3.0"
+        "version": "1.02",
+        "symbol": "pianokeys",
+        "summary": "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.",
+        "kind": "swift",
+        "principalClass": "MidiLink_1795382003.MidiLinkPlugin"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/midiLink-1.01/midiLink.microplugin.zip",
-      "sha256": "96554dc7cbb296c08a6d76d7f3814cccde7ff0d9b2ad01d7f42b2cd996dcf729",
-      "size": 187799,
+      "url": "https://github.com/microbians/microtools/releases/download/midiLink-1.02/midiLink.microplugin.zip",
+      "sha256": "39eff5578d2c9bc70879b689a8c7732bab3844ed5d431808f8db7c0e13cad37a",
+      "size": 260511,
       "strings": {
         "de": {
           "Bluetooth MIDI devices from the menu bar, and MIDI from one to another.": "Bluetooth-MIDI-Geräte in der Menüleiste, und MIDI von einem zum anderen.",
