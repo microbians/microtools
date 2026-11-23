@@ -87,20 +87,20 @@
     },
     {
       "manifest": {
+        "symbol": "externaldrive.connected.to.line.below",
+        "id": "autoMount",
         "minApp": "3.4",
+        "title": "autoMount",
+        "principalClass": "AutoMount_1795460482.AutoMountPlugin",
+        "summary": "Mounts your network disks and cloud servers at login, and again whenever they are back on the network.",
+        "kind": "swift",
         "about": "Choose network volumes (a NAS, another Mac's disk, a WebDAV cloud server) and autoMount mounts them when microTools starts at login, then checks every minute and mounts them again when they come back on the network. Each volume is always mounted once, at /Volumes/<name>: copies such as <name>-1 are unmounted, so links and apps that point there keep working. Passwords come from the keychain.",
         "sdk": 1,
-        "principalClass": "AutoMount_1795200785.AutoMountPlugin",
-        "symbol": "externaldrive.connected.to.line.below",
-        "title": "autoMount",
-        "id": "autoMount",
-        "version": "1.0",
-        "kind": "swift",
-        "summary": "Mounts your network disks and cloud servers at login, and again whenever they are back on the network."
+        "version": "1.01"
       },
-      "url": "https://github.com/microbians/microtools/releases/download/autoMount-1.0/autoMount.microplugin.zip",
-      "sha256": "0c4f36f339ddfa6859cb19bf5fecbe7a53754218c9dc3e52c692f74fb9e9c81b",
-      "size": 142146,
+      "url": "https://github.com/microbians/microtools/releases/download/autoMount-1.01/autoMount.microplugin.zip",
+      "sha256": "1c42c5c58d04d4f7896482fc5161dabc3f8dfbc9f9d8cff18ea8acec3f80c00a",
+      "size": 224098,
       "strings": {
         "de": {
           "Choose network volumes (a NAS, another Mac's disk, a WebDAV cloud server) and autoMount mounts them when microTools starts at login, then checks every minute and mounts them again when they come back on the network. Each volume is always mounted once, at /Volumes/<name>: copies such as <name>-1 are unmounted, so links and apps that point there keep working. Passwords come from the keychain.": "Wähle Netzwerkvolumes (ein NAS, die Festplatte eines anderen Mac, einen WebDAV-Cloud-Server) und autoMount aktiviert sie, wenn microTools bei der Anmeldung startet, prüft dann jede Minute und aktiviert sie erneut, wenn sie wieder im Netzwerk sind. Jedes Volume wird immer nur einmal aktiviert, unter /Volumes/<Name>: Kopien wie <Name>-1 werden deaktiviert, damit Links und Apps, die dorthin zeigen, weiter funktionieren. Passwörter kommen aus dem Schlüsselbund.",
