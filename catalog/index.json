@@ -727,20 +727,20 @@
     },
     {
       "manifest": {
-        "about": "songCard shows the song playing in Music or Spotify: its cover and name under the menu bar icon when it changes, and a small card you can drag anywhere, above every window, below them like a widget, or as a normal window. Play, pause, skip, favorite and rate from it or with your own shortcuts; search the song on YouTube and show its lyrics. Identify a song by its sound and edit its title, artist, album, cover and lyrics; check each song's data while you listen; scrobble to Last.fm.",
-        "principalClass": "SongCard_1795624025.SongCardPlugin",
-        "version": "1.1",
+        "title": "songCard",
+        "id": "songCard",
         "symbol": "music.note",
         "minApp": "4.06",
+        "principalClass": "SongCard_1795625568.SongCardPlugin",
         "kind": "swift",
-        "title": "songCard",
+        "version": "1.11",
         "summary": "The song playing, with its cover, controls and lyrics.",
-        "id": "songCard",
-        "sdk": 1
+        "sdk": 1,
+        "about": "songCard shows the song playing in Music or Spotify: its cover and name under the menu bar icon when it changes, and a small card you can drag anywhere, above every window, below them like a widget, or as a normal window. Play, pause, skip, favorite and rate from it or with your own shortcuts; search the song on YouTube and show its lyrics. Identify a song by its sound and edit its title, artist, album, cover and lyrics; check each song's data while you listen; scrobble to Last.fm."
       },
-      "url": "https://github.com/microbians/microtools/releases/download/songCard-1.1/songCard.microplugin.zip",
-      "sha256": "f4730b654e665448acdf9cc30f3d3e78612577e08a447d93653686f2997ca2e0",
-      "size": 620562,
+      "url": "https://github.com/microbians/microtools/releases/download/songCard-1.11/songCard.microplugin.zip",
+      "sha256": "e4a778e9ce5c2ef28e6e611068266515e61b834e022a93d6c33aaf3abd965825",
+      "size": 628305,
       "strings": {
         "de": {
           "The song playing, with its cover, controls and lyrics.": "Der laufende Titel mit Cover, Tasten und Songtext."
